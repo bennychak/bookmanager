@@ -2,15 +2,15 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>图书查询系统</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>怡心苑书房</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <h1 onclick="resetSearch()">图书查询系统</h1>
+        <h1 onclick="resetSearch()">檢書</h1>
         <form class="search-form">
-            <input type="text" id="search-input" placeholder="请输入书名、出版社、作者、获取时间、分类、ISBN、中图分类号、LCC分类号或评分" style="box-sizing: border-box;">
+            <input type="text" id="search-input" placeholder="请输入书名、出版社、作者、得到时间、分类、ISBN、CLC、LCC分类号、评级" style="box-sizing: border-box;">
             <button type="button" onclick="searchBooks()" style="box-sizing: border-box;">搜索</button>
         </form>
         <div class="book-list-container">
@@ -24,9 +24,8 @@
         <span id="page-info">1 / 1</span>
         <button id="next-page" onclick="changePage(1)">下一页</button>
     </div>
-    <button id="back-to-top" onclick="scrollToTop()">回到顶部</button>
 
     <script src="books.js"></script>
     <script src="app.js"></script>
 </body>
-</html>除
+</html>

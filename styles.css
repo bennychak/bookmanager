@@ -1,3 +1,6 @@
+html{
+    background-color: #bfc55f;
+}
 body {
     font-family: Arial, sans-serif;
     background-color: #bfc55f;
@@ -10,25 +13,31 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    padding-bottom:7rem;
 }
 
 h1 {
     text-align: center;
     cursor: pointer;
     color: #333;
+    border-radius:1rem;
+    margin-left:auto;
+    margin-right:auto;
+    color:#fff;
+    display:inline-block;
 }
 
 .search-form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .search-form input {
     width: 100%;
     max-width: 400px;
-    padding: 10px;
+    padding: 1rem;
     margin-bottom: 10px;
     border: 1px solid #333;
     border-radius: 4px;
@@ -39,23 +48,24 @@ h1 {
 .search-form button {
     padding: 10px 20px;
     border: none;
-    background-color: #333;
-    color: #bfc55f;
+    background-color: #bfc55f;
+    color: #fff;
     border-radius: 4px;
     cursor: pointer;
     box-sizing: border-box;
-    font-size:1rem;
+    font-size:1.2rem;
+    border:#fff .2rem solid;
 }
 
 .search-form button:hover {
-    background-color: #222;
+    background-color: #c0c56d;
 }
 
 .book-total, .search-result-total {
     text-align: center;
     margin-bottom: 20px;
     font-size: 1.2em;
-    color: #333;
+    color: #fff;
 }
 
 .book-cards {
@@ -80,7 +90,8 @@ h1 {
 
 .book-card h2 {
     font-size: 1.4em;
-    margin-bottom: 10px;
+    margin: 5px;
+    margin-left:0;
     color: #333;
 }
 
@@ -117,47 +128,34 @@ h1 {
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: #fff;
+    background-color: #c0c56d;
     padding: 10px 0;
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
     z-index: 10;
+    padding:1rem 0 2rem;
 }
 
 .pagination button {
     padding: 10px 20px;
     margin: 0 10px;
     border: none;
-    background-color: #333;
-    color: #bfc55f;
-    border-radius: 4px;
+    background-color: #c0c56d;
+    color: #fff;
+    border-radius: .6rem;
     cursor: pointer;
+    font-size:1rem;
+    border:#fff .2rem solid;
 }
 
 .pagination button:disabled {
-    background-color: #ccc;
+    opacity:.5;
     cursor: not-allowed;
 }
 
 .pagination span {
     font-weight: bold;
-    color: #333;
-}
-
-#back-to-top {
-    position: fixed;
-    bottom: 70px;
-    right: 20px;
-    padding: 10px 20px;
-    border: none;
-    background-color: #333;
-    color: #bfc55f;
-    border-radius: 4px;
-    cursor: pointer;
-    display: none;
-}
-
-#back-to-top:hover {
-    background-color: #222;
+    font-size:1.6rem;
+    color: #fff;
 }
 
 /* 响应式设计 */
@@ -176,12 +174,12 @@ h1 {
     }
 
     .book-card {
-        padding: 15px;
+        padding: 10px;
         margin: 0;
         border-bottom: 1px dashed #ccc;
     }
 
     .book-card h2 {
-        font-size: 1.2em;
+        font-size: 1.3em;
     }
 }

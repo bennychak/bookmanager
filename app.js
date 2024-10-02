@@ -1,5 +1,5 @@
 let currentPage = 1;
-const itemsPerPage = 5;
+const itemsPerPage = 3;
 let filteredBooks = books;
 let isSearching = false;
 
@@ -77,12 +77,6 @@ function updatePagination() {
     } else {
         nextPageButton.disabled = false;
     }
-
-    if (totalPages > 1) {
-        document.getElementById('back-to-top').style.display = 'block';
-    } else {
-        document.getElementById('back-to-top').style.display = 'none';
-    }
 }
 
 function changePage(direction) {
@@ -129,13 +123,3 @@ function toggleCardDetails(card) {
 
 // 初始化显示所有图书
 displayBooks(books);
-
-// 监听滚动事件，显示/隐藏回到顶部按钮
-window.addEventListener('scroll', () => {
-    const backToTopButton = document.getElementById('back-to-top');
-    if (window.scrollY > 200) {
-        backToTopButton.style.display = 'block';
-    } else {
-        backToTopButton.style.display = 'none';
-    }
-});
