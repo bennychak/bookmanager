@@ -54,12 +54,12 @@ function updatePagination() {
     const searchResultTotal = document.getElementById('search-result-total');
 
     if (isSearching) {
-        searchResultTotal.textContent = `搜索到 ${totalItems} 套图书`;
+        searchResultTotal.textContent = `为你找到${totalItems}套书`;
         bookTotal.style.display = 'none';
-        searchResultTotal.style.display = 'block';
+        searchResultTotal.style.display = 'inline-block';
     } else {
-        bookTotal.textContent = `上架图书共 ${totalItems} 套`;
-        bookTotal.style.display = 'block';
+        bookTotal.textContent = `已上架${totalItems}套图书`;
+        bookTotal.style.display = 'inline-block';
         searchResultTotal.style.display = 'none';
     }
 
