@@ -14,7 +14,7 @@ function displayBooks(books) {
             <h2>${book.book_name}</h2>
             <div class="book-details">
                 <p><strong>作者:</strong> ${book.book_author}</p>
-                <p><strong>出版社:</strong> ${book.book_press}</p>
+                <p><strong>出版:</strong> ${book.book_press}</p>
                 <p><strong>分类:</strong> ${book.book_class}</p>
                 <p><strong>定价:</strong> ${book.book_price}</p>
                 <p><strong>版次:</strong> ${book.book_presstime}</p>
@@ -54,11 +54,11 @@ function updatePagination() {
     const searchResultTotal = document.getElementById('search-result-total');
 
     if (isSearching) {
-        searchResultTotal.textContent = `搜索结果数: ${totalItems}`;
+        searchResultTotal.textContent = `搜索到 ${totalItems} 套图书`;
         bookTotal.style.display = 'none';
         searchResultTotal.style.display = 'block';
     } else {
-        bookTotal.textContent = `总图书数: ${totalItems}`;
+        bookTotal.textContent = `上架图书共 ${totalItems} 套`;
         bookTotal.style.display = 'block';
         searchResultTotal.style.display = 'none';
     }
