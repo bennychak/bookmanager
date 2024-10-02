@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图书查询系统</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 onclick="resetSearch()">图书查询系统</h1>
+        <form class="search-form">
+            <input type="text" id="search-input" placeholder="请输入书名、出版社、作者、获取时间、分类、ISBN、中图分类号、LCC分类号或评分" style="box-sizing: border-box;">
+            <button type="button" onclick="searchBooks()" style="box-sizing: border-box;">搜索</button>
+        </form>
+        <div class="book-list-container">
+            <div id="book-total" class="book-total"></div>
+            <div id="search-result-total" class="search-result-total"></div>
+            <div id="book-cards" class="book-cards"></div>
+        </div>
+    </div>
+    <div class="pagination">
+        <button id="prev-page" onclick="changePage(-1)">上一页</button>
+        <span id="page-info">1 / 1</span>
+        <button id="next-page" onclick="changePage(1)">下一页</button>
+    </div>
+    <button id="back-to-top" onclick="scrollToTop()">回到顶部</button>
+
+    <script src="books.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>除
