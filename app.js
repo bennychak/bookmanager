@@ -22,7 +22,6 @@ function displayBooks(books) {
                 <p><strong>中国国家图书馆分类:</strong> ${book.book_cnClassification}</p>
                 <p><strong>美国国会图书馆分类:</strong> ${book.book_usClassification}</p>
                 <p><strong>得到时间:</strong> ${book.book_gettime}</p>
-                ${book.book_note ? `<p><strong>备注:</strong> ${book.book_note}</p>` : ''}
                 ${book.book_dadsay ? `<p><strong>爸爸说:</strong> ${book.book_dadsay}</p>` : ''}
                 ${book.book_momsay ? `<p><strong>妈妈说:</strong> ${book.book_momsay}</p>` : ''}
                 <p><strong>评级:</strong> <span class="book-star">${createStars(book.book_star)}</span></p>
