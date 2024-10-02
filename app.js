@@ -15,15 +15,17 @@ function displayBooks(books) {
             <div class="book-details">
                 <p><strong>作者:</strong> ${book.book_author}</p>
                 <p><strong>出版社:</strong> ${book.book_press}</p>
-                <p><strong>获取时间:</strong> ${book.book_gettime}</p>
                 <p><strong>分类:</strong> ${book.book_class}</p>
+                <p><strong>定价:</strong> ${book.book_price}</p>
+                <p><strong>版次:</strong> ${book.book_presstime}</p>
                 <p><strong>ISBN:</strong> ${book.book_isbn}</p>
-                <p><strong>中图分类号:</strong> ${book.book_cnClassification}</p>
-                <p><strong>LCC分类号:</strong> ${book.book_usClassification}</p>
+                <p><strong>中国国家图书馆分类:</strong> ${book.book_cnClassification}</p>
+                <p><strong>美国国会图书馆分类:</strong> ${book.book_usClassification}</p>
+                <p><strong>得到时间:</strong> ${book.book_gettime}</p>
                 ${book.book_note ? `<p><strong>备注:</strong> ${book.book_note}</p>` : ''}
                 ${book.book_dadsay ? `<p><strong>爸爸说:</strong> ${book.book_dadsay}</p>` : ''}
                 ${book.book_momsay ? `<p><strong>妈妈说:</strong> ${book.book_momsay}</p>` : ''}
-                <div class="book-star">${createStars(book.book_star)}</div>
+                <p><strong>评级:</strong> <span class="book-star">${createStars(book.book_star)}</span></p>
             </div>
         `;
         card.addEventListener('click', () => {

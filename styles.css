@@ -33,6 +33,7 @@ h1 {
     border: 1px solid #333;
     border-radius: 4px;
     box-sizing: border-box;
+    font-size:1rem;
 }
 
 .search-form button {
@@ -43,6 +44,7 @@ h1 {
     border-radius: 4px;
     cursor: pointer;
     box-sizing: border-box;
+    font-size:1rem;
 }
 
 .search-form button:hover {
