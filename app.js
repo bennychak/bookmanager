@@ -1,7 +1,5 @@
 let currentPage = 1;
 const itemsPerPage = 3;
-const books = fetch('./books.js');
-
 let filteredBooks = books.reverse();
 let isSearching = false;
 

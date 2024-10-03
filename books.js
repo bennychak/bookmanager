@@ -1,4 +1,4 @@
-[
+const books = [
     {
         "id": 1,
         "book_name": "小逻辑",
