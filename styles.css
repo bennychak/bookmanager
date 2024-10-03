@@ -57,7 +57,7 @@ h1 {
 }
 .search-form input:focus + span,
 .search-form input:active + span,
-.search-form input:invalid + span{display:none}
+.search-form input:valid + span{display:none}
 .search-form input + span{
     width: 100%;
     padding: .5rem 1rem;
