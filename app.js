@@ -1,6 +1,6 @@
 let currentPage = 1;
 const itemsPerPage = 3;
-let filteredBooks = books;
+let filteredBooks = books.reverse();
 let isSearching = false;
 
 function displayBooks(books) {

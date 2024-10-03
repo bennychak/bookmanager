@@ -37,13 +37,14 @@ h1 {
 }
 
 .search-form {
+    position:relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 3rem;
 }
 
-.search-form textarea {
+.search-form input {
     width: 100%;
     max-width: 400px;
     padding: .5rem 1rem;
@@ -52,6 +53,22 @@ h1 {
     border-radius: 4px;
     box-sizing: border-box;
     font-size:1rem;
+    height:4rem;
+}
+.search-form input:focus + span{display:none}
+.search-form input + span{
+    width: 100%;
+    padding: .5rem 1rem;
+    margin-bottom: 10px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size:1rem;
+    height:4rem;
+    position:absolute;
+    left:0;
+    right: 0;
+    pointer-events: none;
 }
 
 .search-form button {
