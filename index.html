@@ -15,13 +15,14 @@
             <span id="book-total" class="book-total"></span><span id="search-result-total" class="search-result-total"></span>
         </h1>
         <form class="search-form">
-            <input type="text" maxlength="20" id="search-input" required />
-            <span class="placeholder">请输入书名，或者出版社、作者、分类、ISBN、中图号、国会号等信息以查询。</span>
+            <input type="text" maxlength="16" id="search-input" required />
+            <span class="placeholder">请输入书名，或出版社、作者、分类、ISBN、中图号、国会号等信息以查询。</span>
             <button type="button" onclick="searchBooks()" style="box-sizing: border-box;">搜索</button>
         </form>
         <div class="book-list-container">
             <div id="book-cards" class="book-cards"></div>
         </div>
+        <div class="divide">framework by 通义千问; database &copy; localhost81(2007-2024).</div>
     </div>
     <div class="pagination">
         <button id="prev-page" onclick="changePage(-1)">上一页</button>

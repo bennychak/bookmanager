@@ -41,7 +41,7 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 3rem;
+    margin-bottom:3rem;
 }
 
 .search-form input {
@@ -52,7 +52,7 @@ h1 {
     border: 1px solid #333;
     border-radius: 4px;
     box-sizing: border-box;
-    font-size:1rem;
+    font-size:1.3rem;
     height:4rem;
 }
 .search-form input:focus + span,
@@ -89,6 +89,8 @@ h1 {
 .search-form button:hover {
     background-color: #c0c56d;
 }
+
+.divide{margin:1rem 0; text-align: center; color:#fff; font-size: .75rem}
 
 .book-total, .search-result-total {
     color: #fff; vertical-align: middle;
@@ -195,7 +197,6 @@ h1 {
 
     .search-form input, .search-form button {
         width: 100%;
-        margin-bottom: 10px;
     }
 
     .book-cards {
