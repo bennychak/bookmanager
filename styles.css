@@ -15,6 +15,7 @@ body {
     background-image:url(./bg.jpg);
     background-position:center center;
     background-size:cover;
+    background-attachment: fixed;
  }
 .container {
     max-width: 1200px;
