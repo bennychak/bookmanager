@@ -18,7 +18,7 @@ function displayBooks(books) {
                 <p><strong>分类:</strong> ${book.book_class}</p>
                 <p><strong>定价:</strong> ${book.book_price}</p>
                 <p><strong>版次:</strong> ${book.book_presstime}</p>
-                <p><strong>ISBN:</strong> ${book.book_isbn}</p>
+                <p><strong>ISBN/书号:</strong> ${book.book_isbn}</p>
                 <p><strong>中国国家图书馆分类:</strong> ${book.book_cnClassification}</p>
                 <p><strong>美国国会图书馆分类:</strong> ${book.book_usClassification}</p>
                 <p><strong>得到时间:</strong> ${book.book_gettime}</p>
