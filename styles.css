@@ -55,7 +55,8 @@ h1 {
     font-size:1rem;
     height:4rem;
 }
-.search-form input:focus + span{display:none}
+.search-form input:focus + span,
+.search-form input:active + span{display:none}
 .search-form input + span{
     width: 100%;
     padding: .5rem 1rem;
