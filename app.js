@@ -89,12 +89,11 @@ function searchBooks() {
         book.book_name.toLowerCase().includes(query) ||
         book.book_press.toLowerCase().includes(query) ||
         book.book_author.toLowerCase().includes(query) ||
-        book.book_gettime.includes(query) ||
+        book.book_gettime.toString().includes(query) ||
         book.book_class.toLowerCase().includes(query) ||
         book.book_isbn.includes(query) ||
-        book.book_cnClassification.includes(query) ||
-        book.book_usClassification.includes(query) ||
-        book.book_star.toString().includes(query)
+        book.book_cnClassification.toString().includes(query) ||
+        book.book_usClassification.toString().includes(query)
     );
 
     isSearching = true;
