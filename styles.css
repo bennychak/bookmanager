@@ -3,20 +3,16 @@
 }
 body {
     font-family: Arial, sans-serif;
-    background-color: #bfc55f;
+    background: #bfc55f url(./bg.jpg) center center no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     margin: 0;
     padding: 0;
     color: #333;
 }
 .imggg,.imgpp{ width:3rem; border-radius:50%; display:inline-block;vertical-align:middle;}
 .imgpp{ margin-left:-1rem }
-.bg{ position:absolute; left:0; top:0; width:100%;height:100%; z-index:0;
-    opacity:.1;
-    background-image:url(./bg.jpg);
-    background-position:center center;
-    background-size:cover;
-    background-attachment: fixed;
- }
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -26,7 +22,7 @@ body {
 }
 
 h1 {
-    text-align: left;
+    text-align: center;
     cursor: pointer;
     color: #333;
     border-radius:1rem;
@@ -40,14 +36,15 @@ h1 {
 .search-form {
     position:relative;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
     margin-bottom:3rem;
+    width:60%;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 .search-form input {
     width: 100%;
-    max-width: 400px;
     padding: .5rem 1rem;
     margin-bottom: 10px;
     border: 1px solid #333;
@@ -55,6 +52,7 @@ h1 {
     box-sizing: border-box;
     font-size:1.3rem;
     height:4rem;
+    vertical-align:middle;
 }
 .search-form input:focus + span,
 .search-form input:active + span,
@@ -85,13 +83,16 @@ h1 {
     font-size:1.2rem;
     border:#fff .2rem solid;
     opacity:.85;
+    white-space: nowrap;
+    vertical-align:middle;
+    height:4rem;
 }
 
 .search-form button:hover {
     background-color: #c0c56d;
 }
 
-.divide{margin:1rem 0; text-align: center; color:#fff; font-size: .75rem}
+.divide{margin:24vh 0 1rem; text-align: center; color:#fff; font-size: .75rem}
 
 .book-total, .search-result-total {
     color: #fff; vertical-align: middle;
@@ -99,7 +100,7 @@ h1 {
 
 .book-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     gap: 20px;
 }
 
@@ -192,13 +193,21 @@ h1 {
 
 /* 响应式设计 */
 @media (max-width: 768px) {
+    h1{ text-align:left; }
+    .divide{ margin-top:5vh }
     .search-form {
+        width:100%;
         flex-direction: column;
+        align-items:center;
     }
 
     .search-form input, .search-form button {
         width: 100%;
     }
+
+    .search-form button {
+    height:auto;
+}
 
     .book-cards {
         grid-template-columns: 1fr;
