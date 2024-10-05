@@ -1,6 +1,8 @@
 let currentPage = 1;
 const itemsPerPage = 3;
-let filteredBooks = books.reverse();
+let filteredBooks = books.sort(function(){
+    return Math.random() - 0.5;
+});
 let isSearching = false;
 
 function displayBooks(books) {
