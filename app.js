@@ -13,6 +13,7 @@ function displayBooks(books) {
         card.innerHTML = `
             <h2>${book.book_name}</h2>
             <div class="book-details">
+                <p><strong>简介:</strong> ${book.book_summary}</p>
                 <p><strong>作者:</strong> ${book.book_author}</p>
                 <p><strong>出版:</strong> ${book.book_press}</p>
                 <p><strong>分类:</strong> ${book.book_class}</p>
