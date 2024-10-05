@@ -5,6 +5,10 @@ let filteredBooks = books.sort(function(){
 });
 let isSearching = false;
 
+function book_clc(){
+    alert("书名前的字母标记了图书大类：\nA 马克思主义、列宁主义、毛泽东思想、邓小平理论\nB 哲学、宗教\nC 社会科学总论\nD 政治、法律\nE 军事\nF 经济\nG 文化、科学、教育、体育\nH 语言、文字\nI 文学\nJ 艺术\nK 历史、地理\nN 自然科学总论\nO 数理科学和化学\nP 天文学、地球科学\nQ 生物科学\nR 医药、卫生\nS 农业科学\nT 工业技术\nU 交通运输\nV 航空、航天\nX 环境科学、安全科学\nZ 综合性图书");
+}
+
 function displayBooks(books) {
     const bookCards = document.getElementById('book-cards');
     bookCards.innerHTML = '';
@@ -14,7 +18,7 @@ function displayBooks(books) {
         card.className = 'book-card';
         const card_mark = book.book_cnClassification.slice(0,3).replace(/\d+/g, '').replace('-', '');
         card.innerHTML = `
-            <h2><span class="card_mark">`+card_mark+`</span>${book.book_name}</h2>
+            <h2><span class="card_mark" onclick="book_clc()">`+card_mark+`</span>${book.book_name}</h2>
             <div class="book-details">
                 ${book.book_star ? `<p><strong>评级:</strong style="vertical-align:middle"> <span class="book-star">${createStars(book.book_star)}</span></p>` : ''}
                 ${book.book_gettime ? `<p><strong>得到时间:</strong> ${book.book_gettime}</p>` : ''}
