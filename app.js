@@ -12,20 +12,22 @@ function displayBooks(books) {
     books.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage).forEach(book => {
         const card = document.createElement('div');
         card.className = 'book-card';
+        const card_mark = book.book_cnClassification.slice(0,3).replace(/\d+/g, '').replace('-', '');
         card.innerHTML = `
-            <h2>${book.book_name}</h2>
+            <h2><span class="card_mark">`+card_mark+`</span>${book.book_name}</h2>
             <div class="book-details">
                 ${book.book_star ? `<p><strong>评级:</strong style="vertical-align:middle"> <span class="book-star">${createStars(book.book_star)}</span></p>` : ''}
                 ${book.book_gettime ? `<p><strong>得到时间:</strong> ${book.book_gettime}</p>` : ''}
+                <p><strong>得到价格:</strong> <big>${book.book_getprice}</big> <small>${book.book_getpricecurrent}</small></p>
                 ${book.book_summary ? `<p><strong>简介:</strong> ${book.book_summary}</p>` : ''}
                 ${book.book_dadsay ? `<p><strong>爸爸说:</strong> ${book.book_dadsay}</p>` : ''}
                 ${book.book_momsay ? `<p><strong>妈妈说:</strong> ${book.book_momsay}</p>` : ''}
                 <p><strong>作者:</strong> ${book.book_author}</p>
                 <p><strong>出版:</strong> ${book.book_press}</p>
-                <p><strong>定价:</strong> ${book.book_price}(${book.book_pricecurrent})</p>
-                <p><strong>版次:</strong> ${book.book_presstime}</p>
+                <p><strong>定价:</strong> <big>${book.book_price}</big> <small>${book.book_pricecurrent}</small></p>
+                ${book.book_presstime ? `<p><strong>版次:</strong> ${book.book_presstime}</p>` : ''}
+                ${book.book_isbn ? `<p><strong>ISBN/书号:</strong> ${book.book_isbn}</p>` : ''}
                 <p><strong>分类:</strong> ${book.book_class}</p>
-                <p><strong>ISBN/书号:</strong> ${book.book_isbn}</p>
                 <p><strong>中国国家图书馆分类:</strong> ${book.book_cnClassification}</p>
                 <p><strong>美国国会图书馆分类:</strong> ${book.book_usClassification}</p>
             </div>

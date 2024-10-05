@@ -116,14 +116,29 @@ h1 {
     position: relative;
     word-wrap: break-word;
     word-break: break-all;
-    text-align: justify;
 }
 
 .book-card:hover {
     opacity: 0.92;
 }
 
+.book-card .card_mark{
+    margin-left:-2.5rem;
+    margin-right:.5rem;
+    background-color:#bfc55f;
+    width: 2rem;
+    height: 2rem;
+    line-height:2rem;
+    text-align:center;
+    color: #fff;
+    display: inline-block;
+    font-size:1.2rem;
+    border-radius:.3rem;
+}
+
 .book-card h2 {
+    position:relative;
+    padding-left:2.5rem;
     font-size: 1.4em;
     margin: 5px;
     margin-left:0;
@@ -133,6 +148,12 @@ h1 {
 .book-card .book-details {
     display: none;
     margin-top: 10px;
+}
+
+.book-card .book-details big{
+}
+.book-card .book-details small{
+    display: inline-block; color: #fff; background-color: #ccc; border-radius: .5rem; padding:2px 5px;
 }
 
 .book-card .book-star {
