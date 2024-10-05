@@ -14,10 +14,10 @@ function displayBooks(books) {
             <h2>${book.book_name}</h2>
             <div class="book-details">
                 ${book.book_star ? `<p><strong>评级:</strong style="vertical-align:middle"> <span class="book-star">${createStars(book.book_star)}</span></p>` : ''}
+                ${book.book_gettime ? `<p><strong>得到时间:</strong> ${book.book_gettime}</p>` : ''}
                 ${book.book_summary ? `<p><strong>简介:</strong> ${book.book_summary}</p>` : ''}
                 ${book.book_dadsay ? `<p><strong>爸爸说:</strong> ${book.book_dadsay}</p>` : ''}
                 ${book.book_momsay ? `<p><strong>妈妈说:</strong> ${book.book_momsay}</p>` : ''}
-                ${book.book_gettime ? `<p><strong>得到时间:</strong> ${book.book_gettime}</p>` : ''}
                 <p><strong>作者:</strong> ${book.book_author}</p>
                 <p><strong>出版:</strong> ${book.book_press}</p>
                 <p><strong>定价:</strong> ${book.book_price}</p>
