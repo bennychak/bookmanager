@@ -1,8 +1,6 @@
 let currentPage = 1;
 const itemsPerPage = 3;
-let filteredBooks = books.sort(function(){
-    return Math.random() - 0.5;
-});
+let filteredBooks = books.reverse();
 let isSearching = false;
 
 window.alert = function(name){
@@ -120,10 +118,18 @@ function searchBooks() {
     displayBooks(filteredBooks);
 }
 
-function resetSearch() {
+function randomSearch() {
     filteredBooks = books.sort(function(){
         return Math.random() - 0.5;
     });
+    isSearching = false;
+    currentPage = 1;
+    displayBooks(filteredBooks);
+    document.getElementById('search-input').value = '';
+}
+
+function resetSearch() {
+    filteredBooks = books;
     isSearching = false;
     currentPage = 1;
     displayBooks(filteredBooks);
