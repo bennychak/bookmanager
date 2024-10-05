@@ -135,12 +135,12 @@ h1 {
 
 .book-card .book-star {
     display: inline-block;
-    margin-top: 5px;
+    vertical-align:middle;
 }
 
 .book-star svg {
-    width: 16px;
-    height: 16px;
+    width: 1.5rem;
+    height: 1.5rem;
     fill: #bfc55f;
 }
 
