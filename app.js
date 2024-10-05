@@ -5,20 +5,18 @@ let filteredBooks = books.sort(function(){
 });
 let isSearching = false;
 
-function book_clc() {
-  if (Notification.permission === 'granted') {
-    new Notification('书名前的字母标记了图书大类', {
-      body: 'A 马克思主义、列宁主义、毛泽东思想、邓小平理论\nB 哲学、宗教\nC 社会科学总论\nD 政治、法律\nE 军事\nF 经济\nG 文化、科学、教育、体育\nH 语言、文字\nI 文学\nJ 艺术\nK 历史、地理\nN 自然科学总论\nO 数理科学和化学\nP 天文学、地球科学\nQ 生物科学\nR 医药、卫生\nS 农业科学\nT 工业技术\nU 交通运输\nV 航空、航天\nX 环境科学、安全科学\nZ 综合性图书'
-    });
-  } else if (Notification.permission !== 'denied') {
-    Notification.requestPermission().then(function(permission) {
-      if (permission === 'granted') {
-        new Notification('书名前的字母标记了图书大类', {
-          body: 'A 马克思主义、列宁主义、毛泽东思想、邓小平理论\nB 哲学、宗教\nC 社会科学总论\nD 政治、法律\nE 军事\nF 经济\nG 文化、科学、教育、体育\nH 语言、文字\nI 文学\nJ 艺术\nK 历史、地理\nN 自然科学总论\nO 数理科学和化学\nP 天文学、地球科学\nQ 生物科学\nR 医药、卫生\nS 农业科学\nT 工业技术\nU 交通运输\nV 航空、航天\nX 环境科学、安全科学\nZ 综合性图书'
-        });
-      }
-    });
-  }
+window.alert = function(name){
+    var iframe = document.createElement("IFRAME");
+    iframe.style.display="none";
+    iframe.setAttribute("src", 'data:text/plain,');
+    document.documentElement.appendChild(iframe);
+    window.frames[0].window.alert(name);
+    iframe.parentNode.removeChild(iframe);
+};
+
+
+function book_clc(){
+    alert("书名前的字母标记了图书大类：\nA 马克思主义、列宁主义、毛泽东思想、邓小平理论\nB 哲学、宗教\nC 社会科学总论\nD 政治、法律\nE 军事\nF 经济\nG 文化、科学、教育、体育\nH 语言、文字\nI 文学\nJ 艺术\nK 历史、地理\nN 自然科学总论\nO 数理科学和化学\nP 天文学、地球科学\nQ 生物科学\nR 医药、卫生\nS 农业科学\nT 工业技术\nU 交通运输\nV 航空、航天\nX 环境科学、安全科学\nZ 综合性图书");
 }
 
 function displayBooks(books) {
