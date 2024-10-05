@@ -110,14 +110,13 @@ h1 {
     font-size:1.3rem;
     vertical-align:middle;
     outline:none;
+    background-image:url(./random.svg);
+    background-size: 46%;
+    background-position:center center;
+    background-repeat: no-repeat;
 }
 .search-form .refresh:active{
     opacity:.7;
-}
-
-.search-form .refresh img{
-    width: 100%;
-    height:100%;
 }
 
 .divide{margin:24vh 0 1rem; text-align: center; color:#fff; font-size: .75rem}
