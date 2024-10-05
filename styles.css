@@ -114,8 +114,6 @@ h1 {
     transition: opacity 0.3s;
     cursor: pointer;
     position: relative;
-    word-wrap: break-word;
-    word-break: break-all;
 }
 
 .book-card:hover {
