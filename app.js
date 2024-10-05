@@ -22,7 +22,7 @@ function displayBooks(books) {
                 ${book.book_momsay ? `<p><strong>妈妈说:</strong> ${book.book_momsay}</p>` : ''}
                 <p><strong>作者:</strong> ${book.book_author}</p>
                 <p><strong>出版:</strong> ${book.book_press}</p>
-                <p><strong>定价:</strong> ${book.book_price}</p>
+                <p><strong>定价:</strong> ${book.book_price}(${book.book_pricecurrent})</p>
                 <p><strong>版次:</strong> ${book.book_presstime}</p>
                 <p><strong>分类:</strong> ${book.book_class}</p>
                 <p><strong>ISBN/书号:</strong> ${book.book_isbn}</p>
