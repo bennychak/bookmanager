@@ -93,8 +93,6 @@ h1 {
     background-color: #c0c56d;
 }
 
-
-
 .search-form .refresh{
     height:4rem;
     position:absolute;
@@ -114,6 +112,7 @@ h1 {
     background-size: 46%;
     background-position:center center;
     background-repeat: no-repeat;
+    opacity:.85;
 }
 .search-form .refresh:active{
     opacity:.7;
