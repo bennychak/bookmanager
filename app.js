@@ -121,7 +121,9 @@ function searchBooks() {
 }
 
 function resetSearch() {
-    filteredBooks = books;
+    filteredBooks = books.sort(function(){
+        return Math.random() - 0.5;
+    });
     isSearching = false;
     currentPage = 1;
     displayBooks(filteredBooks);
