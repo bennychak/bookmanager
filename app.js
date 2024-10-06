@@ -12,8 +12,34 @@ window.alert = function(name){
     iframe.parentNode.removeChild(iframe);
 };
 
-function book_clc(){
-    alert("书名前的字母标记了图书大类：\nA 马列毛邓理论\nB 哲学心理宗教\nC 社会科学总论\nD 政治法律相关\nE 军事战略相关\nF 经济管理金融\nG 文体教育传播\nH 语言文字学习\nI 各种文学相关\nJ 各种艺术相关\nK 历史地理传记\nN 自然科学总论\nO 数理科学化学\nP 天文地质海洋\nQ 生物科学人类\nR 医药卫生相关\nS 农林牧副渔业\nT 工业工程技术\nU 交通运输相关\nV 航空航天相关\nX 环境安全科学\nZ 丛书百科综合\n至于2个字母代表什么？搜索中国图书馆分类法（CLC），答案交给你来探索～");
+let bookMark = {
+    a: "A 马克思主义、列宁主义、毛泽东思想、邓小平理论",
+    b: "B 哲学、宗教",
+    c: "C 社会科学总论",
+    d: "D 政治、法律",
+    e: "E 军事",
+    f: "F 经济",
+    g: "G 文化、科学、教育、体育",
+    h: "H 语言、文字",
+    i: "I 文学",
+    j: "J 艺术",
+    k: "K 历史、地理",
+    n: "N 自然科学总论",
+    o: "O 数理科学和化学",
+    p: "P 天文学、地球科学",
+    q: "Q 生物科学",
+    r: "R 医药、卫生",
+    s: "S 农业科学",
+    t: "T 工业技术",
+    u: "U 交通运输",
+    v: "V 航空、航天",
+    x: "X 环境科学、安全科学",
+    z: "Z 综合性图书"
+}
+
+function book_clc(mark,bookname){
+    mark = mark.slice(0,1).toLowerCase();
+    alert("《"+bookname+"》属于如下分类："+bookMark[mark]);
 }
 
 function displayBooks(books) {
@@ -25,7 +51,7 @@ function displayBooks(books) {
         card.className = 'book-card';
         const card_mark = book.book_cnClassification.slice(0,3).replace(/\d+/g, '').replace('-', '');
         card.innerHTML = `
-            <h2><span class="card_mark" onclick="book_clc()">`+card_mark+`</span>${book.book_name}<label>Id.${book.id}</label></h2>
+            <h2><span class="card_mark" onclick="book_clc('`+card_mark+`','${book.book_name}')">`+card_mark+`</span>${book.book_name}<label>Id.${book.id}</label></h2>
             <div class="book-details">
                 ${book.book_star ? `<p><strong>评级:</strong style="vertical-align:middle"> <span class="book-star">${createStars(book.book_star)}</span></p>` : ''}
                 ${book.book_gettime ? `<p><strong>得到时间:</strong> ${book.book_gettime}</p>` : ''}
@@ -70,11 +96,11 @@ function updatePagination() {
     const searchResultTotal = document.getElementById('search-result-total');
 
     if (isSearching) {
-        searchResultTotal.textContent = `为你找到${totalItems}套书`;
+        searchResultTotal.textContent = `为你找到${totalItems}部书`;
         bookTotal.style.display = 'none';
         searchResultTotal.style.display = 'inline-block';
     } else {
-        bookTotal.textContent = `已上架${totalItems}套图书`;
+        bookTotal.textContent = `已上架${totalItems}部图书`;
         bookTotal.style.display = 'inline-block';
         searchResultTotal.style.display = 'none';
     }
