@@ -221,6 +221,7 @@ h1 {
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
     z-index: 10;
     padding:1rem 0 2rem;
+    user-select:none;
 }
 
 .pagination input {
