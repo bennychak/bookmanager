@@ -25,7 +25,7 @@ function displayBooks(books) {
         card.className = 'book-card';
         const card_mark = book.book_cnClassification.slice(0,3).replace(/\d+/g, '').replace('-', '');
         card.innerHTML = `
-            <h2><span class="card_mark" onclick="book_clc()">`+card_mark+`</span>${book.book_name}<label>${book.id}</label></h2>
+            <h2><span class="card_mark" onclick="book_clc()">`+card_mark+`</span>${book.book_name}<label>Id.${book.id}</label></h2>
             <div class="book-details">
                 ${book.book_star ? `<p><strong>评级:</strong style="vertical-align:middle"> <span class="book-star">${createStars(book.book_star)}</span></p>` : ''}
                 ${book.book_gettime ? `<p><strong>得到时间:</strong> ${book.book_gettime}</p>` : ''}
