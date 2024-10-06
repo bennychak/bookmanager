@@ -55183,7 +55183,7 @@ const books = [
         "book_name": "世界美麗如你",
         "book_press": "翟東方 旭明書房",
         "book_author": "翟東方著 余亞潔譯 黃潔兒審校",
-        "book_gettime": "2014",
+        "book_gettime": "2024",
         "book_class": "文学 诗歌",
         "book_presstime": "2024年1版2024年1印",
         "book_pricecurrent": "港币",
