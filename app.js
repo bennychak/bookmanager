@@ -37,9 +37,9 @@ let bookMark = {
     z: "Z 综合性图书"
 }
 
-function book_clc(mark,bookname){
+function book_clc(mark,bookname,clc,lcc){
     mark = mark.slice(0,1).toLowerCase();
-    alert("《"+bookname+"》属于如下分类："+bookMark[mark]);
+    alert("根据中国图书馆分类法，\n《"+bookname+"》\n属于如下分类："+bookMark[mark]+"\n\n具体类别："+clc+"\n对应美国国会图书馆类别："+lcc+"。");
 }
 
 function displayBooks(books) {
@@ -51,7 +51,7 @@ function displayBooks(books) {
         card.className = 'book-card';
         const card_mark = book.book_cnClassification.slice(0,3).replace(/\d+/g, '').replace('-', '');
         card.innerHTML = `
-            <h2><span class="card_mark" onclick="book_clc('`+card_mark+`','${book.book_name}')">`+card_mark+`</span>${book.book_name}<label>Id.${book.id}</label></h2>
+            <h2><span class="card_mark" onclick="book_clc('`+card_mark+`','${book.book_name}','${book.book_cnClassification}','${book.book_usClassification}')">`+card_mark+`</span>${book.book_name}<label>Id.${book.id}</label></h2>
             <div class="book-details">
                 ${book.book_star ? `<p><strong>评级:</strong style="vertical-align:middle"> <span class="book-star">${createStars(book.book_star)}</span></p>` : ''}
                 ${book.book_gettime ? `<p><strong>得到时间:</strong> ${book.book_gettime}</p>` : ''}
