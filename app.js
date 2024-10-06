@@ -153,15 +153,15 @@ const touchnext = document.getElementById("next-page");
 
 touchprev.ontouchstart = function(event) {
     timeoutid = setTimeout(() => {
-        changePage(-1)
-    }, 2000); 
+        setTimeout(changePage(-1),50);
+    }, 1000); 
 };
 
 
 touchnext.ontouchstart = function(event) {
     timeoutid = setTimeout(() => {
-        changePage(1)
-    }, 2000); 
+        setTimeout(changePage(1),50);
+    }, 1000); 
 };
 touchnext.ontouchend = function(event) {
     // 清除定时器，防止长按事件误触发
