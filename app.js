@@ -146,32 +146,61 @@ function toggleCardDetails(card) {
     card.classList.add('expanded');
 }
 
-let timeoutid;
 const touchprev = document.getElementById("prev-page");
 const touchnext = document.getElementById("next-page");
+let intervalId;
+let isLongPress = false;
 
 
 touchprev.ontouchstart = function(event) {
-    timeoutid = setTimeout(() => {
-        changePage(-1);
-    }, 1000); 
+    // 设置一个定时器，3秒后开始长按操作
+    const longPressTimer = setTimeout(() => {
+        isLongPress = true;
+        intervalId = setInterval(() => {
+           changePage(-1);
+        }, 100); // 每50毫秒执行一次
+    }, 1000); // 3000毫秒即3秒
+    // 存储定时器ID以便后续清除
+    event.target.dataset.longPressTimer = longPressTimer;
+};
+touchnext.ontouchstart = function(event) {
+    // 设置一个定时器，3秒后开始长按操作
+    const longPressTimer = setTimeout(() => {
+        isLongPress = true;
+        intervalId = setInterval(() => {
+           changePage(1);
+        }, 100); // 每50毫秒执行一次
+    }, 1000); // 3000毫秒即3秒
+    // 存储定时器ID以便后续清除
+    event.target.dataset.longPressTimer = longPressTimer;
 };
 
-
-touchnext.ontouchstart = function(event) {
-    timeoutid = setTimeout(() => {
-        changePage(1);
-    }, 1000); 
+// 当用户手指离开屏幕时触发
+touchprev.ontouchend = function(event) {
+    // 清除定时器
+    clearTimeout(event.target.dataset.longPressTimer);
+    clearInterval(intervalId);
+    isLongPress = false;
 };
 touchnext.ontouchend = function(event) {
-    // 清除定时器，防止长按事件误触发
-    clearTimeout(timeoutid);
+    // 清除定时器
+    clearTimeout(event.target.dataset.longPressTimer);
+    clearInterval(intervalId);
+    isLongPress = false;
+};
+touchprev.ontouchmove = function(event) {
+    // 如果手指在屏幕上移动，也视为取消了长按操作
+    clearTimeout(event.target.dataset.longPressTimer);
+    clearInterval(intervalId);
+    isLongPress = false;
+};
+touchnext.ontouchmove = function(event) {
+    // 如果手指在屏幕上移动，也视为取消了长按操作
+    clearTimeout(event.target.dataset.longPressTimer);
+    clearInterval(intervalId);
+    isLongPress = false;
 };
 
-touchnext.ontouchmove = function(event) {
-    // 如果手指在屏幕上移动，也可以认为是取消了长按操作
-    clearTimeout(timeoutid);
-};
 
 
 // 初始化显示所有图书
