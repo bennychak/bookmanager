@@ -180,13 +180,15 @@ h1 {
 }
 
 .book-card h2 label{
+    color:#000;
     position: absolute;
-    right: -10px;
+    right: -5px;
     top: -15px;
-    font-size:.75rem;
+    font-size:3rem;
     color:#999;
     font-weight:100;
     font-family: sans-serif;
+    opacity:.2;
 }
 
 .book-card .book-details {
@@ -309,8 +311,5 @@ h1 {
     }
 
     .book-card h2 label{
-        font-size:.5rem;
-        right:-5px;
-        top:-10px;
     }
 }

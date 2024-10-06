@@ -12,7 +12,6 @@ window.alert = function(name){
     iframe.parentNode.removeChild(iframe);
 };
 
-
 function book_clc(){
     alert("书名前的字母标记了图书大类：\nA 马列毛邓理论\nB 哲学心理宗教\nC 社会科学总论\nD 政治法律相关\nE 军事战略相关\nF 经济管理金融\nG 文体教育传播\nH 语言文字学习\nI 各种文学相关\nJ 各种艺术相关\nK 历史地理传记\nN 自然科学总论\nO 数理科学化学\nP 天文地质海洋\nQ 生物科学人类\nR 医药卫生相关\nS 农林牧副渔业\nT 工业工程技术\nU 交通运输相关\nV 航空航天相关\nX 环境安全科学\nZ 丛书百科综合\n至于2个字母代表什么？搜索中国图书馆分类法（CLC），答案交给你来探索～");
 }
@@ -122,6 +121,14 @@ function randomSearch() {
     filteredBooks = books.sort(function(){
         return Math.random() - 0.5;
     });
+    isSearching = false;
+    currentPage = 1;
+    displayBooks(filteredBooks);
+    document.getElementById('search-input').value = '';
+}
+
+function sortSearch(){
+    filteredBooks = books.sort((a, b) => b.id - a.id);
     isSearching = false;
     currentPage = 1;
     displayBooks(filteredBooks);
