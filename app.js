@@ -154,14 +154,14 @@ const touchnext = document.getElementById("next-page");
 touchprev.ontouchstart = function(event) {
     timeoutid = setTimeout(() => {
         changePage(-1)
-    }, 500); 
+    }, 2000); 
 };
 
 
 touchnext.ontouchstart = function(event) {
     timeoutid = setTimeout(() => {
         changePage(1)
-    }, 500); 
+    }, 2000); 
 };
 
 
