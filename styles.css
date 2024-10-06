@@ -303,7 +303,6 @@ h1 {
     .book-card {
         padding: 10px;
         margin: 0;
-        border-bottom: 1px dashed #ccc;
     }
 
     .book-card h2 {
