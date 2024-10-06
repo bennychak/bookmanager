@@ -39,7 +39,7 @@ let bookMark = {
 
 function book_clc(mark,bookname,clc,lcc){
     mark = mark.slice(0,1).toLowerCase();
-    alert("根据中国图书馆分类法，《"+bookname+"》属于如下分类：\n\n"+bookMark[mark]+"。\n\n具体类别："+clc+"，对应美国国会图书馆类别："+lcc+"。");
+    alert("根据中国图书馆分类法，《"+bookname+"》属于如下分类：\n\n"+bookMark[mark]+"\n\n具体类别："+clc+"，对应美国国会图书馆类别："+lcc+"。");
 }
 
 function displayBooks(books) {
