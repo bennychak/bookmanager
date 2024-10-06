@@ -153,18 +153,23 @@ const touchnext = document.getElementById("next-page");
 
 touchprev.ontouchstart = function(event) {
     timeoutid = setTimeout(() => {
-        setTimeout(changePage(-1),50);
+        changePage(-1);
     }, 1000); 
 };
 
 
 touchnext.ontouchstart = function(event) {
     timeoutid = setTimeout(() => {
-        setTimeout(changePage(1),50);
+        changePage(1);
     }, 1000); 
 };
 touchnext.ontouchend = function(event) {
     // 清除定时器，防止长按事件误触发
+    clearTimeout(timeoutid);
+};
+
+touchnext.ontouchmove = function(event) {
+    // 如果手指在屏幕上移动，也可以认为是取消了长按操作
     clearTimeout(timeoutid);
 };
 
