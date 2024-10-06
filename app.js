@@ -168,12 +168,6 @@ touchnext.ontouchend = function(event) {
     clearTimeout(timeoutid);
 };
 
-// 可选：处理手指在屏幕上移动的情况
-touchnext.ontouchmove = function(event) {
-    // 如果手指在屏幕上移动，也可以认为是取消了长按操作
-    clearTimeout(timeoutid);
-};
-
 
 // 初始化显示所有图书
 displayBooks(books);
