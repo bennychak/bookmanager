@@ -146,5 +146,24 @@ function toggleCardDetails(card) {
     card.classList.add('expanded');
 }
 
+let timeoutid;
+const touchprev = document.getElementById("prev-page");
+const touchnext = document.getElementById("next-page");
+
+
+touchprev.ontouchstart = function(event) {
+    timeoutid = setTimeout(() => {
+        changePage(-1)
+    }, 500); 
+};
+
+
+touchnext.ontouchstart = function(event) {
+    timeoutid = setTimeout(() => {
+        changePage(1)
+    }, 500); 
+};
+
+
 // 初始化显示所有图书
 displayBooks(books);
