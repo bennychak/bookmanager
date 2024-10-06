@@ -163,6 +163,16 @@ touchnext.ontouchstart = function(event) {
         changePage(1)
     }, 2000); 
 };
+touchnext.ontouchend = function(event) {
+    // 清除定时器，防止长按事件误触发
+    clearTimeout(timeoutid);
+};
+
+// 可选：处理手指在屏幕上移动的情况
+touchnext.ontouchmove = function(event) {
+    // 如果手指在屏幕上移动，也可以认为是取消了长按操作
+    clearTimeout(timeoutid);
+};
 
 
 // 初始化显示所有图书

@@ -236,7 +236,7 @@ h1 {
     user-select:none;
 }
 
-.pagination input {
+.pagination button {
     padding: 10px 20px;
     margin: 0 10px;
     border: none;
@@ -248,7 +248,7 @@ h1 {
     border:#fff .2rem solid;
 }
 
-.pagination input:disabled {
+.pagination button:disabled {
     opacity:.5;
     cursor: not-allowed;
 }
