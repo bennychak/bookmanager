@@ -191,7 +191,7 @@ touchprev.ontouchstart = function(event) {
         isLongPress = true;
         intervalId = setInterval(() => {
            changePage(-1);
-        }, 100); // 每50毫秒执行一次
+        }, 50); // 每50毫秒执行一次
     }, 1000); // 3000毫秒即3秒
     // 存储定时器ID以便后续清除
     event.target.dataset.longPressTimer = longPressTimer;
@@ -202,7 +202,7 @@ touchnext.ontouchstart = function(event) {
         isLongPress = true;
         intervalId = setInterval(() => {
            changePage(1);
-        }, 100); // 每50毫秒执行一次
+        }, 50); // 每50毫秒执行一次
     }, 1000); // 3000毫秒即3秒
     // 存储定时器ID以便后续清除
     event.target.dataset.longPressTimer = longPressTimer;
