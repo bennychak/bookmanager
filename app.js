@@ -53,7 +53,7 @@ function displayBooks(books) {
         card.innerHTML = `
             <h2><span class="card_mark" onclick="book_clc('`+card_mark+`','${book.book_name}','${book.book_cnClassification}','${book.book_usClassification}')">`+card_mark+`</span>${book.book_name}<label>Id.${book.id}</label></h2>
             <div class="book-details">
-                ${book.book_star ? `<p><strong>评级:</strong style="vertical-align:middle"> <span class="book-star">${createStars(book.book_star)}</span></p>` : ''}
+                ${book.book_star ? `<p><strong>主观评级:</strong style="vertical-align:middle"> <span class="book-star">${createStars(book.book_star)}</span></p>` : ''}
                 ${book.book_gettime ? `<p><strong>得到时间:</strong> ${book.book_gettime}</p>` : ''}
                 <p><strong>得到价格:</strong> <big>${book.book_getprice}</big> <small>${book.book_getpricecurrent}</small></p>
                 ${book.book_summary ? `<p><strong>简介:</strong> ${book.book_summary}</p>` : ''}
@@ -63,7 +63,7 @@ function displayBooks(books) {
                 <p><strong>出版:</strong> ${book.book_press}</p>
                 <p><strong>定价:</strong> <big>${book.book_price}</big> <small>${book.book_pricecurrent}</small></p>
                 ${book.book_presstime ? `<p><strong>版次:</strong> ${book.book_presstime}</p>` : ''}
-                ${book.book_isbn ? `<p><strong>ISBN/书号:</strong> ${book.book_isbn}</p>` : ''}
+                ${book.book_isbn ? `<p><strong>ISBN/书号:</strong> ${book.book_isbn} <a href="https://m.douban.com/search?query=${book.book_isbn}">豆瓣图书</a> </p>` : ''}
                 <p><strong>分类:</strong> ${book.book_class}</p>
                 <p><strong>中国国家图书馆分类:</strong> ${book.book_cnClassification}</p>
                 <p><strong>美国国会图书馆分类:</strong> ${book.book_usClassification}</p>
