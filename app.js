@@ -188,18 +188,6 @@ touchnext.ontouchend = function(event) {
     clearInterval(intervalId);
     isLongPress = false;
 };
-touchprev.ontouchmove = function(event) {
-    // 如果手指在屏幕上移动，也视为取消了长按操作
-    clearTimeout(event.target.dataset.longPressTimer);
-    clearInterval(intervalId);
-    isLongPress = false;
-};
-touchnext.ontouchmove = function(event) {
-    // 如果手指在屏幕上移动，也视为取消了长按操作
-    clearTimeout(event.target.dataset.longPressTimer);
-    clearInterval(intervalId);
-    isLongPress = false;
-};
 
 
 
