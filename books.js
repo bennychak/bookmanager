@@ -51381,8 +51381,8 @@ const books = [
         "book_getpricecurrent": "人民币",
         "book_getprice": 0,
         "book_isbn": "9787537806565",
-        "book_cnClassification": "I253.2",
-        "book_usClassification": "DS482.25",
+        "book_cnClassification": "E291.2",
+        "book_usClassification": "DS481.C4",
         "book_star": 3
     },
     {
