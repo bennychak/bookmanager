@@ -199,7 +199,7 @@ touchprev.ontouchstart = function(event) {
                 clearInterval(intervalId); // 当currentPage等于1时停止setInterval
                 return;
             }
-           changePage(-1);
+            changePage(-1);
         }, 50); // 每50毫秒执行一次
     }, 1000); // 3000毫秒即3秒
     // 存储定时器ID以便后续清除
@@ -210,11 +210,13 @@ touchnext.ontouchstart = function(event) {
     const longPressTimer = setTimeout(() => {
         isLongPress = true;
         intervalId = setInterval(() => {
+            const totalItems = filteredBooks.length;
+            const totalPages = Math.ceil(totalItems / itemsPerPage);
             if (currentPage === totalPages) {
                 clearInterval(intervalId); // 当currentPage等于1时停止setInterval
                 return;
             }
-           changePage(1);
+            changePage(1);
         }, 50); // 每50毫秒执行一次
     }, 1000); // 3000毫秒即3秒
     // 存储定时器ID以便后续清除
