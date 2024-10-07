@@ -64,6 +64,8 @@ function book_clc(mark,bookname,clc,lcc){
     $('#dialogMark').attr('tabindex','0');
     $('#dialogMark').trigger('focus');
 
+    event.stopPropagation(); // 阻止事件冒泡
+
     //alert("根据中国图书馆分类法，《"+bookname+"》属于如下分类：\n\n"+bookMark[mark]+"\n\n具体类别："+clc+"，对应美国国会图书馆类别："+lcc+"。");
 }
 
