@@ -195,23 +195,11 @@ touchprev.ontouchstart = function(event) {
     const longPressTimer = setTimeout(() => {
         isLongPress = true;
         intervalId = setInterval(() => {
+            if (currentPage === 1) {
+                clearInterval(intervalId); // 当currentPage等于1时停止setInterval
+                return;
+            }
            changePage(-1);
-           if (currentPage === 1) {
-                prevPageButton.disabled = true;
-                clearTimeout(event.target.dataset.longPressTimer);
-                clearInterval(intervalId);
-            } else {
-                prevPageButton.disabled = false;
-            }
-
-            if (currentPage === totalPages) {
-                nextPageButton.disabled = true;
-                clearTimeout(event.target.dataset.longPressTimer);
-                clearInterval(intervalId);
-            } else {
-                nextPageButton.disabled = false;
-            }
-            isLongPress = false;
         }, 50); // 每50毫秒执行一次
     }, 1000); // 3000毫秒即3秒
     // 存储定时器ID以便后续清除
@@ -222,25 +210,11 @@ touchnext.ontouchstart = function(event) {
     const longPressTimer = setTimeout(() => {
         isLongPress = true;
         intervalId = setInterval(() => {
-           changePage(1);
-           if (currentPage === 1) {
-                prevPageButton.disabled = true;
-                clearTimeout(event.target.dataset.longPressTimer);
-                clearInterval(intervalId);
-            } else {
-                prevPageButton.disabled = false;
-            }
-
             if (currentPage === totalPages) {
-                nextPageButton.disabled = true;
-                clearTimeout(event.target.dataset.longPressTimer);
-                clearInterval(intervalId);
-            } else {
-                nextPageButton.disabled = false;
+                clearInterval(intervalId); // 当currentPage等于1时停止setInterval
+                return;
             }
-            clearTimeout(event.target.dataset.longPressTimer);
-            clearInterval(intervalId);
-            isLongPress = false;
+           changePage(1);
         }, 50); // 每50毫秒执行一次
     }, 1000); // 3000毫秒即3秒
     // 存储定时器ID以便后续清除
