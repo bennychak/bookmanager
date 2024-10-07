@@ -262,6 +262,7 @@ function classifyBooks(){
                 resetSearch();
             }else{
                 filteredBooks= books.filter(book => book.book_cnClassification.startsWith(result));
+                currentPage = 1;
                 displayBooks(filteredBooks);
                 $('#book-total').hide();
                 document.getElementById('search-result-total').textContent = '找到'+filteredBooks.length+'部图书';
