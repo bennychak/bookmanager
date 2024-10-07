@@ -16,7 +16,7 @@
         </h1>
         <form class="search-form">
             <input type="text" maxlength="16" id="search-input" required />
-            <span class="placeholder">请输入图书信息，如书名、出版社、作者、分类、书号、中图分类号、LCC等</span>
+            <span class="placeholder">请输入图书信息，如书名、出版社、作者、类别、ISBN/书号、中图分类号、LCC等</span>
             <button type="button" onclick="searchBooks()" style="box-sizing: border-box;">查询</button>
             <span onclick="randomSearch();this.style.display = 'none'; document.getElementById('refreshReset').style.display = 'block';" id="refreshRandom" class="refresh" title="随机排序"></span>
             <span onclick="sortSearch();resetSearch();this.style.display = 'none'; document.getElementById('refreshRandom').style.display = 'block';" id="refreshReset" class="refresh" style="display:none;background-image:url(./repeat.svg); background-size:70%" title="按新得到顺序排序"></span>
