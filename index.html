@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
+    <a href="javascript:" role="button" class="weui-btn weui-btn_default" id="showDialog1" wah-hotarea="click">样式一</a>
     <div style="opacity:0; position: absolute; width:1px;height:1px; overflow:hidden;"><img src="repeat.svg" /></div>
     <div class="container">
         <h1 onclick="resetSearch()">
@@ -35,7 +36,72 @@
         <button type="button" id="next-page" onclick="changePage(1)">下一页</button>
     </div>
 
+    <div id="dialogs">
+        <div id="dialogWrap1" class="js_dialog_wrap" ref="showDialog1" aria-labelledby="js_title1" role="dialog" aria-modal="false" aria-hidden="true" style="display: none;">
+            <div id="mask1" class="js_close weui-mask"></div>
+            <div id="js_dialog_1" class="js_dialog weui-half-screen-dialog">
+                <div class="weui-half-screen-dialog__hd">
+                  <div class="weui-half-screen-dialog__hd__side">
+                    <button class="js_close weui-btn_icon weui-wa-hotarea">关闭<i class="weui-icon-close-thin"></i></button>
+                  </div>
+                  <div class="weui-half-screen-dialog__hd__main">
+                    <strong class="weui-half-screen-dialog__title" id="js_title1">标题</strong>
+                    <span class="weui-half-screen-dialog__subtitle">副标题</span>
+                  </div>
+                </div>
+                <div class="weui-half-screen-dialog__bd">
+                  <br>
+                  <br>
+                  可放自定义内容
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="books.js"></script>
     <script src="app.js"></script>
+    <script>
+    const $dialog1 = $('#js_dialog_1');
+    const $dialogWrap1 = $('#dialogWrap1');
+
+    function closeDialog(o){
+      const $jsDialogWrap = o.parents('.js_dialog_wrap');
+      $jsDialogWrap.attr('aria-hidden','true').attr('aria-modal','false').removeAttr('tabindex');
+      $jsDialogWrap.fadeOut(300);
+      $jsDialogWrap.find('.js_dialog').removeClass('weui-half-screen-dialog_show');
+      setTimeout(function(){
+        $('#' + $jsDialogWrap.attr('ref')).trigger('focus');
+      }, 300);
+    }
+
+    // 阻止弹窗内部滚动冒泡
+    $('.js_dialog_wrap').on('touchmove', function(e) {
+        if($.contains(document.getElementById('js_wrap_content'), e.target)){
+        } else {
+          e.preventDefault();
+        }
+    });
+
+    $('.js_close').on('click', function() {
+      closeDialog($(this));
+    });
+
+    $(function(){
+        $('#showDialog1').on('click', function(){
+          $dialogWrap1.fadeIn(200);
+          $dialog1.addClass('weui-half-screen-dialog_show');
+          setTimeout(function(){
+            $dialogWrap1.attr('aria-hidden','false');
+            $dialogWrap1.attr('aria-modal','true');
+            $dialogWrap1.attr('tabindex','0');
+            $dialogWrap1.trigger('focus');
+          },200)
+        });
+    });
+    </script>
 </body>
 </html>
