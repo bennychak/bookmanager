@@ -14,27 +14,27 @@ window.alert = function(name){
 
 let bookMark = {
     a: "A 马克思主义、列宁主义、毛泽东思想、邓小平理论",
-    b: "B 哲学、宗教",
-    c: "C 社会科学总论",
-    d: "D 政治、法律",
+    b: "B 哲学、宗教，含美学、心理学",
+    c: "C 社会科学总论，含统计学、管理学",
+    d: "D 政治、法律，含社会运动、外交关系",
     e: "E 军事",
-    f: "F 经济",
-    g: "G 文化、科学、教育、体育",
+    f: "F 经济，含财政、金融",
+    g: "G 文化、科学、教育、体育，含科研、传播",
     h: "H 语言、文字",
     i: "I 文学",
     j: "J 艺术",
-    k: "K 历史、地理",
-    n: "N 自然科学总论",
+    k: "K 历史、地理，含人物传记、考古风俗",
+    n: "N 自然科学总论，含情报学",
     o: "O 数理科学和化学",
     p: "P 天文学、地球科学",
-    q: "Q 生物科学",
+    q: "Q 生物科学，含人类学",
     r: "R 医药、卫生",
-    s: "S 农业科学",
-    t: "T 工业技术",
+    s: "S 农业科学，含农林牧副渔",
+    t: "T 工业技术，含信息产业",
     u: "U 交通运输",
     v: "V 航空、航天",
     x: "X 环境科学、安全科学",
-    z: "Z 综合性图书"
+    z: "Z 综合性图书，含丛书百科、年鉴期刊"
 }
 
 function book_clc(mark,bookname,clc,lcc){
@@ -189,22 +189,22 @@ function classifyBooks(){
         label: 'A 马列主义、毛泽东思想、邓小平理论',
         value: 'A'
     }, {
-        label: 'B 哲学、宗教',
+        label: 'B 哲学、宗教，含美学、心理学',
         value: 'B'
     }, {
-        label: 'C 社会科学总论',
+        label: 'C 社会科学总论，含统计学、管理学',
         value: 'C'
     },{
-        label: 'D 政治、法律',
+        label: 'D 政治、法律，含社会运动、外交关系',
         value: 'D'
     },{
         label: 'E 军事',
         value: 'E'
     },{
-        label: 'F 经济',
+        label: 'F 经济，含财政、金融',
         value: 'F'
     },{
-        label: 'G 文化、科学、教育、体育',
+        label: 'G 文化、科学、教育、体育，含科研、传播',
         value: 'G'
     },{
         label: 'H 语言、文字',
@@ -216,10 +216,10 @@ function classifyBooks(){
         label: 'J 艺术',
         value: 'J'
     },{
-        label: 'K 历史、地理',
+        label: 'K 历史、地理，含人物传记、考古风俗',
         value: 'K'
     },{
-        label: 'N 自然科学总论',
+        label: 'N 自然科学总论，含情报学',
         value: 'N'
     },{
         label: 'O 数理科学和化学',
@@ -228,16 +228,16 @@ function classifyBooks(){
         label: 'P 天文学、地球科学',
         value: 'P'
     },{
-        label: 'Q 生物科学',
+        label: 'Q 生物科学，含人类学',
         value: 'Q'
     },{
         label: 'R 医药、卫生',
         value: 'R'
     },{
-        label: 'S 农业科学',
+        label: 'S 农业科学，含农林牧副渔',
         value: 'S'
     },{
-        label: 'T 工业技术',
+        label: 'T 工业技术，含信息产业',
         value: 'T'
     },{
         label: 'U 交通运输',
@@ -249,7 +249,7 @@ function classifyBooks(){
         label: 'X 环境科学、安全科学',
         value: 'X'
     },{
-        label: 'Z 综合性图书',
+        label: 'Z 综合性图书，含丛书百科、年鉴期刊',
         value: 'Z'
     }], {
         onChange: function (result) {
