@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ActionSheet Example</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/weui@2.1.1/style/index.min.css">
+</head>
+<body>
+    <button onclick="showActionSheet()">打开ActionSheet</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/weui@2.1.1/dist/weui.min.js"></script>
+    <script>
+        function showActionSheet() {
+            weui.actionSheet(
+                [
+                    {
+                        label: '选项1',
+                        onClick: function () {
+                            console.log('选项1被点击');
+                        }
+                    },
+                    {
+                        label: '选项2',
+                        onClick: function () {
+                            console.log('选项2被点击');
+                        }
+                    },
+                    {
+                        label: '选项3',
+                        onClick: function () {
+                            console.log('选项3被点击');
+                        }
+                    }
+                ],
+                [
+                    {
+                        label: '取消',
+                        onClick: function () {
+                            console.log('取消被点击');
+                        }
+                    }
+                ]
+            );
+        }
+    </script>
+</body>
+</html>
