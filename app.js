@@ -198,17 +198,19 @@ touchprev.ontouchstart = function(event) {
            changePage(-1);
            if (currentPage === 1) {
                 prevPageButton.disabled = true;
+                clearTimeout(event.target.dataset.longPressTimer);
+                clearInterval(intervalId);
             } else {
                 prevPageButton.disabled = false;
             }
 
             if (currentPage === totalPages) {
                 nextPageButton.disabled = true;
+                clearTimeout(event.target.dataset.longPressTimer);
+                clearInterval(intervalId);
             } else {
                 nextPageButton.disabled = false;
             }
-            clearTimeout(event.target.dataset.longPressTimer);
-            clearInterval(intervalId);
             isLongPress = false;
         }, 50); // 每50毫秒执行一次
     }, 1000); // 3000毫秒即3秒
@@ -223,12 +225,16 @@ touchnext.ontouchstart = function(event) {
            changePage(1);
            if (currentPage === 1) {
                 prevPageButton.disabled = true;
+                clearTimeout(event.target.dataset.longPressTimer);
+                clearInterval(intervalId);
             } else {
                 prevPageButton.disabled = false;
             }
 
             if (currentPage === totalPages) {
                 nextPageButton.disabled = true;
+                clearTimeout(event.target.dataset.longPressTimer);
+                clearInterval(intervalId);
             } else {
                 nextPageButton.disabled = false;
             }
