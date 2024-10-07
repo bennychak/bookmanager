@@ -104,6 +104,7 @@ h1 {
     white-space: nowrap;
     vertical-align:middle;
     height:4rem;
+    font-weight: bold;
 }
 
 .search-form .searchbutton:hover {
@@ -130,6 +131,7 @@ h1 {
     font-size:1.2rem;
     text-align:center;
     cursor: pointer;
+    font-weight: bold;
 }
 .search-form .refresh{
     background-image:url(./random.svg);
