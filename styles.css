@@ -16,6 +16,9 @@ body {
     -ms-user-select: none;
     user-select: none;
 }
+p{
+    margin-top:.5em;
+}
 .imggg,.imgpp{ width:3rem; border-radius:50%; display:inline-block;vertical-align:middle;}
 .imgpp{ margin-left:-1rem }
 
@@ -200,6 +203,7 @@ h1 {
 }
 
 .book-card .book-details big{
+    font-size:1rem; font-weight:800;
 }
 .book-card .book-details small{
     display: inline-block; color: #fff; background-color: #ccc; border-radius: .5rem; padding:2px 5px;
