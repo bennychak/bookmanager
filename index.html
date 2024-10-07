@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>黄金屋</title>
-    <script src="https://weui.io/zepto.min.js"></script>
-    <script src="./weui.min.js"></script>
     <link rel="stylesheet" href="./weui.min.css" />
     <link rel="stylesheet" href="./styles.css" />
+    <script src="https://weui.io/zepto.min.js"></script>
+    <script src="./weui.min.js"></script>
 </head>
 <body>
-    <a href="javascript:" role="button" class="weui-btn weui-btn_default" id="showDialog1" wah-hotarea="click">样式一</a>
+        <a href="javascript:" role="button" class="weui-btn weui-btn_default" id="showIOSDialog1">样式一</a>
     <div style="opacity:0; position: absolute; width:1px;height:1px; overflow:hidden;"><img src="repeat.svg" /></div>
     <div class="container">
         <h1 onclick="resetSearch()">
@@ -37,71 +37,37 @@
     </div>
 
     <div id="dialogs">
-        <div id="dialogWrap1" class="js_dialog_wrap" ref="showDialog1" aria-labelledby="js_title1" role="dialog" aria-modal="false" aria-hidden="true" style="display: none;">
-            <div id="mask1" class="js_close weui-mask"></div>
-            <div id="js_dialog_1" class="js_dialog weui-half-screen-dialog">
-                <div class="weui-half-screen-dialog__hd">
-                  <div class="weui-half-screen-dialog__hd__side">
-                    <button class="js_close weui-btn_icon weui-wa-hotarea">关闭<i class="weui-icon-close-thin"></i></button>
-                  </div>
-                  <div class="weui-half-screen-dialog__hd__main">
-                    <strong class="weui-half-screen-dialog__title" id="js_title1">标题</strong>
-                    <span class="weui-half-screen-dialog__subtitle">副标题</span>
-                  </div>
-                </div>
-                <div class="weui-half-screen-dialog__bd">
-                  <br>
-                  <br>
-                  可放自定义内容
-                  <br>
-                  <br>
-                  <br>
-                  <br>
+        <div class="js_dialog" role="dialog"  aria-hidden="true" aria-modal="true" aria-labelledby="js_title1" id="iosDialog1" style="display: none;">
+            <div class="weui-mask"></div>
+            <div class="weui-dialog">
+                <div class="weui-dialog__hd"><strong class="weui-dialog__title" id="js_title1">弹窗标题</strong></div>
+                <div class="weui-dialog__bd">弹窗内容，告知当前状态、信息和解决方法，描述文字尽量控制在三行内</div>
+                <div class="weui-dialog__ft">
+                    <a role="button" href="javascript:" class="weui-dialog__btn weui-dialog__btn_default">辅助操作</a>
+                    <a role="button" href="javascript:" class="weui-dialog__btn weui-dialog__btn_primary">主操作</a>
                 </div>
             </div>
         </div>
     </div>
 
-    <script src="books.js"></script>
-    <script src="app.js"></script>
+
     <script>
-    const $dialog1 = $('#js_dialog_1');
-    const $dialogWrap1 = $('#dialogWrap1');
+        var $iosDialog1 = $('#iosDialog1');
 
-    function closeDialog(o){
-      const $jsDialogWrap = o.parents('.js_dialog_wrap');
-      $jsDialogWrap.attr('aria-hidden','true').attr('aria-modal','false').removeAttr('tabindex');
-      $jsDialogWrap.fadeOut(300);
-      $jsDialogWrap.find('.js_dialog').removeClass('weui-half-screen-dialog_show');
-      setTimeout(function(){
-        $('#' + $jsDialogWrap.attr('ref')).trigger('focus');
-      }, 300);
-    }
-
-    // 阻止弹窗内部滚动冒泡
-    $('.js_dialog_wrap').on('touchmove', function(e) {
-        if($.contains(document.getElementById('js_wrap_content'), e.target)){
-        } else {
-          e.preventDefault();
-        }
-    });
-
-    $('.js_close').on('click', function() {
-      closeDialog($(this));
-    });
-
-    $(function(){
-        $('#showDialog1').on('click', function(){
-          $dialogWrap1.fadeIn(200);
-          $dialog1.addClass('weui-half-screen-dialog_show');
-          setTimeout(function(){
-            $dialogWrap1.attr('aria-hidden','false');
-            $dialogWrap1.attr('aria-modal','true');
-            $dialogWrap1.attr('tabindex','0');
-            $dialogWrap1.trigger('focus');
-          },200)
+        $('#dialogs').on('click', '.weui-dialog__btn', function(){
+            $(this).parents('.js_dialog').fadeOut(200);
+            $(this).parents('.js_dialog').attr('aria-hidden','true');
+            $(this).parents('.js_dialog').removeAttr('tabindex');
         });
-    });
+
+        $('#showIOSDialog1').on('click', function(){
+            $iosDialog1.fadeIn(200);
+            $iosDialog1.attr('aria-hidden','false');
+            $iosDialog1.attr('tabindex','0');
+            $iosDialog1.trigger('focus');
+        });
     </script>
+    <script src="./books.js"></script>
+    <script src="./app.js"></script>
 </body>
 </html>
