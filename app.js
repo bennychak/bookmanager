@@ -73,6 +73,7 @@ function dialogClose(){
     $('.js_dialog').fadeOut(0);
     $('.js_dialog').attr('aria-hidden','true');
     $('.js_dialog').removeAttr('tabindex');
+    $('#dialogs').remove();
 }
 
 function displayBooks(books) {
