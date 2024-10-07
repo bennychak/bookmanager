@@ -133,11 +133,11 @@ function updatePagination() {
     const searchResultTotal = document.getElementById('search-result-total');
 
     if (isSearching) {
-        searchResultTotal.textContent = `为你找到${totalItems}部书`;
+        searchResultTotal.textContent = `找到${totalItems}部书`;
         bookTotal.style.display = 'none';
         searchResultTotal.style.display = 'inline-block';
     } else {
-        bookTotal.textContent = `已上架${totalItems}部图书`;
+        bookTotal.textContent = `找到${totalItems}部图书`;
         bookTotal.style.display = 'inline-block';
         searchResultTotal.style.display = 'none';
     }
@@ -163,6 +163,7 @@ function changePage(direction) {
 }
 
 function searchBooks() {
+    $('#classify').text('类别');
     const query = document.getElementById('search-input').value.toLowerCase();
     filteredBooks = books.filter(book => 
         book.book_name.toLowerCase().includes(query) ||
@@ -180,7 +181,102 @@ function searchBooks() {
     displayBooks(filteredBooks);
 }
 
+function classifyBooks(){
+    weui.picker([{
+        label: '不限类别',
+        value: '类别'
+    }, {
+        label: 'A 马列主义、毛泽东思想、邓小平理论',
+        value: 'A'
+    }, {
+        label: 'B 哲学、宗教',
+        value: 'B'
+    }, {
+        label: 'C 社会科学总论',
+        value: 'C'
+    },{
+        label: 'D 政治、法律',
+        value: 'D'
+    },{
+        label: 'E 军事',
+        value: 'E'
+    },{
+        label: 'F 经济',
+        value: 'F'
+    },{
+        label: 'G 文化、科学、教育、体育',
+        value: 'G'
+    },{
+        label: 'H 语言、文字',
+        value: 'H'
+    },{
+        label: 'I 文学',
+        value: 'I'
+    },{
+        label: 'J 艺术',
+        value: 'J'
+    },{
+        label: 'K 历史、地理',
+        value: 'K'
+    },{
+        label: 'N 自然科学总论',
+        value: 'N'
+    },{
+        label: 'O 数理科学和化学',
+        value: 'O'
+    },{
+        label: 'P 天文学、地球科学',
+        value: 'P'
+    },{
+        label: 'Q 生物科学',
+        value: 'Q'
+    },{
+        label: 'R 医药、卫生',
+        value: 'R'
+    },{
+        label: 'S 农业科学',
+        value: 'S'
+    },{
+        label: 'T 工业技术',
+        value: 'T'
+    },{
+        label: 'U 交通运输',
+        value: 'U'
+    },{
+        label: 'V 航空、航天',
+        value: 'V'
+    },{
+        label: 'X 环境科学、安全科学',
+        value: 'X'
+    },{
+        label: 'Z 综合性图书',
+        value: 'Z'
+    }], {
+        onChange: function (result) {
+            console.log(result);
+        },
+        onConfirm: function (result) {
+            $('#classify').text(result);
+            if(result == '不限'){
+                sortSearch();
+                resetSearch();
+            }else{
+                filteredBooks= books.filter(book => book.book_cnClassification.startsWith(result));
+                displayBooks(filteredBooks);
+                $('#book-total').hide();
+                document.getElementById('search-result-total').textContent = '找到'+filteredBooks.length+'部图书';
+                document.getElementById('search-result-total').style.display = 'inline-block';
+                document.getElementById('search-input').value = '';
+            }
+        },
+        title: '筛选图书类别'
+    });
+
+    updatePagination();
+}
+
 function randomSearch() {
+    $('#classify').text('类别');
     for (let i = books.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));  // 选择一个随机索引
         [books[i], books[j]] = [books[j], books[i]];  // 交换两个元素的位置
@@ -193,6 +289,7 @@ function randomSearch() {
 }
 
 function sortSearch(){
+    $('#classify').text('类别');
     filteredBooks = books.sort((a, b) => b.id - a.id);
     isSearching = false;
     currentPage = 1;
@@ -201,6 +298,7 @@ function sortSearch(){
 }
 
 function resetSearch() {
+    $('#classify').text('类别');
     filteredBooks = books;
     isSearching = false;
     currentPage = 1;
