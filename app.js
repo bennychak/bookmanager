@@ -49,7 +49,7 @@ function book_clc(mark,bookname,clc,lcc){
             <div class="weui-mask"></div>
             <div class="weui-dialog">
                 <div class="weui-dialog__hd"><strong class="weui-dialog__title" id="js_title1">`+bookname+`</strong></div>
-                <div class="weui-dialog__bd">此图书属于如下分类<br /><br />`+bookMark[mark]+`<br /><br />具体中图分类号：`+clc+`<br />对应美国国会图书馆分类号<br />`+lcc+`</div>
+                <div class="weui-dialog__bd">`+bookMark[mark]+`<br /><br />中图分类号：`+clc+`<br />美国国会图书馆分类号：`+lcc+`</div>
                 <div class="weui-dialog__ft">
                     <a role="button" onclick="dialogClose();" href="javascript:;" class="weui-dialog__btn weui-dialog__btn_primary">确定</a>
                 </div>
