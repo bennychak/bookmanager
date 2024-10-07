@@ -39,7 +39,38 @@ let bookMark = {
 
 function book_clc(mark,bookname,clc,lcc){
     mark = mark.slice(0,1).toLowerCase();
-    alert("根据中国图书馆分类法，《"+bookname+"》属于如下分类：\n\n"+bookMark[mark]+"\n\n具体类别："+clc+"，对应美国国会图书馆类别："+lcc+"。");
+
+    const dialogMark = document.createElement('div');
+    dialogMark.className = 'bookmarkdialog';
+    dialogMark.innerHTML = `
+
+    <div id="dialogs">
+        <div class="js_dialog" role="dialog"  aria-hidden="true" aria-modal="true" aria-labelledby="js_title1" id="dialogMark" style="display: none;">
+            <div class="weui-mask"></div>
+            <div class="weui-dialog">
+                <div class="weui-dialog__hd"><strong class="weui-dialog__title" id="js_title1">`+bookname+`</strong></div>
+                <div class="weui-dialog__bd">根据中国图书馆分类法<br />此图书属于如下分类<br /><br />`+bookMark[mark]+`<br /><br />具体类别：`+clc+`<br />对应美国国会图书馆类别<br />`+lcc+`。</div>
+                <div class="weui-dialog__ft">
+                    <a role="button" onclick="dialogClose();" href="javascript:;" class="weui-dialog__btn weui-dialog__btn_primary">确定</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    `;
+    $('body').append(dialogMark);
+    $('#dialogMark').fadeIn(0);
+    $('#dialogMark').attr('aria-hidden','false');
+    $('#dialogMark').attr('tabindex','0');
+    $('#dialogMark').trigger('focus');
+
+    //alert("根据中国图书馆分类法，《"+bookname+"》属于如下分类：\n\n"+bookMark[mark]+"\n\n具体类别："+clc+"，对应美国国会图书馆类别："+lcc+"。");
+}
+
+function dialogClose(){
+    $('.js_dialog').fadeOut(0);
+    $('.js_dialog').attr('aria-hidden','true');
+    $('.js_dialog').removeAttr('tabindex');
 }
 
 function displayBooks(books) {
