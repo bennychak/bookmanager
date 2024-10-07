@@ -196,6 +196,20 @@ touchprev.ontouchstart = function(event) {
         isLongPress = true;
         intervalId = setInterval(() => {
            changePage(-1);
+           if (currentPage === 1) {
+                prevPageButton.disabled = true;
+            } else {
+                prevPageButton.disabled = false;
+            }
+
+            if (currentPage === totalPages) {
+                nextPageButton.disabled = true;
+            } else {
+                nextPageButton.disabled = false;
+            }
+            clearTimeout(event.target.dataset.longPressTimer);
+            clearInterval(intervalId);
+            isLongPress = false;
         }, 50); // 每50毫秒执行一次
     }, 1000); // 3000毫秒即3秒
     // 存储定时器ID以便后续清除
@@ -207,6 +221,20 @@ touchnext.ontouchstart = function(event) {
         isLongPress = true;
         intervalId = setInterval(() => {
            changePage(1);
+           if (currentPage === 1) {
+                prevPageButton.disabled = true;
+            } else {
+                prevPageButton.disabled = false;
+            }
+
+            if (currentPage === totalPages) {
+                nextPageButton.disabled = true;
+            } else {
+                nextPageButton.disabled = false;
+            }
+            clearTimeout(event.target.dataset.longPressTimer);
+            clearInterval(intervalId);
+            isLongPress = false;
         }, 50); // 每50毫秒执行一次
     }, 1000); // 3000毫秒即3秒
     // 存储定时器ID以便后续清除
