@@ -257,7 +257,7 @@ function classifyBooks(){
         },
         onConfirm: function (result) {
             $('#classify').text(result);
-            if(result == '不限'){
+            if(result == '类别'){
                 sortSearch();
                 resetSearch();
             }else{
