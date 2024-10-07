@@ -18,12 +18,6 @@
             <input type="text" maxlength="16" id="search-input" required />
             <span class="placeholder">请输入图书信息，如书名、出版社、作者、类别、ISBN/书号、中图分类号、LCC等</span>
             <button type="button" onclick="searchBooks()" style="box-sizing: border-box;">查询</button>
-            <span class="classify" id>全部</span>
-            <select name="classify" id="classify">
-                <option value="all">全部</option>
-                <option value="all">A 马克思主义、列宁主义、毛泽东思想、邓小平理论</option>
-                <option value="all">B 哲学、宗教</option>
-            </select>
             <span onclick="randomSearch();this.style.display = 'none'; document.getElementById('refreshReset').style.display = 'block';" id="refreshRandom" class="refresh" title="随机排序"></span>
             <span onclick="sortSearch();resetSearch();this.style.display = 'none'; document.getElementById('refreshRandom').style.display = 'block';" id="refreshReset" class="refresh" style="display:none;background-image:url(./repeat.svg); background-size:70%" title="按新得到顺序排序"></span>
         </form>
