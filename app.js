@@ -53,7 +53,7 @@ function displayBooks(books) {
         card.innerHTML = `
             <h2><span class="card_mark" onclick="book_clc('`+card_mark+`','${book.book_name}','${book.book_cnClassification}','${book.book_usClassification}')">`+card_mark+`</span>${book.book_name}<label>Id.${book.id}</label></h2>
             <div class="book-details">
-                ${book.book_star ? `<p><strong>主观评级:</strong style="vertical-align:middle"> <span class="book-star">${createStars(book.book_star)}</span></p>` : ''}
+                <p><strong>主观评级:</strong style="vertical-align:middle"> <span class="book-star">${createStars(book.book_star)}</span></p>
                 ${book.book_gettime ? `<p><strong>得到时间:</strong> ${book.book_gettime}</p>` : ''}
                 <p><strong>得到价格:</strong> <big>${book.book_getprice}</big> <small>${book.book_getpricecurrent}</small></p>
                 ${book.book_summary ? `<p><strong>简介:</strong> ${book.book_summary}</p>` : ''}
@@ -81,7 +81,10 @@ function displayBooks(books) {
 function createStars(stars) {
     let starHtml = '';
     for (let i = 0; i < stars; i++) {
-        starHtml += `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>`;
+        starHtml += `<svg fill="#bfc55f" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>`;
+    }
+    for (let i = 0; i < 5 - stars; i++) {
+        starHtml += `<svg fill="#cccccc" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>`;
     }
     return starHtml;
 }
