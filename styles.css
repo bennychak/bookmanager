@@ -152,6 +152,10 @@ h1 {
     color: #fff; vertical-align: middle;
 }
 
+.book-list-container{
+    min-height:40vh;
+}
+
 .book-cards {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
