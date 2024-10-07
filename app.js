@@ -144,9 +144,11 @@ function searchBooks() {
 }
 
 function randomSearch() {
-    filteredBooks = books.sort(function(){
-        return Math.random() - 0.5;
-    });
+    for (let i = books.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));  // 选择一个随机索引
+        [books[i], books[j]] = [books[j], books[i]];  // 交换两个元素的位置
+    }
+    filteredBooks = books;
     isSearching = false;
     currentPage = 1;
     displayBooks(filteredBooks);
