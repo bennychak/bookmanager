@@ -87,20 +87,17 @@ function displayBooks(books) {
         card.innerHTML = `
             <h2><span class="card_mark" onclick="book_clc('`+card_mark+`','${book.book_name}','${book.book_cnClassification}','${book.book_usClassification}')">`+card_mark+`</span>${book.book_name}<label>Id.${book.id}</label></h2>
             <div class="book-details">
-                <p><strong>主观评级:</strong style="vertical-align:middle"> <span class="book-star">${createStars(book.book_star)}</span></p>
-                ${book.book_gettime ? `<p><strong>得到时间:</strong> ${book.book_gettime}</p>` : ''}
-                <p><strong>得到价格:</strong> <big>${book.book_getprice}</big> <small>${book.book_getpricecurrent}</small></p>
-                ${book.book_summary ? `<p><strong>简介:</strong> ${book.book_summary}</p>` : ''}
-                ${book.book_dadsay ? `<p><strong>爸爸说:</strong> ${book.book_dadsay}</p>` : ''}
-                ${book.book_momsay ? `<p><strong>妈妈说:</strong> ${book.book_momsay}</p>` : ''}
-                <p><strong>作者:</strong> ${book.book_author}</p>
-                <p><strong>出版:</strong> ${book.book_press}</p>
-                <p><strong>定价:</strong> <big>${book.book_price}</big> <small>${book.book_pricecurrent}</small></p>
-                ${book.book_presstime ? `<p><strong>版次:</strong> ${book.book_presstime}</p>` : ''}
-                ${book.book_isbn ? `<p><strong>ISBN/书号:</strong> ${book.book_isbn}</p>` : ''}
-                <p><strong>类别:</strong> ${book.book_class}</p>
-                <p><strong>中国国家图书馆分类:</strong> ${book.book_cnClassification}</p>
-                <p><strong>美国国会图书馆分类:</strong> ${book.book_usClassification}</p>
+                <p><strong>主观评级：</strong style="vertical-align:middle"> <span class="book-star">${createStars(book.book_star)}</span></p>
+                
+                <p><strong>上架信息：</strong>本书${book.book_gettime ? `于 <big>${book.book_gettime}</big>（日期）` : ''}在 <big>${book.book_getcity}</big> ${book.book_getway ? `通过 <big>${book.book_getway}</big> 途径` : ''}获得。定价为 <big>${book.book_pricecurrent} ${book.book_price} 元</big> ，获得价格为 <big>${book.book_getpricecurrent} ${book.book_getprice} 元</big> 。现存放于 <big>${book.book_keepcity}</big> 。</p>
+                ${book.book_summary ? `<p><strong>内容简介：</strong> ${book.book_summary}</p>` : ''}
+                ${book.book_dadsay ? `<p><strong>爸爸说：</strong> ${book.book_dadsay}</p>` : ''}
+                ${book.book_momsay ? `<p><strong>妈妈说：</strong> ${book.book_momsay}</p>` : ''}
+                <p><strong>作者：</strong> ${book.book_author}</p>
+                <p><strong>出版：</strong> ${book.book_press}</p>
+                ${book.book_presstime ? `<p><strong>版次：</strong> ${book.book_presstime}</p>` : ''}
+                <p><strong>类别：</strong> ${book.book_class}</p>
+                ${book.book_isbn ? `<p><strong>ISBN/书号：</strong> ${book.book_isbn}</p>` : ''}
             </div>
         `;
         card.addEventListener('click', () => {
@@ -150,7 +147,7 @@ function updatePagination() {
         prevPageButton.disabled = false;
     }
 
-    if (currentPage === totalPages) {
+    if (currentPage === totalPages || totalPages == 0) {
         nextPageButton.disabled = true;
     } else {
         nextPageButton.disabled = false;
@@ -170,6 +167,7 @@ function searchBooks() {
         book.book_press.toLowerCase().includes(query) ||
         book.book_author.toLowerCase().includes(query) ||
         book.book_gettime.toString().includes(query) ||
+        book.book_getway.toString().includes(query) ||
         book.book_class.toLowerCase().includes(query) ||
         book.book_isbn.includes(query) ||
         book.book_cnClassification.toString().includes(query) ||
