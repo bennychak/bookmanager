@@ -89,7 +89,7 @@ function displayBooks(books) {
             <div class="book-details">
                 <p><strong>主观评级：</strong style="vertical-align:middle"> <span class="book-star">${createStars(book.book_star)}</span></p>
                 
-                <p><strong>上架信息：</strong>本书${book.book_gettime ? `于 <big>${book.book_gettime}</big>（日期）` : ''}在 <big>${book.book_getcity}</big> ${book.book_getway ? `通过 <big>${book.book_getway}</big> 途径` : ''}获得。定价为 <big>${book.book_pricecurrent} ${book.book_price} 元</big> ，获得价格为 <big>${book.book_getpricecurrent} ${book.book_getprice} 元</big> 。现存放于 <big>${book.book_keepcity}</big> 。</p>
+                <p><strong>上架信息：</strong>本书${book.book_gettime ? `于 <big>${book.book_gettime}</big>（日期）` : ''}在 <big>${book.book_getcity}</big> ${book.book_getway ? `通过 <big>${book.book_getway}</big> 途径` : ''}获得。定价为 <big>${book.book_pricecurrent} ${book.book_price} 元</big> ，获得价格为 <big>${book.book_getpricecurrent} ${book.book_getprice} 元</big> 。${book.book_keepcity ? `现存放于 <big>${book.book_keepcity}</big> 。` : ''}</p>
                 ${book.book_summary ? `<p><strong>内容简介：</strong> ${book.book_summary}</p>` : ''}
                 ${book.book_dadsay ? `<p><strong>爸爸说：</strong> ${book.book_dadsay}</p>` : ''}
                 ${book.book_momsay ? `<p><strong>妈妈说：</strong> ${book.book_momsay}</p>` : ''}
