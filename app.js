@@ -96,9 +96,12 @@ function displayBooks(books) {
                 <p><strong>图书信息：</strong>本书作者为 <big>${book.book_author}</big>，由 <big>${book.book_press}</big> 出版，${book.book_presstime ? `在架版次为 <big>${book.book_presstime}</big> ，` : ''}${book.book_isbn ? `ISBN/书号为 <big>${book.book_isbn}</big> 。` : ''}</p>
                 <p><strong>上架信息：</strong>本书${book.book_gettime ? `于 <big>${book.book_gettime}</big>（日期）` : ''}在 <big>${book.book_getcity}</big> ${book.book_getway ? `通过 <big>${book.book_getway}</big> 途径` : ''}获得。${book.book_price ? `定价为 <big>${book.book_pricecurrent} ${book.book_price} 元</big> ，` : ''}${book.book_getprice ? `获得价格为 <big>${book.book_getpricecurrent} ${book.book_getprice} 元</big> ，` : ''}${book.book_count ? `实存 <big>${book.book_count}</big> 册。` : ''}${book.book_keepcity && book.book_count != 0 ? `现存放于 <big>${book.book_keepcity}</big> 。` : ''}</p>
                 <p><strong>建议分类：</strong><big>${book.book_class}</big></p>
-                ${book.book_count == 0 ? `<div style="position:absolute;font-size:3rem; left:15%; top:30%; text-align:center; width:70%; box-sizing:border-box; padding:0; color:#000; font-weight:bold; border:#000 .3rem solid; opacity:.7; border-radius:1rem; transform:rotate(-5deg); font-family:cursive, serif;">已出库</div>` : ''}
+                ${book.book_count == 0 ? `<div style="position:absolute;font-size:3rem; left:15%; top:30%; text-align:center; width:70%; box-sizing:border-box; padding:0; color:#000; font-weight:bold; border:#000 .3rem solid; opacity:.7; border-radius:1rem; transform:rotate(-5deg);">已出库</div>` : ''}
             </div>
         `;
+        if(book.book_count == 0){
+            card.style = 'background-color:#ddd; filter:saturate(0%)';
+        }
         card.addEventListener('click', () => {
             toggleCardDetails(card);
         });
