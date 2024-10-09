@@ -74,7 +74,6 @@ h1 {
     -moz-user-select:auto;
     -ms-user-select: auto;
     user-select: auto;
-    opacity:.9;
 }
 .search-form input:focus + span,
 .search-form input:active + span,
