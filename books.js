@@ -49007,15 +49007,16 @@ const books = [
         "book_presstime": "2013年2版2015年28印",
         "book_pricecurrent": "人民币",
         "book_price": 49,
-        "book_count": "1",
+        "book_count": "0",
         "book_summary": "《金字塔原理：思考、表达和解决问题的逻辑》是美国管理学家芭芭拉·明托的一部管理学专著，系统地介绍了金字塔原理的基本理论和方法。书中通过对大量案例的分析，详细阐述了金字塔原理在实际工作中的应用。汪洱和高愉的译本忠实于原著，语言流畅，使读者能够更好地理解和应用书中的理论。本书不仅适合管理学研究者阅读，也非常适合对逻辑思维感兴趣的普通读者。",
-        "book_status": "在库",
+        "book_status": "已赠朋友",
         "book_getpricecurrent": "人民币",
         "book_getprice": 0,
         "book_isbn": "9787544268509 ",
         "book_cnClassification": "C93-49",
         "book_usClassification": "BF431",
-        "book_star": 5
+        "book_star": 5,
+        "book_note": "赠邢益彰"
     },
     {
         "id": 2096,
