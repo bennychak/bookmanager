@@ -19,6 +19,9 @@ body {
 p{
     margin-top:.5em;
 }
+
+hr{ background:none; border:none; padding:0; margin:1rem 0; border-top: #000 1px dotted;}
+
 .imggg,.imgpp{ width:3rem; border-radius:50%; display:inline-block;vertical-align:middle;}
 .imgpp{ margin-left:-1rem }
 
@@ -157,6 +160,7 @@ h1 {
 }
 
 .book-cards {
+    position:relative;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     gap: 20px;
