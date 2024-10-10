@@ -4244,7 +4244,7 @@ const books = [
         "book_cnClassification": "I565.88",
         "book_usClassification": "PQ2671.U35",
         "book_star": 5,
-        "book_dadsay": "什么时候看都成，读了11个以上的出版社出的10来个译者版本，结论是哈尔滨出版社艾柯译得最好。"
+        "book_dadsay": "什么时候看都成，读了11个以上的出版社出的10来个译者版本，结论是哈尔滨出版社艾柯译得最好。六年级推荐读物。"
     },
     {
         "id": 182,
@@ -4268,7 +4268,8 @@ const books = [
         "book_cnClassification": "I565.88",
         "book_usClassification": "PQ2671.U35",
         "book_star": 5,
-        "book_note": "含法文原文"
+        "book_note": "含法文原文",
+        "book_dadsay": "六年级推荐读物。"
     },
     {
         "id": 183,
@@ -5616,7 +5617,8 @@ const books = [
         "book_cnClassification": "I534.88",
         "book_usClassification": "PZ8.A6",
         "book_star": 1,
-        "book_note": "非全译版，为儿童版"
+        "book_note": "非全译版，为儿童版",
+        "book_dadsay": "二年级推荐读物"
     },
     {
         "id": 241,
@@ -5662,7 +5664,8 @@ const books = [
         "book_isbn": "",
         "book_cnClassification": "I565.88",
         "book_usClassification": "PQ2671.U35",
-        "book_star": 4
+        "book_star": 4,
+        "book_dadsay": "六年级推荐读物。"
     },
     {
         "id": 243,
@@ -5686,7 +5689,8 @@ const books = [
         "book_cnClassification": "I565.88",
         "book_usClassification": "PQ2671.U35",
         "book_star": 4,
-        "book_note": "附朗读光盘"
+        "book_note": "附朗读光盘",
+        "book_dadsay": "六年级推荐读物。"
     },
     {
         "id": 244,
@@ -5709,7 +5713,8 @@ const books = [
         "book_isbn": "",
         "book_cnClassification": "I565.88",
         "book_usClassification": "PQ2671.U35",
-        "book_star": 4
+        "book_star": 4,
+        "book_dadsay": "六年级推荐读物。"
     },
     {
         "id": 245,
@@ -5732,7 +5737,8 @@ const books = [
         "book_isbn": "",
         "book_cnClassification": "I565.88",
         "book_usClassification": "PQ2671.U35",
-        "book_star": 4
+        "book_star": 4,
+        "book_dadsay": "六年级推荐读物。"
     },
     {
         "id": 246,
@@ -5755,7 +5761,8 @@ const books = [
         "book_isbn": "",
         "book_cnClassification": "I565.88",
         "book_usClassification": "PQ2671.U35",
-        "book_star": 4
+        "book_star": 4,
+        "book_dadsay": "六年级推荐读物。"
     },
     {
         "id": 247,
@@ -5778,7 +5785,8 @@ const books = [
         "book_isbn": "",
         "book_cnClassification": "I565.88",
         "book_usClassification": "PQ2671.U35",
-        "book_star": 4
+        "book_star": 4,
+        "book_dadsay": "六年级推荐读物。"
     },
     {
         "id": 248,
@@ -5802,7 +5810,8 @@ const books = [
         "book_cnClassification": "I565.88",
         "book_usClassification": "PQ2671.U35",
         "book_star": 4,
-        "book_note": "附2光盘"
+        "book_note": "附2光盘",
+        "book_dadsay": "六年级推荐读物。"
     },
     {
         "id": 249,
@@ -5825,7 +5834,8 @@ const books = [
         "book_isbn": "",
         "book_cnClassification": "I565.88",
         "book_usClassification": "PQ2671.U35",
-        "book_star": 4
+        "book_star": 4,
+        "book_dadsay": "六年级推荐读物。"
     },
     {
         "id": 250,
@@ -5849,7 +5859,8 @@ const books = [
         "book_cnClassification": "I565.88",
         "book_usClassification": "PQ2671.U35",
         "book_star": 4,
-        "book_note": "拼音注音版"
+        "book_note": "拼音注音版",
+        "book_dadsay": "六年级推荐读物。"
     },
     {
         "id": 251,
@@ -6060,7 +6071,8 @@ const books = [
         "book_isbn": "",
         "book_cnClassification": "I287.8",
         "book_usClassification": "NC760 .L55",
-        "book_star": 5
+        "book_star": 5,
+        "book_dadsay": "七年级推荐读物。"
     },
     {
         "id": 260,
@@ -7593,8 +7605,8 @@ const books = [
         "book_press": "南海出版公司",
         "book_author": "余华",
         "book_gettime": "2003",
-        "book_getcity": "郑州",
-        "book_keepcity": "太原",
+        "book_getcity": "郑州、北京",
+        "book_keepcity": "北京",
         "book_getway": "与杨光交换",
         "book_class": "文学 小说",
         "book_presstime": "2003年2版2003年10印",
@@ -7605,7 +7617,7 @@ const books = [
         "book_status": "在库",
         "book_getpricecurrent": "人民币",
         "book_getprice": 0,
-        "book_isbn": "",
+        "book_isbn": "9787544210966",
         "book_cnClassification": "I247.5",
         "book_usClassification": "PS3563.A25",
         "book_star": 5,
@@ -9919,7 +9931,8 @@ const books = [
         "book_cnClassification": "I565.88",
         "book_usClassification": "PQ3983.A12 V65",
         "book_star": 5,
-        "book_note": "胡桦峻处"
+        "book_note": "胡桦峻处",
+        "book_dadsay": "六年级推荐读物。"
     },
     {
         "id": 424,
@@ -10117,12 +10130,12 @@ const books = [
     {
         "id": 432,
         "book_name": "吉他弹唱",
-        "book_press": "",
-        "book_author": "",
+        "book_press": "忘记了",
+        "book_author": "忘记了",
         "book_gettime": "2003",
         "book_getcity": "郑州",
         "book_keepcity": "郑州",
-        "book_getway": "",
+        "book_getway": "忘记了",
         "book_class": "音乐",
         "book_presstime": "",
         "book_pricecurrent": "人民币",
@@ -15473,7 +15486,7 @@ const books = [
         "book_status": "在库",
         "book_getpricecurrent": "人民币",
         "book_getprice": 0,
-        "book_isbn": "9787101103144 ",
+        "book_isbn": "9787101103144",
         "book_cnClassification": "K204.2",
         "book_usClassification": "DS747.5",
         "book_star": 5
@@ -15837,12 +15850,12 @@ const books = [
         "book_name": "拙政园志稿",
         "book_press": "内部发行",
         "book_author": "苏州市地方志编纂委员会办公室 苏州市园林管理局",
-        "book_gettime": "",
+        "book_gettime": "2023/10/4",
         "book_getcity": "苏州",
         "book_keepcity": "太原",
         "book_getway": "苏州一家旧书店",
         "book_class": "园林",
-        "book_presstime": "",
+        "book_presstime": "1986年版",
         "book_pricecurrent": "人民币",
         "book_price": 2.5,
         "book_count": "1",
@@ -15853,7 +15866,8 @@ const books = [
         "book_isbn": "",
         "book_cnClassification": "K928.73",
         "book_usClassification": "NA1041",
-        "book_star": 5
+        "book_star": 5,
+        "book_note": "内部发行"
     },
     {
         "id": 677,
@@ -16553,7 +16567,7 @@ const books = [
         "book_author": "余华",
         "book_gettime": "2013/1/10",
         "book_getcity": "北京",
-        "book_keepcity": "太原",
+        "book_keepcity": "北京",
         "book_getway": "卓越网（亚马逊中国）",
         "book_class": "小说",
         "book_presstime": "2008年1版2012年5印",
@@ -16564,7 +16578,7 @@ const books = [
         "book_status": "在库",
         "book_getpricecurrent": "人民币",
         "book_getprice": 0,
-        "book_isbn": "",
+        "book_isbn": "9787506343138",
         "book_cnClassification": "I247.5",
         "book_usClassification": "PL2151",
         "book_star": 5
@@ -16889,7 +16903,8 @@ const books = [
         "book_isbn": "9787020069521",
         "book_cnClassification": "I267",
         "book_usClassification": "CT25",
-        "book_star": 5
+        "book_star": 5,
+        "book_dadsay": "七年级推荐读物。"
     },
     {
         "id": 722,
@@ -17971,7 +17986,7 @@ const books = [
         "book_pricecurrent": "人民币",
         "book_price": 0.77,
         "book_count": "1",
-        "book_summary": "《鲁滨孙漂流记》是英国作家笛福的代表作之一，由方原翻译。书中讲述了主人公鲁滨孙在荒岛上的生存经历，探讨了人性、勇气和智慧的主题。笛福以其丰富的想象力和精湛的文学技巧，描绘了一个充满冒险和挑战的世界。书中不仅有对荒岛生活的描写，还有对人性的探讨，适合文学爱好者和研究者阅读。",
+        "book_summary": "鲁滨孙出身于中产阶级，他父亲常用知足常乐的哲学教育他，要他满足于中间阶层的幸福生活。但他抵挡不住海外新世界的诱惑，几次三番出海闯荡，终于有一次被困在了一个荒岛上。二十八年的孤岛生活仍然未能阻止他的冒险精神。面对死亡的威胁，他凭着坚忍的毅力，在蛮荒之地白手起家，造房子、修田地、种植粮食、驯化野兽，与食人族大战，勇夺叛变水手控制的商船，历尽千辛万苦，最后终于脱险，得到可观财富，成为一个时代的传奇人物。",
         "book_status": "在库",
         "book_getpricecurrent": "人民币",
         "book_getprice": 0,
@@ -18024,7 +18039,8 @@ const books = [
         "book_isbn": "",
         "book_cnClassification": "I561.45",
         "book_usClassification": "PR4155",
-        "book_star": 5
+        "book_star": 5,
+        "book_dadsay": "八年级推荐读物"
     },
     {
         "id": 771,
@@ -22180,7 +22196,8 @@ const books = [
         "book_isbn": "",
         "book_cnClassification": "B83-0",
         "book_usClassification": "BH1-385",
-        "book_star": 5
+        "book_star": 5,
+        "book_dadsay": "九年级推荐读物。"
     },
     {
         "id": 951,
@@ -22618,7 +22635,8 @@ const books = [
         "book_isbn": "9787020066919",
         "book_cnClassification": "I247.5",
         "book_usClassification": "PL2151",
-        "book_star": 5
+        "book_star": 5,
+        "book_dadsay": "五年级推荐读物"
     },
     {
         "id": 970,
@@ -25336,7 +25354,8 @@ const books = [
         "book_cnClassification": "I712.64",
         "book_usClassification": "PS3236",
         "book_star": 5,
-        "book_note": "购买价格22元"
+        "book_note": "购买价格22元",
+        "book_dadsay": "九年级推荐读物。"
     },
     {
         "id": 1086,
@@ -26950,7 +26969,7 @@ const books = [
         "book_author": "李敖",
         "book_gettime": "2016/6/22",
         "book_getcity": "北京",
-        "book_keepcity": "太原",
+        "book_keepcity": "北京",
         "book_getway": "豆瓣网",
         "book_class": "文学 小说",
         "book_presstime": "1999年1版1999年1印",
@@ -26961,8 +26980,8 @@ const books = [
         "book_status": "在库",
         "book_getpricecurrent": "人民币",
         "book_getprice": 0,
-        "book_isbn": "9787540723859",
-        "book_cnClassification": "I247.5",
+        "book_isbn": "9787540723851",
+        "book_cnClassification": "I248.5",
         "book_usClassification": "DS700-899.82",
         "book_star": 5,
         "book_note": "老婆在豆瓣网上买的",
@@ -27343,7 +27362,8 @@ const books = [
         "book_cnClassification": "I561.45",
         "book_usClassification": "PR4155",
         "book_star": 5,
-        "book_note": "老婆的书"
+        "book_note": "老婆的书",
+        "book_dadsay": "八年级推荐读物"
     },
     {
         "id": 1171,
@@ -31420,7 +31440,8 @@ const books = [
         "book_cnClassification": "I712.45",
         "book_usClassification": "PS3511.O9",
         "book_star": 3,
-        "book_note": "无版权页"
+        "book_note": "无版权页",
+        "book_dadsay": "六年级推荐读物。"
     },
     {
         "id": 1346,
@@ -32412,15 +32433,16 @@ const books = [
         "book_pricecurrent": "美元",
         "book_price": 5.95,
         "book_count": "1",
-        "book_summary": "《Alice's Adventures in Wonderland & Through the Looking Glass》是英国作家刘易斯·卡罗尔的代表作之一，讲述了小女孩爱丽丝在奇妙仙境和镜中世界的冒险经历。通过幽默的语言和丰富的想象力，展现了儿童文学的魅力。书中不仅有动人的故事，还有对儿童心理的深刻反思，适合文学爱好者和研究者阅读。",
+        "book_summary": "It's a warm summer's afternoon when young Alice first tumbles down the rabbit hole and into the adventures in Wonderland that have kept readers spellbound for more than 150 years. Part of the Macmillan Collector’s Library; a series of stunning, clothbound, pocket sized classics with gold foiled edges and ribbon markers. These beautiful books make perfect gifts or a treat for any book lover. This edition is brought to life by Sir John Tenniel's legendary illustrations in colour, and with an afterword by Anna South. Collected here are Lewis Carroll's two classics - Alice's Adventures in Wonderland and Through the Looking-Glass - in which Alice encounters the laconic Cheshire Cat, the anxious White Rabbit and the terrifying Red Queen, as well as a host of other outlandish and charming characters.",
         "book_status": "在库",
         "book_getpricecurrent": "人民币",
         "book_getprice": 0,
-        "book_isbn": "",
+        "book_isbn": "9780553213454",
         "book_cnClassification": "I561.84",
         "book_usClassification": "PR4610",
         "book_star": 5,
-        "book_note": "原版书 定价为美元"
+        "book_note": "原版书 定价为美元",
+        "book_dadsay": "Curiouser! Curiouser! 英语阅读入门优选"
     },
     {
         "id": 1389,
@@ -32529,7 +32551,7 @@ const books = [
         "book_pricecurrent": "港币",
         "book_price": 128,
         "book_count": "0",
-        "book_summary": "《Alice's Adventures in Wonderland & Through the Looking Glass》是英国作家刘易斯·卡罗尔的代表作之一，讲述了小女孩爱丽丝在奇妙仙境和镜中世界的冒险经历。通过幽默的语言和丰富的想象力，展现了儿童文学的魅力。书中不仅有动人的故事，还有对儿童心理的深刻反思，适合文学爱好者和研究者阅读。",
+        "book_summary": "It's a warm summer's afternoon when young Alice first tumbles down the rabbit hole and into the adventures in Wonderland that have kept readers spellbound for more than 150 years. Part of the Macmillan Collector’s Library; a series of stunning, clothbound, pocket sized classics with gold foiled edges and ribbon markers. These beautiful books make perfect gifts or a treat for any book lover. This edition is brought to life by Sir John Tenniel's legendary illustrations in colour, and with an afterword by Anna South. Collected here are Lewis Carroll's two classics - Alice's Adventures in Wonderland and Through the Looking-Glass - in which Alice encounters the laconic Cheshire Cat, the anxious White Rabbit and the terrifying Red Queen, as well as a host of other outlandish and charming characters.",
         "book_status": "外借中",
         "book_getpricecurrent": "港币",
         "book_getprice": 128,
@@ -32537,7 +32559,8 @@ const books = [
         "book_cnClassification": "I561.84",
         "book_usClassification": "PR4611",
         "book_star": 5,
-        "book_note": "定价为港币，在小妹处"
+        "book_note": "定价为港币，在小妹处",
+        "book_dadsay": "英语阅读入门优选"
     },
     {
         "id": 1394,
@@ -33282,7 +33305,8 @@ const books = [
         "book_isbn": "7506312824",
         "book_cnClassification": "I565.64",
         "book_usClassification": "QL462-599.8",
-        "book_star": 4
+        "book_star": 4,
+        "book_dadsay": "四年级推荐读物"
     },
     {
         "id": 1425,
@@ -34873,7 +34897,8 @@ const books = [
         "book_isbn": "9787201077642",
         "book_cnClassification": "I565.88",
         "book_usClassification": "PQ2669.E62",
-        "book_star": 5
+        "book_star": 5,
+        "book_dadsay": "六年级推荐读物。"
     },
     {
         "id": 1493,
@@ -39035,7 +39060,8 @@ const books = [
         "book_isbn": "",
         "book_cnClassification": "I287.8",
         "book_usClassification": "PZ10",
-        "book_star": 5
+        "book_star": 5,
+        "book_dadsay": "一年级推荐读物"
     },
     {
         "id": 1670,
@@ -41420,7 +41446,8 @@ const books = [
         "book_isbn": "9787805672458",
         "book_cnClassification": "I561.45",
         "book_usClassification": "PR4172",
-        "book_star": 3
+        "book_star": 5,
+        "book_dadsay": "八年级推荐读物"
     },
     {
         "id": 1772,
@@ -41583,7 +41610,8 @@ const books = [
         "book_isbn": "",
         "book_cnClassification": "I565.45",
         "book_usClassification": "PQ2218.H85",
-        "book_star": 5
+        "book_star": 5,
+        "book_dadsay": "七年级推荐读物。"
     },
     {
         "id": 1779,
@@ -41629,7 +41657,8 @@ const books = [
         "book_isbn": "",
         "book_cnClassification": "I712.45",
         "book_usClassification": "PS3236",
-        "book_star": 5
+        "book_star": 5,
+        "book_dadsay": "九年级推荐读物。"
     },
     {
         "id": 1781,
@@ -42479,7 +42508,7 @@ const books = [
         "book_pricecurrent": "人民币",
         "book_price": 0,
         "book_count": "1",
-        "book_summary": "《鲁滨孙飘流记》是英国作家达孚的一部经典冒险小说，讲述了主人公鲁滨孙在荒岛上的生存故事。书中通过对鲁滨孙的描写，展现了人类的智慧和毅力。林纾和曾宗巩的译本忠实于原文，语言流畅，为读者带来了一个充满智慧和勇气的故事。",
+        "book_summary": "林纾《鲁滨孙漂流记》序（1905）：吾国圣人，以中庸立人之极。于是训者，以中为不偏，以庸为不易。不偏云者，凡过中失正，皆偏也。不易云者，夷犹巧避，皆易也。据义而争，当义而发，抱义而死，中也，亦庸也。若夫洞洞属属，自恤其命，无所可否，日对妻子娱乐，处人未尝有过，是云中庸，特中人之中，庸人之庸耳。英国鲁滨孙者，惟不为中人之中，庸人之庸，故单舸猝出，侮狎风涛，濒绝地而处，独行独坐，兼羲、轩、巢、燧诸氏之所为而为之，独居二十七年始返，其事盖亘古所不经见者也。然其父之诏之也，则固愿其为中人之中，庸人之庸。而鲁滨孙乃大悖其旨，而成此奇诡之事业，因之天下探险之夫，几以性命与鲨鳄狎，则皆鲁滨孙有以启之耳。然吾观鲁滨孙氏之宗旨，初亦无他，特好为浪游。迨从死中得生，岛居萧寥，与人境隔，乃稍稍入宗教思想，忽大悟天意有属，因之历历作学人语。然鲁滨孙氏初非有学，亦阅历所得，稍近于学者也。余读之，益悟制寂与御穷之道矣。制寂以心，御穷以力，人初以身犯寂，必焦蹶恼恐，凄然无所投附，非寂之能生此状也，后望无冀，前望无助，长日悸动，患与死濒，若囚之初待决然者。顾死囚知决日之必至，则转坦易，而泽其容；正以无冀无助，内宁其心，安死而心转得此须斯之宅，气机发充，故容泽耳。鲁滨孙之困于死岸，初亦劳扰不可终日，既知助穷援绝，极其劳扰，亦无成功，乃敛其畏死之心，附丽于宗教。心既宅矣，遂大出其力，以自治其生。须知生人之心，有所寄则浸忘其忧。鲁滨孙日寓心于锹锄斧斤之间，夜复寓心于宗教，节节磨治，久且便帖，故发言多平恕。此讵有学问匡迪，使之平恕耶？严寂之中，无可自慰，遂择其不如我者，以自尊其我。天下人人无不有好高之心，抑人以自高，则高者慰矣。自外闻之，似喜其能降抑以为平恕，实则非平恕也，无聊反本之言也。迨二十七年后，鲁滨孙归英，散财发粟，赒赡亲故，未尝靳惜，部署家政，动合天理，较其父当日命彼为中庸者，若大进焉。盖其父之言，望子之保有其产，犹吾国宦途之秘诀，所谓不求有功，但求无过者也。鲁滨孙功既成矣，又所阅所历，极人世不堪之遇，因之益知人情之不可处于不堪之遇中，故每事称情而施，则真得其中与庸矣。至书中多宗教家言，似译者亦稍稍输心于彼教，然实非是。译书非著书比也，著作之家，可以抒吾所见，乘虚逐微，靡所不可；若译书，则述其巳成之事迹，焉能参以己见？彼书有宗教言，吾既译之，又胡能讳避而铲鉏之？故一一如其所言。而吾友曾幼固宗巩亦以为然。幼固自少学水师业，习海事，故海行甚悉，且云探险之书，此为第一。各家叙跋无数，实为欧人家弦户诵之书，哲学家尤动必引据之者也。尚有续篇二卷，拟春初译之，今先书其缘起于此。大清光绪三十一年十月，闽县林纾畏庐父叙于京师望瀛楼。",
         "book_status": "在库",
         "book_getpricecurrent": "人民币",
         "book_getprice": 0,
@@ -42689,7 +42718,7 @@ const books = [
         "book_pricecurrent": "人民币",
         "book_price": 22,
         "book_count": "1",
-        "book_summary": "《鲁滨孙飘流记》是英国作家丹尼尔·笛福的一部经典冒险小说，讲述了主人公鲁滨孙在荒岛上的生存故事。书中通过对鲁滨孙的描写，展现了人类的智慧和毅力。张蕾芳的译本忠实于原文，语言流畅，为读者带来了一个充满智慧和勇气的故事。",
+        "book_summary": "鲁滨孙出身于中产阶级，他父亲常用知足常乐的哲学教育他，要他满足于中间阶层的幸福生活。但他抵挡不住海外新世界的诱惑，几次三番出海闯荡，终于有一次被困在了一个荒岛上。二十八年的孤岛生活仍然未能阻止他的冒险精神。面对死亡的威胁，他凭着坚忍的毅力，在蛮荒之地白手起家，造房子、修田地、种植粮食、驯化野兽，与食人族大战，勇夺叛变水手控制的商船，历尽千辛万苦，最后终于脱险，得到可观财富，成为一个时代的传奇人物。",
         "book_status": "在库",
         "book_getpricecurrent": "人民币",
         "book_getprice": 0,
@@ -42766,7 +42795,8 @@ const books = [
         "book_isbn": "9787539134055",
         "book_cnClassification": "I287.8",
         "book_usClassification": "DS753.5",
-        "book_star": 5
+        "book_star": 5,
+        "book_dadsay": "五年级推荐读物"
     },
     {
         "id": 1830,
@@ -42812,7 +42842,8 @@ const books = [
         "book_isbn": "9787543464575",
         "book_cnClassification": "I287.8",
         "book_usClassification": "PZ10",
-        "book_star": 5
+        "book_star": 5,
+        "book_dadsay": "一年级推荐读物"
     },
     {
         "id": 1832,
@@ -43556,7 +43587,8 @@ const books = [
         "book_isbn": "9787020002207",
         "book_cnClassification": "I242.4",
         "book_usClassification": "PL2261",
-        "book_star": 5
+        "book_star": 5,
+        "book_dadsay": "九年级推荐读物。"
     },
     {
         "id": 1864,
@@ -43602,7 +43634,8 @@ const books = [
         "book_isbn": "9787020008728",
         "book_cnClassification": "I242.4",
         "book_usClassification": "PL2628.S25",
-        "book_star": 5
+        "book_star": 5,
+        "book_dadsay": "六年级推荐读物。"
     },
     {
         "id": 1866,
@@ -44358,7 +44391,8 @@ const books = [
         "book_isbn": "",
         "book_cnClassification": "I565.45",
         "book_usClassification": "PQ2218.H85",
-        "book_star": 5
+        "book_star": 5,
+        "book_dadsay": "七年级推荐读物。"
     },
     {
         "id": 1898,
@@ -45396,7 +45430,7 @@ const books = [
         "book_author": "费孝通",
         "book_gettime": "2020/5/16",
         "book_getcity": "北京",
-        "book_keepcity": "太原",
+        "book_keepcity": "北京",
         "book_getway": "京东商城",
         "book_class": "社会学 经济学",
         "book_presstime": "2012年1版2012年1印",
@@ -45407,10 +45441,11 @@ const books = [
         "book_status": "在库",
         "book_getpricecurrent": "人民币",
         "book_getprice": 0,
-        "book_isbn": "",
+        "book_isbn": "9787301174821",
         "book_cnClassification": "C912.82",
         "book_usClassification": "HM101",
-        "book_star": 5
+        "book_star": 5,
+        "book_dadsay": "高中一年级必修，很好读。"
     },
     {
         "id": 1942,
@@ -45693,7 +45728,7 @@ const books = [
         "book_cnClassification": "I247.5",
         "book_usClassification": "PS3563.U65",
         "book_star": 5,
-        "book_dadsay": "海淀区初中指定阅读书目"
+        "book_dadsay": "八年级推荐读物。曾给学生做过的第1-10章阅读练习：【1】根据第1章情节，推断1975年的1元人民币大约相当于现在多少人民币的购买能力？【2】第1章中，孙少平和郝红梅最后来取饭的原因是什么？【3】第2章中，写到孙少平读了哪几本书？孙少平和郝红梅第一次交谈的话题是什么？【4】在第3章中，找出一处能够突出突出润叶姐性格的描写，说一说润叶姐的性格是怎样的？【5】第4章出现了“粮票”，对父母进行一次访谈，询问：在70-80年代，“粮票”有什么作用？记录父母使用“粮票”的回忆。（100字左右）【6】第5章第30页，王满银的“受洋罪”指的是什么？【7】第6章中，孙少平在经历并主持了家庭的一连串琐事后，加上已经看过了一些书，他懂得了什么样的人生道理？【8】第7章提到，“双水村”村庄名字的由来？【9】第8章中，孙玉厚老汉最大的愿望是什么？【10】第9章中，田二被批判的原因？【11】第10章中，以铁匠为代表的“河南人”有什么样的特点？"
     },
     {
         "id": 1954,
@@ -46905,11 +46940,11 @@ const books = [
     {
         "id": 2005,
         "book_name": "貓蕨漫生掌紋",
-        "book_press": "有鹿文化",
+        "book_press": "有鹿文化事業有限公司",
         "book_author": "李筱涵",
         "book_gettime": "2020/9/26",
         "book_getcity": "北京",
-        "book_keepcity": "太原",
+        "book_keepcity": "北京",
         "book_getway": "当当网",
         "book_class": "文学 散文",
         "book_presstime": "2020年1版2020年1印",
@@ -47667,11 +47702,11 @@ const books = [
         "book_pricecurrent": "人民币",
         "book_price": 12.8,
         "book_count": "1",
-        "book_summary": "《鲁滨逊漂流记》是英国著名作家丹尼尔·笛福的代表作，讲述了主人公鲁滨逊在荒岛上的生存故事。书中通过丰富的故事情节和深刻的人物描写，展现了主人公的坚强和智慧。笛福以其独特的文风和深刻的思想，成功地吸引了广大读者的关注。本书不仅适合文学爱好者阅读，也非常适合年轻人作为励志读物。",
+        "book_summary": "鲁滨孙出身于中产阶级，他父亲常用知足常乐的哲学教育他，要他满足于中间阶层的幸福生活。但他抵挡不住海外新世界的诱惑，几次三番出海闯荡，终于有一次被困在了一个荒岛上。二十八年的孤岛生活仍然未能阻止他的冒险精神。面对死亡的威胁，他凭着坚忍的毅力，在蛮荒之地白手起家，造房子、修田地、种植粮食、驯化野兽，与食人族大战，勇夺叛变水手控制的商船，历尽千辛万苦，最后终于脱险，得到可观财富，成为一个时代的传奇人物。",
         "book_status": "在库",
         "book_getpricecurrent": "人民币",
         "book_getprice": 0,
-        "book_isbn": "7506261529 ",
+        "book_isbn": "7506261529?",
         "book_cnClassification": "I561.45",
         "book_usClassification": "PR3402",
         "book_star": 5,
@@ -49012,7 +49047,7 @@ const books = [
         "book_status": "已赠朋友",
         "book_getpricecurrent": "人民币",
         "book_getprice": 0,
-        "book_isbn": "9787544268509 ",
+        "book_isbn": "9787544268509",
         "book_cnClassification": "C93-49",
         "book_usClassification": "BF431",
         "book_star": 5,
@@ -49138,7 +49173,8 @@ const books = [
         "book_cnClassification": "I267.5",
         "book_usClassification": "DS753.5",
         "book_star": 5,
-        "book_note": "老婆的书"
+        "book_note": "老婆的书",
+        "book_dadsay": "七年级推荐读物。"
     },
     {
         "id": 2101,
@@ -50263,7 +50299,7 @@ const books = [
         "book_name": "撒哈拉的故事",
         "book_press": "皇冠文化出版有限公司",
         "book_author": "三毛",
-        "book_gettime": "",
+        "book_gettime": "2004",
         "book_getcity": "郑州",
         "book_keepcity": "太原",
         "book_getway": "郑州古玩城",
@@ -50275,12 +50311,13 @@ const books = [
         "book_summary": "《撒哈拉的故事》是台湾著名作家三毛的经典散文集，记录了她在撒哈拉沙漠的生活经历和感悟。书中通过一系列温馨、幽默、感人的故事，展现了三毛对生活的热爱和对自由的追求。三毛的文字清新脱俗，情感真挚，深受读者喜爱，成为她最具代表性的作品之一。",
         "book_status": "在库，赠夫人的礼物",
         "book_getpricecurrent": "人民币",
-        "book_getprice": 0,
-        "book_isbn": "9789573305545 ",
+        "book_getprice": 9,
+        "book_isbn": "9789573305545",
         "book_cnClassification": "I267.5",
         "book_usClassification": "DS753.5",
         "book_star": 5,
-        "book_note": "送老婆。定价为新台币"
+        "book_note": "送老婆。定价为新台币",
+        "book_dadsay": "七年级推荐读物。"
     },
     {
         "id": 2149,
@@ -52482,7 +52519,7 @@ const books = [
         "book_author": "罗新璋 陈应年编",
         "book_gettime": "2021/2/19",
         "book_getcity": "北京",
-        "book_keepcity": "太原",
+        "book_keepcity": "北京",
         "book_getway": "王府井大街涵芬楼商务印书馆",
         "book_class": "翻译",
         "book_presstime": "2009年2版2015年3印",
@@ -52496,7 +52533,8 @@ const books = [
         "book_isbn": "9787100048064",
         "book_cnClassification": "H059-53",
         "book_usClassification": "PL1277",
-        "book_star": 5
+        "book_star": 5,
+        "book_dadsay": "从古到今翻译领域重要的文章集成，关于几何原本的翻译和心经不同版本的翻译部分很有趣。"
     },
     {
         "id": 2244,
@@ -53240,11 +53278,12 @@ const books = [
         "book_status": "在库",
         "book_getpricecurrent": "人民币",
         "book_getprice": 0,
-        "book_isbn": "9787514845938 ",
+        "book_isbn": "9787514845938?",
         "book_cnClassification": "K225.09",
         "book_usClassification": "DS747.5",
         "book_star": 5,
-        "book_note": "老婆的书"
+        "book_note": "老婆的书",
+        "book_dadsay": "五年级推荐读物"
     },
     {
         "id": 2276,
@@ -53264,11 +53303,12 @@ const books = [
         "book_status": "在库",
         "book_getpricecurrent": "人民币",
         "book_getprice": 0,
-        "book_isbn": "9787514845952 ",
+        "book_isbn": "9787514845952?",
         "book_cnClassification": "K225.09",
         "book_usClassification": "DS747.5",
         "book_star": 5,
-        "book_note": "老婆的书"
+        "book_note": "老婆的书",
+        "book_dadsay": "五年级推荐读物"
     },
     {
         "id": 2277,
@@ -54292,7 +54332,8 @@ const books = [
         "book_isbn": "9787501609666",
         "book_cnClassification": "I287.45",
         "book_usClassification": "PZ10.831",
-        "book_star": 5
+        "book_star": 5,
+        "book_dadsay": "六年级推荐读物。"
     },
     {
         "id": 2321,
@@ -54847,7 +54888,8 @@ const books = [
         "book_isbn": "9787532563975",
         "book_cnClassification": "B223.5",
         "book_usClassification": "B123.5",
-        "book_star": 5
+        "book_star": 5,
+        "book_dadsay": "九年级推荐读物。"
     },
     {
         "id": 2345,
@@ -54893,7 +54935,8 @@ const books = [
         "book_isbn": "9787532564002",
         "book_cnClassification": "I207.22",
         "book_usClassification": "PL2261",
-        "book_star": 5
+        "book_star": 5,
+        "book_dadsay": "九年级推荐读物。"
     },
     {
         "id": 2347,
@@ -56791,7 +56834,8 @@ const books = [
         "book_isbn": "9787533273309",
         "book_cnClassification": "I287.8",
         "book_usClassification": "PZ10",
-        "book_star": 5
+        "book_star": 5,
+        "book_dadsay": "六年级推荐读物。"
     },
     {
         "id": 2429,
@@ -57319,7 +57363,7 @@ const books = [
     },
     {
         "id": 2451,
-        "book_name": "小王子 ",
+        "book_name": "小王子",
         "book_press": "群言出版社",
         "book_author": "[法] 圣·埃克苏佩里",
         "book_gettime": "",
@@ -57335,12 +57379,12 @@ const books = [
         "book_status": "在库",
         "book_getpricecurrent": "人民币",
         "book_getprice": 0,
-        "book_isbn": "9787800806094 ",
+        "book_isbn": "9787800806094",
         "book_cnClassification": "I565.88",
         "book_usClassification": "PQ2621.S38",
         "book_star": 5,
         "book_note": "老婆的书。中英法60周年彩色纪念版",
-        "book_dadsay": "了解外国名著的最好方法是看原文，了解翻译的最好方法是多语言对比，这本书除了是一本很好的童话，也是了解翻译的一本好书。"
+        "book_dadsay": "了解外国名著的最好方法是看原文，了解翻译的最好方法是多语言对比，这本书除了是一本很好的童话，也是了解翻译的一本好书。六年级推荐读物。"
     },
     {
         "id": 2452,
@@ -57887,11 +57931,12 @@ const books = [
         "book_status": "在库",
         "book_getpricecurrent": "人民币",
         "book_getprice": 0,
-        "book_isbn": "7532403963 ",
+        "book_isbn": "7532403963?",
         "book_cnClassification": "K35",
         "book_usClassification": "DS747.5",
         "book_star": 3,
-        "book_note": "老婆的书"
+        "book_note": "老婆的书",
+        "book_dadsay": "五年级推荐读物"
     },
     {
         "id": 2475,
@@ -57983,11 +58028,12 @@ const books = [
         "book_status": "在库",
         "book_getpricecurrent": "人民币",
         "book_getprice": 0,
-        "book_isbn": "9787531309314 ",
+        "book_isbn": "9787531309314?",
         "book_cnClassification": "I242.471",
         "book_usClassification": "PL2261",
         "book_star": 4,
-        "book_note": "老婆的书"
+        "book_note": "老婆的书",
+        "book_dadsay": "六年级推荐读物。"
     },
     {
         "id": 2479,
@@ -58055,11 +58101,12 @@ const books = [
         "book_status": "在库",
         "book_getpricecurrent": "人民币",
         "book_getprice": 0,
-        "book_isbn": "9787532422838 ",
+        "book_isbn": "9787532422838?",
         "book_cnClassification": "G563",
         "book_usClassification": "PE1611",
         "book_star": 4,
-        "book_note": "老婆的书"
+        "book_note": "老婆的书",
+        "book_dadsay": "二年级推荐读物"
     },
     {
         "id": 2482,
@@ -59449,12 +59496,12 @@ const books = [
     {
         "id": 2541,
         "book_name": "初中生生涯规划与发展",
-        "book_press": "赵世俊 管以东编著",
-        "book_author": "江苏凤凰科学技术出版社",
+        "book_press": "江苏凤凰科学技术出版社",
+        "book_author": "赵世俊 管以东编著",
         "book_gettime": "2024",
         "book_getcity": "北京",
         "book_keepcity": "太原",
-        "book_getway": "",
+        "book_getway": "北京爱迪学校",
         "book_class": "教育",
         "book_presstime": "2020年1版2021年2印",
         "book_pricecurrent": "人民币",
@@ -59464,7 +59511,7 @@ const books = [
         "book_status": "已赠朋友",
         "book_getpricecurrent": "人民币",
         "book_getprice": 0,
-        "book_isbn": "9787571309442 ",
+        "book_isbn": "9787571309442",
         "book_cnClassification": "G635.5",
         "book_usClassification": "LB2341.7",
         "book_star": 3,
@@ -59745,7 +59792,8 @@ const books = [
         "book_isbn": "10019·114",
         "book_cnClassification": "I512.45",
         "book_usClassification": "PS3563.U65",
-        "book_star": 5
+        "book_star": 5,
+        "book_dadsay": "八年级推荐读物"
     },
     {
         "id": 2554,
@@ -59784,11 +59832,11 @@ const books = [
         "book_pricecurrent": "人民币",
         "book_price": 22,
         "book_count": "1",
-        "book_summary": "《鲁滨孙飘流记》是英国作家丹尼尔·笛福的经典冒险小说。书中通过主人公鲁滨孙在荒岛上的生存经历，展现了人类的智慧、勇气和毅力。张蕾芳的译本忠实于原著，语言流畅，适合喜欢文学和冒险题材的读者阅读。",
+        "book_summary": "鲁滨孙出身于中产阶级，他父亲常用知足常乐的哲学教育他，要他满足于中间阶层的幸福生活。但他抵挡不住海外新世界的诱惑，几次三番出海闯荡，终于有一次被困在了一个荒岛上。二十八年的孤岛生活仍然未能阻止他的冒险精神。面对死亡的威胁，他凭着坚忍的毅力，在蛮荒之地白手起家，造房子、修田地、种植粮食、驯化野兽，与食人族大战，勇夺叛变水手控制的商船，历尽千辛万苦，最后终于脱险，得到可观财富，成为一个时代的传奇人物。",
         "book_status": "在库",
         "book_getpricecurrent": "人民币",
         "book_getprice": 0,
-        "book_isbn": "9787020137145 ",
+        "book_isbn": "9787020137145?",
         "book_cnClassification": "I561.44",
         "book_usClassification": "PR3402",
         "book_star": 4
@@ -61018,7 +61066,8 @@ const books = [
         "book_isbn": "R10024·3647",
         "book_cnClassification": "I712.85",
         "book_usClassification": "PZ7 .B275",
-        "book_star": 3
+        "book_star": 3,
+        "book_dadsay": "三年级推荐读物"
     },
     {
         "id": 2609,
@@ -62730,7 +62779,7 @@ const books = [
     {
         "id": 2682,
         "book_name": "談師友",
-        "book_press": "三聯書店",
+        "book_press": "三聯書店（香港）有限公司",
         "book_author": "季羡林",
         "book_gettime": "",
         "book_getcity": "北京",
@@ -63835,7 +63884,7 @@ const books = [
         "book_author": "白先勇",
         "book_gettime": "2021/11/25",
         "book_getcity": "北京",
-        "book_keepcity": "太原",
+        "book_keepcity": "北京",
         "book_getway": "当当网",
         "book_class": "文学 小说",
         "book_presstime": "2021年1版2021年1印",
@@ -63850,7 +63899,8 @@ const books = [
         "book_cnClassification": "I247.5",
         "book_usClassification": "PS3563.U65",
         "book_star": 5,
-        "book_note": "定价为新台币，得到价格为人民币"
+        "book_note": "定价为新台币，得到价格为人民币",
+        "book_dadsay": "永远的尹雪艳，退据台湾的原国府上流人士众生相。"
     },
     {
         "id": 2730,
@@ -64671,7 +64721,7 @@ const books = [
         "book_author": "[德]格林兄弟 [美]杰克·奇普斯注 姚了了译",
         "book_gettime": "2023/6/28",
         "book_getcity": "北京",
-        "book_keepcity": "太原",
+        "book_keepcity": "北京",
         "book_getway": "京东商城",
         "book_class": "文学 童话",
         "book_presstime": "2022年版",
@@ -64694,7 +64744,7 @@ const books = [
         "book_author": "柳永 陶然 姚逸超注",
         "book_gettime": "2023/4/23",
         "book_getcity": "北京",
-        "book_keepcity": "太原",
+        "book_keepcity": "北京",
         "book_getway": "京东商城",
         "book_class": "文学 古籍 诗歌",
         "book_presstime": "2019年版",
@@ -64708,7 +64758,8 @@ const books = [
         "book_isbn": "9787532580637",
         "book_cnClassification": "I207.23",
         "book_usClassification": "PL2687",
-        "book_star": 5
+        "book_star": 5,
+        "book_dadsay": "某种心境下，读柳永。"
     },
     {
         "id": 2767,
@@ -64850,8 +64901,9 @@ const books = [
         "book_getprice": 0,
         "book_isbn": "9787513318808",
         "book_cnClassification": "I313.85",
-        "book_usClassification": "PL856.A47 ",
-        "book_star": 5
+        "book_usClassification": "PL856.A47?",
+        "book_star": 5,
+        "book_dadsay": "二年级推荐读物"
     },
     {
         "id": 2773,
@@ -64943,8 +64995,9 @@ const books = [
         "book_getprice": 0,
         "book_isbn": "9787543464605",
         "book_cnClassification": "I712.85",
-        "book_usClassification": "PZ10.3.C66 ",
-        "book_star": 5
+        "book_usClassification": "PZ10.3.C66?",
+        "book_star": 5,
+        "book_dadsay": "二年级推荐读物"
     },
     {
         "id": 2777,
@@ -66349,7 +66402,7 @@ const books = [
     },
     {
         "id": 2836,
-        "book_name": "回聲集",
+        "book_name": "回聲集 Echo Lyrics",
         "book_press": "花千樹出版有限公司",
         "book_author": "舒巷城",
         "book_gettime": "2023/8/16",
@@ -66361,11 +66414,11 @@ const books = [
         "book_pricecurrent": "港币",
         "book_price": 28,
         "book_count": "1",
-        "book_summary": "《回声集》是由舒巷城编著的一部诗集，收录了作者的多篇代表作品。书中通过对自然、爱情和人生的描写，展现了舒巷城独特的文学魅力和深刻的人文关怀。舒巷城以其细腻的笔触和深刻的情感，为读者带来了一系列真实而动人的诗歌。本书不仅适合文学爱好者阅读，也适合对现代诗歌和文化感兴趣的读者。通过本书的阅读，读者可以更好地了解舒巷城的诗歌创作和思想。",
+        "book_summary": "本詩集是《舒巷城詩選》的第二卷，收錄了《回聲集》的六十六首詩，及代序《一點個人的體驗》與作者的自傳。《回聲集》原於一九七○年二月由中流出版社出版，署名舒巷城。這些詩在雜誌發表時署名陸思魚。這次《回聲集》再版，中英對照，英語也是出於作者之手。編輯的安排，第一、二輯照原著，沒有英譯的編為第三輯。本書的英語名字——《Echo Lyrics》——是張五常教授起的。",
         "book_status": "在库",
         "book_getpricecurrent": "港币",
         "book_getprice": 20,
-        "book_isbn": "9628806084",
+        "book_isbn": "9789628806089",
         "book_cnClassification": "I206.7",
         "book_usClassification": "PL2901",
         "book_star": 5
@@ -66769,7 +66822,7 @@ const books = [
     {
         "id": 2854,
         "book_name": "跨學科視角下的語言與身份認同 兼談香港問題",
-        "book_press": "香港三聯書店",
+        "book_press": "三聯書店（香港）有限公司",
         "book_author": "郭宇菲",
         "book_gettime": "2023/2/20",
         "book_getcity": "北京",
@@ -66904,7 +66957,8 @@ const books = [
         "book_cnClassification": "I313",
         "book_usClassification": "PZ8.3.T37",
         "book_star": 5,
-        "book_note": "朋友董一鹤推荐"
+        "book_note": "朋友董一鹤推荐",
+        "book_dadsay": "五年级推荐读物"
     },
     {
         "id": 2860,
@@ -67120,7 +67174,7 @@ const books = [
     {
         "id": 2869,
         "book_name": "若無其事",
-        "book_press": "香港三聯書店",
+        "book_press": "三聯書店（香港）有限公司",
         "book_author": "鄧小樺",
         "book_gettime": "2023/1/9",
         "book_getcity": "北京",
@@ -67660,44 +67714,46 @@ const books = [
         "book_author": "香港教育博物館 李子建 劉瑩 陳智德",
         "book_gettime": "2022/3/22",
         "book_getcity": "北京",
-        "book_keepcity": "太原",
+        "book_keepcity": "北京",
         "book_getway": "当当网",
         "book_class": "教育",
-        "book_presstime": "",
+        "book_presstime": "2021年版",
         "book_pricecurrent": "港币",
-        "book_price": 0,
+        "book_price": 158,
         "book_count": "1",
         "book_summary": "《承教·城傳：九龍學校的故事》是香港教育博物馆编著的一本关于九龙学校历史的书籍。书中详细介绍了九龙地区学校的发展历程，通过丰富的史料和生动的叙述，展现了学校的教育理念和历史背景。书中不仅有对学校历史的介绍，还有对教育理念的解读，适合教育研究者和爱好者阅读。",
         "book_status": "在库",
         "book_getpricecurrent": "人民币",
         "book_getprice": 91.14,
-        "book_isbn": "",
+        "book_isbn": "9789888759231",
         "book_cnClassification": "G639.28",
         "book_usClassification": "LA2300",
-        "book_star": 5
+        "book_star": 5,
+        "book_dadsay": "用来熟悉九龙各家学校校史沿革。"
     },
     {
         "id": 2893,
         "book_name": "香港短篇小說百年精華（全二册）",
-        "book_press": "香港三聯書店",
+        "book_press": "三聯書店（香港）有限公司",
         "book_author": "劉以鬯等",
         "book_gettime": "2022/3/22",
         "book_getcity": "北京",
-        "book_keepcity": "太原",
+        "book_keepcity": "北京",
         "book_getway": "当当网",
         "book_class": "文学 小说",
-        "book_presstime": "",
+        "book_presstime": "2017年2版2021年3印",
         "book_pricecurrent": "港币",
-        "book_price": 0,
+        "book_price": 206,
         "book_count": "2",
         "book_summary": "《香港短篇小說百年精華（全二册）》是刘以鬯等人编著的一本关于香港短篇小说的选集。书中收录了香港百年来的优秀短篇小说，涵盖了多个时期的代表作品。书中不仅有动人的故事，还有对社会现象的深刻反思，适合文学爱好者和研究者阅读。",
         "book_status": "在库",
         "book_getpricecurrent": "人民币",
         "book_getprice": 158.76,
-        "book_isbn": "",
+        "book_isbn": "9789620441066",
         "book_cnClassification": "I247.7",
         "book_usClassification": "PL2628.H65",
-        "book_star": 5
+        "book_star": 5,
+        "book_note": "下册ISBN为9789620441073。"
     },
     {
         "id": 2894,
@@ -67840,11 +67896,11 @@ const books = [
     {
         "id": 2900,
         "book_name": "廖玉蕙老師的經典文學：聽說書人講故事",
-        "book_press": "五南",
-        "book_author": "李筱涵",
+        "book_press": "五南圖書出版股份有限公司",
+        "book_author": "廖玉蕙總策畫 李筱涵撰稿",
         "book_gettime": "2022/2/26",
         "book_getcity": "北京",
-        "book_keepcity": "太原",
+        "book_keepcity": "北京",
         "book_getway": "当当网",
         "book_class": "文学",
         "book_presstime": "2020年版",
@@ -67859,7 +67915,8 @@ const books = [
         "book_cnClassification": "I207.42",
         "book_usClassification": "PL2628.H65",
         "book_star": 5,
-        "book_note": "定价为新台币，得到价格为人民币"
+        "book_note": "定价为新台币，得到价格为人民币",
+        "book_dadsay": "有杜十娘怒沉百宝箱。筱涵的书，好读。"
     },
     {
         "id": 2901,
@@ -67917,12 +67974,12 @@ const books = [
         "book_author": "劉紹銘 梁淑雯",
         "book_gettime": "2022/2/26",
         "book_getcity": "北京",
-        "book_keepcity": "太原",
+        "book_keepcity": "北京",
         "book_getway": "当当网",
         "book_class": "文学",
         "book_presstime": "2019年版",
         "book_pricecurrent": "港币",
-        "book_price": 520,
+        "book_price": 110,
         "book_count": "1",
         "book_summary": "《给孩子的港臺散文》是一本精选了多位港台作家的经典散文的合集，旨在培养孩子们的文学兴趣和审美能力。书中收录了如龙应台、张晓风、林清玄等著名作家的作品，内容涉及自然、亲情、友情等多个方面。每篇文章都以生动的语言和深刻的思考，引导孩子们感受生活的美好和人性的光辉。本书不仅适合儿童阅读，也非常适合家长和教师作为亲子阅读的材料。",
         "book_status": "在库",
@@ -67933,7 +67990,7 @@ const books = [
         "book_usClassification": "PZ10",
         "book_star": 5,
         "book_note": "定价为港币，得到价格为人民币",
-        "book_dadsay": "老中青都有，居然有三毛哈哈"
+        "book_dadsay": "很好的书，曾想再买一本，中华书局油麻地分局有货，但想了想没必要。收录作家老中青都有，居然有三毛。劉紹銘先生今已去世，梁淑雯是一个朋友的老师，跳槽了好几个大学，愿好运。"
     },
     {
         "id": 2904,
@@ -67985,14 +68042,14 @@ const books = [
     {
         "id": 2906,
         "book_name": "生命中不能承受之輕",
-        "book_press": "皇冠",
+        "book_press": "皇冠文化出版有限公司",
         "book_author": "米蘭&#8231;昆德拉 尉遲秀譯",
         "book_gettime": "2022/2/19",
         "book_getcity": "北京",
-        "book_keepcity": "太原",
+        "book_keepcity": "北京",
         "book_getway": "当当网",
-        "book_class": "文学",
-        "book_presstime": "2018年版",
+        "book_class": "文学 小说",
+        "book_presstime": "2018年版3版2021年7印",
         "book_pricecurrent": "新台币",
         "book_price": 350,
         "book_count": "1",
@@ -68199,9 +68256,9 @@ const books = [
         "book_author": "安妮宝贝",
         "book_gettime": "2022/10/16",
         "book_getcity": "北京",
-        "book_keepcity": "太原",
+        "book_keepcity": "北京",
         "book_getway": "中国图书网",
-        "book_class": "文学",
+        "book_class": "文学 散文",
         "book_presstime": "2002年版",
         "book_pricecurrent": "人民币",
         "book_price": 16,
@@ -68210,7 +68267,7 @@ const books = [
         "book_status": "在库",
         "book_getpricecurrent": "人民币",
         "book_getprice": 6.6,
-        "book_isbn": "7506319853",
+        "book_isbn": "9787506319850",
         "book_cnClassification": "I247.5",
         "book_usClassification": "PS3563.U65",
         "book_star": 5,
@@ -69602,7 +69659,7 @@ const books = [
         "book_pricecurrent": "人民币",
         "book_price": 11.75,
         "book_count": "1",
-        "book_summary": "《鲁滨孙漂流记》是英国著名作家丹尼尔·笛福的代表作，讲述了主人公鲁滨孙在荒岛上的生存故事。书中通过丰富的故事情节和深刻的人物描写，展现了主人公的坚强和智慧。徐霞村的译本忠实于原著，语言流畅，使读者能够更好地理解和感受这部经典作品。本书不仅适合文学爱好者阅读，也非常适合年轻人作为励志读物。",
+        "book_summary": "鲁滨孙出身于中产阶级，他父亲常用知足常乐的哲学教育他，要他满足于中间阶层的幸福生活。但他抵挡不住海外新世界的诱惑，几次三番出海闯荡，终于有一次被困在了一个荒岛上。二十八年的孤岛生活仍然未能阻止他的冒险精神。面对死亡的威胁，他凭着坚忍的毅力，在蛮荒之地白手起家，造房子、修田地、种植粮食、驯化野兽，与食人族大战，勇夺叛变水手控制的商船，历尽千辛万苦，最后终于脱险，得到可观财富，成为一个时代的传奇人物。",
         "book_status": "在库",
         "book_getpricecurrent": "人民币",
         "book_getprice": 0,
@@ -69625,7 +69682,7 @@ const books = [
         "book_pricecurrent": "人民币",
         "book_price": 28,
         "book_count": "1",
-        "book_summary": "《细菌世界历险记》是高士其的一部科普读物，通过生动的故事情节和丰富的科学知识，介绍了细菌的世界。书中通过主人公的冒险经历，让读者深入了解细菌的种类、特点和影响。高士其以其独特的文风和深入浅出的讲解，成功地吸引了广大读者的关注。本书不仅适合青少年阅读，也非常适合家长和教师作为科普教育的材料。",
+        "book_summary": "“菌儿”是一个极微小的细菌，它从天空飘落，四处漂泊：先是进入人的身体，接着被科学家抓入实验室，又被战争野心家利用参加战争……《细菌世界历险记》是我国著名科学家、科普作家高士其的代表作，以生动活泼的方式带领小读者去细菌世界一探究竟。作者用诙谐有趣的语言、妙趣横生的比喻和拟人化的创作手法，将深奥神秘的科学知识讲得通俗易懂、形象生动，为小读者展现了一个奥妙无穷的科学世界，传播了医学与公共卫生的科普知识和科学精神。",
         "book_status": "在库",
         "book_getpricecurrent": "人民币",
         "book_getprice": 0,
@@ -69694,7 +69751,7 @@ const books = [
         "book_pricecurrent": "人民币",
         "book_price": 1.25,
         "book_count": "1",
-        "book_summary": "《啼笑因缘》是张恨水的一部长篇小说，讲述了主人公樊家树和几位女性之间的爱情故事。书中通过丰富的故事情节和深刻的人物描写，展现了民国时期的社会风貌和文化背景。张恨水以其独特的文风和深刻的思想，成功地吸引了广大读者的关注。本书不仅适合文学爱好者阅读，也非常适合历史研究者作为参考。",
+        "book_summary": "作品描写青年学子樊家树游北京天桥时，结识了武师关寿峰关秀姑父女，又同天坛鼓书艺人沈凤喜一见钟情，他的表嫂则撮合他和财政部长的千金何丽娜姻缘。后来军阀刘将军霸占了沈凤喜，关秀姑扮作佣人深入刘宅，把刘将军诱到西山极乐寺刺杀何丽娜先因失意纵情声色，后学佛吃素隐居西山别墅关秀姑又带樊家树上西山与何丽娜相会，并把贺喜书束插入他们相会的雅室，而后出关参加了东北抗日义勇军。续集则写身为统制的沈国英向何丽娜求婚，财政部长的女儿与樊家树订婚为由来搪塞，并打发女儿与樊家树赴欧求学。归国后，见沈凤喜已为国英内室。不久，沈凤喜因念念不忘旧情瘁死于心病，此时国难当头，沈国英损献家产购买军火与关寿峰关秀姑父女，在要塞保卫战中为国损躯。",
         "book_status": "在库",
         "book_getpricecurrent": "人民币",
         "book_getprice": 0,
@@ -69717,7 +69774,7 @@ const books = [
         "book_pricecurrent": "人民币",
         "book_price": 4.55,
         "book_count": "1",
-        "book_summary": "《中国历史人物辞典》是吴海林和李延沛合著的一部历史工具书，详细介绍了中国历史上众多重要人物的生平事迹和贡献。书中通过对大量史料的梳理和分析，为读者提供了丰富的历史知识。吴海林和李延沛以其扎实的学术功底和严谨的态度，为读者呈现了一部权威的历史工具书。本书不仅适合历史研究者阅读，也非常适合对历史感兴趣的普通读者。",
+        "book_summary": "该书分正、续两编，本册为正编，收商代至清末(含部分民国人物)共五千八百多人。包括历代政治家、思想家、哲学家、军事家、科学家、文学家、艺术家、人民起义领袖、少数民族重要人物，以及帝王将相、学者名流、高人逸士、仕宦僧尼、能工巧匠等等。著录生卒年、异名、籍贯、职业、官阶、生平、著述、爱好及其功过。人物按生年先后排列，仅知卒年或生卒年不详者，按其生活时代酌情排列。人物的异名，均在有关人名下列为参见条目。",
         "book_status": "在库",
         "book_getpricecurrent": "人民币",
         "book_getprice": 0,
@@ -69740,7 +69797,7 @@ const books = [
         "book_pricecurrent": "人民币",
         "book_price": 33.6,
         "book_count": "2",
-        "book_summary": "《乱世佳人（全二册）》是美国著名作家玛格丽特·米切尔的代表作，讲述了美国南北战争和重建时期一个女性的命运。书中通过丰富的故事情节和深刻的人物描写，展现了主人公斯嘉丽·奥哈拉的坚强和勇敢。陈良廷等的译本忠实于原著，语言流畅，使读者能够更好地理解和感受这部经典作品。本书不仅适合文学爱好者阅读，也非常适合历史研究者作为参考。",
+        "book_summary": "《乱世佳人》称得上有史以来最经典的爱情巨著之一，由费雯丽和克拉克&#8226;盖博主演的影片亦成为影史上“不可逾越的”的最著名的爱情片经典。小说以美国南北战争为背景，主线是好强、任性的庄园主小姐斯佳丽纠缠在几个男人之间的爱恨情仇，与之相伴的还有社会、历史的重大变迁，旧日熟悉的一切的一去不返……《乱世佳人》既是一首人类爱情的绝唱，又是一幅反映社会政治、经济、道德诸多方面的巨大而深刻变化的宏大历史画卷。",
         "book_status": "在库",
         "book_getpricecurrent": "人民币",
         "book_getprice": 0,
@@ -69763,7 +69820,7 @@ const books = [
         "book_pricecurrent": "人民币",
         "book_price": 1.05,
         "book_count": "1",
-        "book_summary": "《萨朗波》是法国著名作家福楼拜的一部历史小说，讲述了迦太基公主萨朗波和雇佣军首领马托之间的爱情故事。书中通过丰富的故事情节和深刻的人物描写，展现了古代迦太基的社会风貌和文化背景。郑永慧的译本忠实于原著，语言优美，使读者能够更好地理解和感受这部经典作品。本书不仅适合文学爱好者阅读，也非常适合历史研究者作为参考。",
+        "book_summary": "故事发生在公元前三世纪，迦太基战败后拖欠雇佣军的军饷无法支付。雇佣军在利比亚人马托的带领下举行哗变，包围了迦太基城。马托爱上了迦太基统帅阿米尔卡的女儿萨朗波，在希腊奴隶斯庞迪斯的帮助下潜入迦太基城，盗走了保佑迦太基城的神衣。阿米尔卡回师解救迦太基城，初战失利，亏得萨朗波只身走进马托的营盘，取回神衣，才扭转了战争局势。阿米尔卡用计包围了起义军，又用分化瓦解、收买叛徒的办法对起义军逐个击破，彻底消灭。马托被俘且被残忍地处死，萨朗波的眼光同马托的眼光相遇后，如受雷击一般，也倒地而死。",
         "book_status": "在库",
         "book_getpricecurrent": "人民币",
         "book_getprice": 0,
@@ -69786,7 +69843,7 @@ const books = [
         "book_pricecurrent": "人民币",
         "book_price": 1.4,
         "book_count": "1",
-        "book_summary": "《续孽海花》是燕谷老人的一部长篇小说，讲述了清末民初时期一群知识分子的生活和命运。书中通过丰富的故事情节和深刻的人物描写，展现了那个时代的社会风貌和文化背景。燕谷老人以其独特的文风和深刻的思想，成功地吸引了广大读者的关注。本书不仅适合文学爱好者阅读，也非常适合历史研究者作为参考。",
+        "book_summary": "曾朴年老多病，无力完成《孽海花》，恳请张鸿代为续写，是为《续孽海花》，章回编号承《孽海花》，自第三十六回始。案：楔子所言接原书三十回后续写，且提到原作者有未发表之后五回（第三十一回～第三十五回）。其原话为“我就从现行的三十回后续起，以期文字一贯。至于东亚病夫（即原作者曾朴）所续的五回，不妨并行不悖，好在事实各可独立，只要无负书中旧友，东亚病夫天上有灵，当亦为掀髯一笑哩！”下面目录作了小小改动：直接接续原书当时未发表的后五回，从“三十六回”开始编号。",
         "book_status": "在库",
         "book_getpricecurrent": "人民币",
         "book_getprice": 0,
@@ -69809,7 +69866,7 @@ const books = [
         "book_pricecurrent": "人民币",
         "book_price": 26.8,
         "book_count": "1",
-        "book_summary": "《人间失格》是日本著名作家太宰治的代表作，讲述了主人公叶藏的自传式故事。书中通过丰富的内心独白和深刻的人物描写，展现了主人公的孤独和迷茫。颜月的译本忠实于原著，语言流畅，使读者能够更好地理解和感受这部经典作品。本书不仅适合文学爱好者阅读，也非常适合心理研究者作为参考。",
+        "book_summary": "《人间失格》是日本著名小说家太宰治最具影响力的小说作品，同时也是糸色望（注：动漫《再见！绝望先生》的主角）老师日常生活必备的读物之一。另外在日本轻小说《文学少女》第一卷中被大量提及。《人间失格》（又名《丧失为人的资格》）发表于1948年，是一部自传体的小说，纤细的自传体中透露出极致的颓废，毁灭式的绝笔之作。太宰治巧妙地将自己的人生与思想，隐藏于主角叶藏的人生遭遇，藉由叶藏的独白，窥探太宰治的内心世界，一个“充满了可耻的一生”。在发表这部作品的同年，太宰治就自杀身亡。",
         "book_status": "在库",
         "book_getpricecurrent": "人民币",
         "book_getprice": 0,
@@ -69832,7 +69889,7 @@ const books = [
         "book_pricecurrent": "人民币",
         "book_price": 108,
         "book_count": "2",
-        "book_summary": "《南宋佛教制度文化研究（全二册）》是王仲尧的一部学术专著，系统地探讨了南宋时期的佛教制度和文化。书中通过对大量史料的梳理和分析，详细阐述了佛教在南宋社会中的地位和影响。王仲尧以其扎实的学术功底和独到的见解，为读者呈现了一幅丰富多彩的佛教文化图景。本书不仅适合宗教研究者阅读，也非常适合对历史感兴趣的普通读者。",
+        "book_summary": "本书创造性地研究了南宋佛教制度文化及其在国内外特有的文化影响力问题，从三个角度展开讨论：一是政府行政机制与寺院体制关系；南宋朝与户籍配套的僧籍体制、通过敕额进行合法寺数控制、敕差住持制度、寺院住持体制等，提高了佛教的社会文化影响力。二是寺院体制关系本身；嘉定年间出现的五山十刹体制及作为其外在物质形式的寺院建筑功能等，形成特定制度文化，成为佛教制度建设进程中的鼎盛期。三是寺院体制内部结构关系；因体制内涵的经营性质而体现的寺院经济经营模式，及其与社会经济系统互动的和谐性质，成为相应制度安排的特有表现，研究视点从以往习见的僧团、教派转移到以寺院为主体，用详实的资料和鲜明的观点说明南宋佛教在与社会关系的和谐互动中建立的寺院体制，成为佛教发展迄今的基本制度。",
         "book_status": "在库",
         "book_getpricecurrent": "人民币",
         "book_getprice": 0,
@@ -69855,7 +69912,7 @@ const books = [
         "book_pricecurrent": "人民币",
         "book_price": 72,
         "book_count": "1",
-        "book_summary": "《抗战时期中国图书馆界研究》是刘劲松的一部学术专著，系统地探讨了抗战时期中国图书馆的发展和贡献。书中通过对大量史料的梳理和分析，详细阐述了图书馆在抗战时期的作用和影响。刘劲松以其扎实的学术功底和独到的见解，为读者呈现了一幅丰富多彩的图书馆历史图景。本书不仅适合图书馆研究者阅读，也非常适合对历史感兴趣的普通读者。",
+        "book_summary": "在中华民族如火如荼、可歌可泣的抗日战争期间，中国图书馆界作为中国全面抗战的一个重要构成部分，以其“文化救国”的思想与实践，为抗战的 “全覆盖”和“全员参与”做出了不可磨灭的贡献。本书阐述了抗日战争期间中国图书馆界的文化救国活动，包括通过转移珍贵文献、抢救收购沦陷区文献等方式努力保存中国优秀典籍，传承中华传统文明；克服一切困难向国际社会征集书籍，促进中外文化交流；推动西部地区的图书馆建设，打造新的文化基地；等等。中国图书馆界的举措配合了政府的抗战，形成了独特的文化救国模式，在文化战线上体现出中华民族特有的文化品格和精神气质。",
         "book_status": "在库",
         "book_getpricecurrent": "人民币",
         "book_getprice": 58,
@@ -69878,7 +69935,7 @@ const books = [
         "book_pricecurrent": "人民币",
         "book_price": 198,
         "book_count": "1",
-        "book_summary": "《波德莱尔传》是法国学者克洛德·皮舒瓦和让·齐格勒合著的一部传记，详细介绍了法国著名诗人波德莱尔的生平和创作。书中通过对大量文献的梳理和分析，揭示了波德莱尔在文学史上的地位和影响。董强的译本忠实于原著，语言流畅，使读者能够更好地理解和感受这部经典作品。本书不仅适合文学爱好者阅读，也非常适合文化研究者作为参考。",
+        "book_summary": "本书作者运用历史学方法，致力于从声音中还原现代派大师夏尔·波德莱尔传奇生活的真相。书中引用大量来自波德莱尔生前亲友的翔实一手资料，记录波德莱尔及其亲友、同行的往来书信，从波德莱尔的父辈开始，深入发掘一切与诗人相关的史实，抽丝剥茧，旁征博引，围绕波德莱尔的家庭情况、成长经历、反叛精神、落魄生活和创作才情进行了深入细致的叙述与分析。不仅为读者展现了一个有血有肉的诗人形象，书中所引用的书信、自传材料等资料，也能帮助我们更好地理解波德莱尔的作品，走进这位现代派大师的精神世界。",
         "book_status": "在库",
         "book_getpricecurrent": "人民币",
         "book_getprice": 99,
@@ -69925,7 +69982,7 @@ const books = [
         "book_pricecurrent": "新台币",
         "book_price": 260,
         "book_count": "2",
-        "book_summary": "《个人与群体事件的本質》是美国著名灵媒Jane Roberts的一部灵性著作，探讨了个人与群体事件的关系和本质。书中通过丰富的灵性知识和深刻的思考，帮助读者更好地理解自己和周围的世界。王季慶的译本忠实于原著，语言流畅，使读者能够更好地理解和感受这部经典作品。本书不仅适合灵性爱好者阅读，也非常适合心理学研究者作为参考。",
+        "book_summary": "正如電視台在幕後以所有繁複的努力使節目在螢幕上呈現,我們每一個人也以思想與情感的無形能量，促使一件又一件的群體事件在現實生活中發生。影響成千上萬的天災人禍,沒有一件是偶然發生的。地震、傳染病大流行、核能電廠輻射線外洩，這些群體與事件的當事者，並不是意外地被捲入的,每一個人在深層意識上都參與了一手，而整體地形成了共同的命運。本書指出了在這些事件「幕後」運作的信念和理由。人類天生善良，並且具有追求理想的衝動，「架構二」是我們能以直覺與想像力溝通的內在世界。透過這個充滿善意與巨大能量的「內在溝通網路」，我們能夠以有力的行動，為自己，也為群體大眾創造出更美好的世界。",
         "book_status": "在库",
         "book_getpricecurrent": "人民币",
         "book_getprice": 0,
@@ -69949,7 +70006,7 @@ const books = [
         "book_pricecurrent": "新台币",
         "book_price": 350,
         "book_count": "1",
-        "book_summary": "《梦与意识投射》是美国著名灵媒Jane Roberts的一部灵性著作，探讨了梦境和意识投射的现象和意义。书中通过丰富的灵性知识和深刻的思考，帮助读者更好地理解梦境和意识投射的机制。王季慶的译本忠实于原著，语言流畅，使读者能够更好地理解和感受这部经典作品。本书不仅适合灵性爱好者阅读，也非常适合心理学研究者作为参考。",
+        "book_summary": "你有許多夢境，都是你的意識投射到其他時空的回憶。懂得如何作夢，就能改善健康。你能夠作預知夢、與前生溝通之夢、與社會大眾共享的「群體之夢」。作者珍．羅伯茲在賽斯的教導下力自發地經歷無數奇特的夢中旅遊。透過作夢，她預知未來，探索各個實相，甚至幫助剛死去的人適應死後環境，也因此傳下了無數珍貴的、全然原創的夢知識。本書不只是一趟眩魅的夢境之旅，也是一本劃時代的夢學經典。賽斯對夢的洞見在此全盤托出，不但超越現有的心理學，改變我們對夢的定義，更揭開了夢的諸多親密世界。下一個千禧，人類的心將不可思議地擴展，夢的潛能就扮演了關鍵性的角色。就讓這本書為你掀起一場「夢內革命」吧！",
         "book_status": "在库",
         "book_getpricecurrent": "人民币",
         "book_getprice": 0,
@@ -69973,7 +70030,7 @@ const books = [
         "book_pricecurrent": "新台币",
         "book_price": 250,
         "book_count": "1",
-        "book_summary": "《灵界的讯息》是美国著名灵媒Jane Roberts的一部灵性著作，记录了她与灵界沟通的过程和内容。书中通过丰富的灵性知识和深刻的思考，帮助读者更好地理解灵界的存在和意义。王季慶的译本忠实于原著，语言流畅，使读者能够更好地理解和感受这部经典作品。本书不仅适合灵性爱好者阅读，也非常适合心理学研究者作为参考。",
+        "book_summary": "本書是「賽斯資料」的入門書，詳述了羅伯茲與賽斯達成接觸的經過，並以突破性的觀念，說明了超感官能力的開發、輪迴的意義與結構、多次元時的實相、人類超越肉體的「本體」、神的觀念等重要的心靈課題。無論你是科學家、修行人，或是生命的探索者，經由此書，都將發現一片嶄新的天地。一九六三，美國女詩人珍．羅伯茲忽然收到「賽斯」所傳來的「靈界的訊息」。賽斯說他是一個不具肉身的存在，已完成塵世生活的輪迴，現在他是教師，以深入淺出，不帶迷信色彩的語言，傳給人類多次元世界的知識。他們長達二十年的合作，傳下了後來結集成數大冊的通靈訊息，這即是如今風行歐美，成為新時代（New Age）運動中心思想的「賽斯資料」。",
         "book_status": "在库",
         "book_getpricecurrent": "人民币",
         "book_getprice": 0,
@@ -69997,7 +70054,7 @@ const books = [
         "book_pricecurrent": "新台币",
         "book_price": 220,
         "book_count": "1",
-        "book_summary": "《做夢的藝術》是美国著名作家Carlos Castaneda的一部灵性著作，记录了他与墨西哥巫师唐洛伍德的交往和学习过程。书中通过丰富的灵性知识和深刻的思考，探讨了梦境和意识投射的奥秘。鲁宓的译本忠实于原著，语言流畅，使读者能够更好地理解和感受这部经典作品。本书不仅适合灵性爱好者阅读，也非常适合心理学研究者作为参考。",
+        "book_summary": "卡斯塔尼達的著作對於美國當代反璞歸真的思潮具有莫大的影響，同時也打破了西方文化對於原住民印第安人文化的歧視與偏見。使廣大讀者，能一窺這個具有悠久歷史的文化傳統裡奇妙的智慧。從書中可知，印第安人的巫術文化，與所有追求內在精神超越的示教或思想，都有不謀而合，甚至更為簡潔真接的觀點和態度。而書中的主人翁──老巫士唐望，不僅具備超卓的人格與智慧，也擁有對現實透徹瞭悟後的神奇力量。透過唐望不尋常的教誨，及卡氏充滿懷疑的智性報導，我們可以知道，在使人類沉迷的現代文明，與圈囿於自我心靈的偏執之外，其實存在著一個充滿神奇奧妙的世界，只是我們視而不見罷了。",
         "book_status": "在库",
         "book_getpricecurrent": "人民币",
         "book_getprice": 0,
@@ -70021,7 +70078,7 @@ const books = [
         "book_pricecurrent": "人民币",
         "book_price": 45,
         "book_count": "2",
-        "book_summary": "《从鸦片战争到五四运动（全二册）》是胡绳的一部历史著作，系统地介绍了中国近代史的重要事件和历史背景。书中通过对大量史料的梳理和分析，详细阐述了从鸦片战争到五四运动的历史进程和影响。胡绳以其扎实的学术功底和独到的见解，为读者呈现了一幅丰富多彩的历史图景。本书不仅适合历史研究者阅读，也非常适合对历史感兴趣的普通读者。",
+        "book_summary": "《从鸦片战争到五四运动》，充满了一个深深参与、密切关注现实政治生活而又研究中国近代史的大学者、大专家的聪慧和眼力。他处理复杂的近代史料，往往居高临下，给人以驾轻就熟、游刃有余的印象。他的著作，不是专门为研究中国近代史的学者写的，没有单纯学术著作所常有的古板、书卷气和学院气，因而能为有中等文化水平以上的广大干部和各行业读者所喜读。学者们，尤其是研究中国近代史的学者们，总是把它置于案头，常加参考。",
         "book_status": "在库",
         "book_getpricecurrent": "人民币",
         "book_getprice": 0,
@@ -70183,7 +70240,7 @@ const books = [
         "book_pricecurrent": "人民币",
         "book_price": 0.4,
         "book_count": "1",
-        "book_summary": "《文學（第一冊）》是张毕来和蔡超尘主编的一部文学教材，系统地介绍了文学的基本理论和知识。书中通过对大量文学作品的分析，帮助读者更好地理解和掌握文学的核心概念和方法。张毕来和蔡超尘以其扎实的学术功底和独到的见解，为读者呈现了一幅丰富多彩的文学图景。本书不仅适合文学专业学生阅读，也非常适合文学爱好者作为参考。",
+        "book_summary": "1953年9月，因工作需要，张毕来调任上海华东师范大学中文系教授兼图书馆副馆长。1954年春，张毕来又调任人民教育出版社中学语文编辑室主任，主持全国中学语文课本的编辑工作。1955年，张毕来原来撰写的新文学运动史经过整理、修改、完善，编成《新文学史纲》（第一卷），由作家出版社出版。这部专著是建国初期全国仅有的几部关于新文学史方面的代表性著作之一，是第一部在新文学史中介绍共产党人文学主张的著作，几十年来一直是各大学中文系和研究中国现代文学史的重要参考书，这部著作于1985年由人民文学出版社再版发行。张毕来在人民教育出版社工作期间，按照中央的要求，与著名作家吴伯萧共同负责课程改革，主要是将汉语与文学实行分科教学。这项课程改革工作，因吴伯萧常常忙于突击其他中心工作任务，实际主要的课程改革任务都落在了张毕来的肩上。1956年下半年，中学汉语、文学分科教育试行，人民教育出版社陆续出版他和王微、蔡超尘共同主编的中学文学课本，其中初中六册，高中四册。这次课程改革对推动中学语言文学教学的进步与发展起到了积极的促进作用。",
         "book_status": "在库",
         "book_getpricecurrent": "人民币",
         "book_getprice": 0,
@@ -70206,7 +70263,7 @@ const books = [
         "book_pricecurrent": "人民币",
         "book_price": 0.46,
         "book_count": "1",
-        "book_summary": "《汉姆莱特》是英国著名剧作家莎士比亚的代表作之一，讲述了丹麦王子汉姆莱特的复仇故事。书中通过丰富的故事情节和深刻的人物描写，展现了人性的复杂和命运的无常。曹未风的译本忠实于原著，语言流畅，使读者能够更好地理解和感受这部经典作品。本书不仅适合文学爱好者阅读，也非常适合戏剧研究者作为参考。",
+        "book_summary": "生存还是毁灭，这是一个值得思考的问题；默然忍受命运暴虐的毒箭，或是挺身反抗人世的无涯的苦难，通过斗争把它们扫清，这两种行为，哪一种更高贵？死了，睡着了，什么都完了；要是在这一种睡眠之中，我们心头的创痛，以及其他无数血肉之躯所不能避免的打击，都可以就此消失，那正是我们求之不得的结局。死了，睡着了，睡着了也许还会做梦；嗯，阻碍就在这儿：因为当我们摆脱了这一具朽腐的皮囊以后，在那死的睡眠里，究竟将要做些什么梦，那不能不使我们踌躇顾虑。人们甘心就困于患难之中，也就是为了这个缘故；谁愿意忍受人世的鞭挞和讥嘲、压迫者的凌辱、傲慢者的冷眼、被轻蔑的爱情的惨痛、法律的迁延、官吏的横暴和费尽辛勤所换来的小人的鄙视，要是他只要用一柄小小的刀子，就可以清算自己的一生？谁愿意负着这样的重担，在烦劳的生命的压迫下呻吟流汗，倘不是因为恐惧不可知的死后，惧怕那从来不曾有一个旅人回来过的神秘之国，是他迷惑了我们的意志，使我们宁愿忍受目前的折磨，被审慎的思维盖上了一层灰色，伟大的事业在这一重考虑之下，也会逆流而退，失去了行动的意义。且慢！美丽的奥菲利亚——女神，在你的祈祷之中，不要忘记替我忏悔我的罪孽。",
         "book_status": "在库",
         "book_getpricecurrent": "人民币",
         "book_getprice": 0,
@@ -70229,7 +70286,7 @@ const books = [
         "book_pricecurrent": "人民币",
         "book_price": 2.2,
         "book_count": "1",
-        "book_summary": "《火坑：俄国妓女辛酸史》是俄国著名作家库普林的代表作，讲述了俄国妓女的生活和命运。书中通过丰富的故事情节和深刻的人物描写，展现了妓女在社会底层的苦难和挣扎。姜明河的译本忠实于原著，语言流畅，使读者能够更好地理解和感受这部经典作品。本书不仅适合文学爱好者阅读，也非常适合社会研究者作为参考。",
+        "book_summary": "俄罗斯作家亚历山大·伊万诺维奇·库普林的长篇小说（1909～1915），又名《亚玛》，描述资本主义社会妓女的悲惨生活，但带有自然主义色彩，曾经被一些人目为淫书，但公正的读者和评论界一直赞扬它是一部优秀的现实主义杰作，被公认为是一部“伟大愤怒之书”、是“憾人心弦”和“震动了社会根基”的作品。",
         "book_status": "在库",
         "book_getpricecurrent": "人民币",
         "book_getprice": 0,
@@ -70367,11 +70424,11 @@ const books = [
         "book_pricecurrent": "人民币",
         "book_price": 18,
         "book_count": "1",
-        "book_summary": "《喧哗与骚动》是美国著名作家威廉·福克纳的经典小说。书中通过多个视角的叙述，展现了康普生家族的衰落和南方社会的变迁。李文俊的译本忠实于原著，语言流畅，适合喜欢文学和现代主义题材的读者阅读。",
+        "book_summary": "《喧哗与骚动》是威廉&#8226;福克纳最著名的作品，几乎每个人都对这个名字耳熟能详。它以四个人物的不同视角将一个故事讲了四遍，如同一部交响乐的四个乐章，构筑了一个立体主义的美国南方社会，其创作手法之大胆丰富，足以为一部“创作艺术教科书”，是现当代文坛罕见的大手笔。《喧哗与骚动》被福克纳认作自己“最伟大的作品”，它也是公认的福克纳小说中最精美的一部。《喧哗与骚动》书名取自莎士比亚《麦克白》一句台词：“生活就像傻子讲的故事，满是聒噪和狂怒（喧哗与骚动），却没有任何意义。”小说主题也在被这句台词说中。小说分为四部分，分别由四个人讲述同一个故事。有智障弟弟班杰明完全时空错乱的心理活动；有昆汀在自杀前的种种臆想；有杰森有私利无亲情的所作所为；有黑人女仆眼中的烦扰家事。这些人以及他们所讲述的故事中的另外的人，如凯蒂、父亲母亲、毛莱舅舅，他们所有人似乎都在同时发出声音，急于诉说自己的欲望、困惑、愠怒和绝望。这些声音就如同现代派交响乐中的那种乐句，如低吟和嘶吼，倾诉着人在凝滞的时间中的窒息和苦熬，此起彼伏地充满整部小说的每一页，但没有一句是和谐和有意义的。",
         "book_status": "在库",
         "book_getpricecurrent": "人民币",
         "book_getprice": 0,
-        "book_isbn": "9787532742547 ",
+        "book_isbn": "9787532742547",
         "book_cnClassification": "I712.45",
         "book_usClassification": "PS3503.U27",
         "book_star": 5
@@ -70390,11 +70447,11 @@ const books = [
         "book_pricecurrent": "人民币",
         "book_price": 39,
         "book_count": "1",
-        "book_summary": "《被掩埋的巨人》是英国作家石黑一雄的一部奇幻小说。书中通过主人公在古代不列颠的冒险经历，探讨了记忆、遗忘和历史的主题。周小进的译本忠实于原著，语言优美，适合喜欢文学和奇幻题材的读者阅读。",
+        "book_summary": "公元六世纪的英格兰，本土不列颠人与撒克逊入侵者之间的战争似乎已走到了终点——和平降临了这片土地，两个族群比邻而居，相安无事地共同生活了数十年。但与此同时，一片奇怪的“遗忘之雾”充盈着英格兰的山谷，吞噬着村民们的记忆，使他们的生活好似一场毫无意义的白日梦。一对年迈的不列颠夫妇想要赶在记忆完全丧失前找到此刻依稀停留在脑海中的儿子，于是匆匆踏上了一段艰辛的旅程。他们渴望让迷雾散去，渴望重拾两人相伴一生的恩爱回忆——但这片静谧的雾霭掩盖的却是一个黑暗血腥的过去，那是一个在数十年前被不列颠人的亚瑟王用违背理想的手段掩埋的巨人。一个神秘的撒克逊武士肩负使命来到这片看似平和的山谷，他那谦逊的外表背后究竟隐藏着怎样秘而不宣的动机？他的使命带给这个国度将是宽恕的橄榄枝还是复仇的剑与火？而亚瑟王最后的骑士高文则决心用生命守护国王的遗产，因为守护它就就意味着守护最后的和平。记忆与宽恕，复仇与和平，四人的命运不可避免地交织在了一处，而结局只有一个。",
         "book_status": "在库",
         "book_getpricecurrent": "人民币",
         "book_getprice": 0,
-        "book_isbn": "9787532770243 ",
+        "book_isbn": "9787532770243",
         "book_cnClassification": "I561.45",
         "book_usClassification": "PR6063.A94",
         "book_star": 5
@@ -70436,7 +70493,7 @@ const books = [
         "book_pricecurrent": "人民币",
         "book_price": 1.95,
         "book_count": "2",
-        "book_summary": "《美国短篇小说选（全二册）》是一部收录了多篇美国经典短篇小说的文集。书中通过丰富的文学作品，展现了美国文学的魅力和多样性。王佐良的编选详尽，语言优美，适合文学爱好者和研究者的阅读。",
+        "book_summary": "外国中短篇小说选(共12册)， 这套丛书还有 《法国中篇小说选（上下册）》《英国短篇小说选》《苏联短篇小说选（上下册）》《苏联短篇小说选（2册）》《俄国短篇小说选（上下册）》 等 。",
         "book_status": "在库",
         "book_getpricecurrent": "人民币",
         "book_getprice": 0,
@@ -70444,5 +70501,265 @@ const books = [
         "book_cnClassification": "I712.45",
         "book_usClassification": "PS648",
         "book_star": 4
+    },
+    {
+        "id": 3012,
+        "book_name": "红星照耀中国（新译本）",
+        "book_press": "长江文艺出版社",
+        "book_author": "[美]埃德加·斯诺著 王涛译",
+        "book_gettime": "2024",
+        "book_getcity": "北京",
+        "book_keepcity": "北京",
+        "book_getway": "北京爱迪学校",
+        "book_class": "文学 纪实文学",
+        "book_presstime": "2018年1版2023年11印",
+        "book_pricecurrent": "人民币",
+        "book_price": 49.6,
+        "book_count": "1",
+        "book_summary": "《红星照耀中国》是西方记者对中国共产党和红军的第一部采访记录，也是新闻史和报告文学史上里程碑式的作品。书中不仅记载了大量有关中国红军和苏区，以及革命领导人的第一手资料，而且深入分析和探究了“红色中国”产生、发展的原因，对中国共产党和中国革命做出了客观的评价。由于其对历史 的权威记录，以及对历史趋势的准确预见，本书成为风靡全球的经典名著，被译成近二十种文字。2016年，本书入选统编初中语文教材指定阅读书目。本书经过斯诺基金会的官方授权。应斯诺基金会要求，该版本根据《红星照耀中国》定版重新翻译。译者王涛的译文得到了斯诺基金会的高度认可，成为斯诺基金会官方认证的中文译本。斯诺之女西安·斯诺为本书倾情作序。",
+        "book_status": "在库",
+        "book_getpricecurrent": "人民币",
+        "book_getprice": 0,
+        "book_isbn": "9787570204786",
+        "book_cnClassification": "I712.55",
+        "book_usClassification": "DS774.5",
+        "book_star": 5,
+        "book_dadsay": "八年级上，通讯知识点扩展课外阅读指定读物。"
+    },
+    {
+        "id": 3015,
+        "book_name": "上海摩登：一种新都市文化在中国（1930-1945）（修订版）",
+        "book_press": "浙江大学出版社",
+        "book_author": "李欧梵著 毛尖译",
+        "book_gettime": "2023",
+        "book_getcity": "北京",
+        "book_keepcity": "北京",
+        "book_getway": "",
+        "book_class": "社会学 文学",
+        "book_presstime": "2017年版",
+        "book_pricecurrent": "人民币",
+        "book_price": 60,
+        "book_count": "1",
+        "book_summary": "明明是一部极其严肃的文学批评专著，有时候却更像一本书写上海的颓废放荡的小说，或者像一篇妖艳华丽的散文，厚重的文字铺展开来又形成一张时空错落的文化地图，将上海这座城市在大时代中悲情传奇的命运细细勾画出来。李欧梵精彩重塑摩登上海的文化肖像，并由此奠定其在文化研究领域的先锋地位。",
+        "book_status": "在库",
+        "book_getpricecurrent": "人民币",
+        "book_getprice": 0,
+        "book_isbn": "9787308165044",
+        "book_cnClassification": "I207.6",
+        "book_usClassification": "HT123.S48",
+        "book_star": 5
+    },
+    {
+        "id": 3016,
+        "book_name": "围城",
+        "book_press": "人民文学出版社",
+        "book_author": "钱锺书",
+        "book_gettime": "2024",
+        "book_getcity": "北京",
+        "book_keepcity": "北京",
+        "book_getway": "北京爱迪学校",
+        "book_class": "文学 小说",
+        "book_presstime": "1991年2版2023年38印",
+        "book_pricecurrent": "人民币",
+        "book_price": 36,
+        "book_count": "1",
+        "book_summary": "围城故事发生于1920到1940年代。主角方鸿渐是个从中国南方乡绅家庭走出的青年人，迫于家庭压力与同乡周家女子订亲。但在其上大学期间，周氏患病早亡。准岳父周先生被方所写的唁电感动，资助他出国求学。方鸿渐在欧洲游学期间，不理学业。为了给家人一个交待，方于毕业前购买了虚构的“克莱登大学”的博士学位证书，并随海外学成的学生回国。在船上与留学生鲍小姐相识并热恋，但被鲍小姐欺骗感情。同时也遇见了大学同学苏文纨。到达上海后，在已故未婚妻父亲周先生开办的银行任职。此时，方获得了同学苏文纨的青睐，又与苏的表妹唐晓芙一见钟情，整日周旋于苏、唐二人之间，期间并结识了追求苏文纨的赵辛楣。方最终与苏、唐二人感情终结，苏嫁与诗人曹元朗，而赵也明白方并非其情敌，从此与方惺惺相惜。方鸿渐逐渐与周家不和。抗战开始，方家逃难至上海的租界。在赵辛楣的引荐下，与赵辛楣、孙柔嘉、顾尔谦、李梅亭几人同赴位于内地的三闾大学任教。由于方鸿渐性格等方面的弱点，陷入了复杂的人际纠纷当中。后与孙柔嘉订婚，并离开三闾大学回到上海。在赵辛楣的帮助下，方鸿渐在一家报馆任职，与孙柔嘉结婚。婚后，方鸿渐夫妇与方家、孙柔嘉姑母家的矛盾暴露并激化。方鸿渐辞职并与孙柔嘉吵翻，逐渐失去了生活的希望。",
+        "book_status": "在库",
+        "book_getpricecurrent": "人民币",
+        "book_getprice": 0,
+        "book_isbn": "9787020127894",
+        "book_cnClassification": "I247.5",
+        "book_usClassification": "PL2692.Q23",
+        "book_star": 5,
+        "book_dadsay": "九年级推荐读物。"
+    },
+    {
+        "id": 3017,
+        "book_name": "平凡的世界（普及本）",
+        "book_press": "北京十月文艺出版社",
+        "book_author": "路遥",
+        "book_gettime": "2024",
+        "book_getcity": "北京",
+        "book_keepcity": "北京",
+        "book_getway": "北京爱迪学校",
+        "book_class": "文学 小说",
+        "book_presstime": "2021年1版2023年23印",
+        "book_pricecurrent": "人民币",
+        "book_price": 49.5,
+        "book_count": "1",
+        "book_summary": "作品导读：《平凡的世界》是中国作家路遥创作的一部百万字的小说。这是一部全景式地表现中国当代城乡社会生活的长篇小说，全书共三部。该书以中国70年代中期到80年代中期十年间为背景，通过复杂的矛盾纠葛，以孙少安和孙少平两兄弟为中心，刻画了当时社会各阶层众多普通人的形象；劳动与爱情、挫折与追求、痛苦与欢乐、日常生活与巨大社会冲突纷繁地交织在一起，深刻地展示了普通人在大时代历史进程中所走过的艰难曲折的道路。1991年3月份《平凡的世界》获中国第三届茅盾文学奖。第一版于1986年12月在文联出版社出版；第二版于2012年3月在北京十月文艺出版社正式发行。作品主题：这是一个平凡的世界，却是一个不平凡的年代，这个年代的各种矛盾，让这个山沟沟里的一个名叫双水村的小地方，发生了许多的故事，每个人都生活在命运的束缚当中，家族的矛盾，贫富的差距，让人与人之间的相处，爆炸出了很多让人为之流泪的情节。我们生活在这个平凡的世界，一部分人不能做任何改变，只能随波逐流；但另一部分人，却敢于和命运做斗争，去活得不平凡！",
+        "book_status": "在库",
+        "book_getpricecurrent": "人民币",
+        "book_getprice": 0,
+        "book_isbn": "9787530220481",
+        "book_cnClassification": "I247.5",
+        "book_usClassification": "PL2778.L8",
+        "book_star": 4,
+        "book_dadsay": "八年级推荐读物，海淀区九年级必读读物，推荐这个版本就可以，三册本没必要。"
+    },
+    {
+        "id": 3018,
+        "book_name": "苔丝",
+        "book_press": "译林出版社",
+        "book_author": "[英]托马斯·哈代著 孙法理译",
+        "book_gettime": "",
+        "book_getcity": "北京",
+        "book_keepcity": "北京",
+        "book_getway": "",
+        "book_class": "文学 小说",
+        "book_presstime": "1993年1版2003年12印",
+        "book_pricecurrent": "人民币",
+        "book_price": 18,
+        "book_count": "1",
+        "book_summary": "这是作者最优秀的作品。纯朴美丽的农村姑娘苔丝曾遭富人奸污。新婚之夜她向新郎讲述自己的不幸遭遇，但新郎不能谅解弃她而去。为生计所迫，苔丝只好与富人同居。后新郎回心转意愿与苔丝言归于好。绝望中的苔丝认为富人毁了她一生幸福，便杀了他，自己也被处死刑。作品深刻反映了当时社会现实，揭露了正是虚伪的资产阶级道德造成了苔丝的不幸。",
+        "book_status": "在库",
+        "book_getpricecurrent": "人民币",
+        "book_getprice": 0,
+        "book_isbn": "9787805672168",
+        "book_cnClassification": "I561.44",
+        "book_usClassification": "PR6015.A7",
+        "book_star": 5
+    },
+    {
+        "id": 3019,
+        "book_name": "一根弦的小提琴：36個讓你想快樂就快樂的生命智慧",
+        "book_press": "平裝本出版有限公司",
+        "book_author": "黑幼龍 黑立言",
+        "book_gettime": "",
+        "book_getcity": "北京",
+        "book_keepcity": "北京",
+        "book_getway": "",
+        "book_class": "心灵 心理学",
+        "book_presstime": "2002年1版2002年1印",
+        "book_pricecurrent": "新台币",
+        "book_price": 200,
+        "book_count": "1",
+        "book_summary": "青少年卡内基：在性格最具可塑性的中學時期，大多數的孩子卻將全副精神埋首苦讀，而忽略了其他應有的發展。青少年卡內基訓練最主要的目的，就是幫助這群年輕朋友在人生重要的階段找到自己的信心，讓他們更有能力面對未來的挑戰。透過本書近四十篇溫馨、輕鬆的故事分享，從自信、樂觀、人際溝通，到開發自我智慧等主題，讓青少年們更能培養出課本上所沒有的積極態度與能力，在課堂之外開展自己的人生。",
+        "book_status": "在库",
+        "book_getpricecurrent": "人民币",
+        "book_getprice": 0,
+        "book_isbn": "9789578033726",
+        "book_cnClassification": "B848",
+        "book_usClassification": "BF637.S4",
+        "book_star": 3
+    },
+    {
+        "id": 3020,
+        "book_name": "红岩",
+        "book_press": "中国青年出版社",
+        "book_author": "罗广斌 杨益言",
+        "book_gettime": "2024",
+        "book_getcity": "北京",
+        "book_keepcity": "北京",
+        "book_getway": "北京爱迪学校",
+        "book_class": "文学 小说",
+        "book_presstime": "2020年3版2023年188印",
+        "book_pricecurrent": "人民币",
+        "book_price": 36,
+        "book_count": "1",
+        "book_summary": "小说以解放前夕“重庆中美合作所集中营”敌我斗争为主线，展开了对当时国统区阶级斗争全貌的描写。全书通过三条斗争线索(集中营的狱中斗争、重庆城内的学生运动和地下工作、农村根据地的武装斗争)、联系广阔的社会背景，形成纷繁的斗争场面；同时又用川东地下党机关报《挺进报》的斗争情节把这三条斗争线索联结起来，汇聚到狱中斗争上，集中描写革命者为迎接全国解放，挫败敌人垂死挣扎而进行的最后决战。作者以一定的广度和深度再现了国民党统治行将覆灭、解放战争走向全国胜利的斗争形势和时代风貌，成功地塑造了许云峰、江姐、成岗和华子良等为代表的共产党人的英雄形象，光彩照人，感人至深；同时对反面人物的形象塑造也很有特色，既揭示了他们的反动本质，又不流于脸谱化。作品结构错综复杂又富于变化，善于刻画人物心理活动和烘托气氛，语言朴实，笔调悲壮，被誉为“革命的教科书”。作品一经面世，立即引起轰动，先后被改编成电影《烈火中永生》和豫剧《江姐》等，从1961年出版至今51次再版，发行800多万册，是发行量最大的小说；同时，被译成多国文字发行。该书被中宣部、文化部、团中央命名为百部爱国主义教科书。",
+        "book_status": "在库",
+        "book_getpricecurrent": "人民币",
+        "book_getprice": 0,
+        "book_isbn": "9787500601593",
+        "book_cnClassification": "I247.5",
+        "book_usClassification": "PL2778.L8",
+        "book_star": 5,
+        "book_dadsay": "爱国主义样板书，但真的读过发现，嘿，写得还真不错。"
+    },
+    {
+        "id": 3021,
+        "book_name": "灵魂饭",
+        "book_press": "南海出版公司",
+        "book_author": "余华",
+        "book_gettime": "2006",
+        "book_getcity": "郑州",
+        "book_keepcity": "北京",
+        "book_getway": "郑州轻工业学院后门书店",
+        "book_class": "文学 散文",
+        "book_presstime": "2002年1版2006年2印",
+        "book_pricecurrent": "人民币",
+        "book_price": 18,
+        "book_count": "1",
+        "book_summary": "收有“流行音乐”、“消费的儿子”、“最初的岁月”、“午门广场之夜”、“别人的城市”、“我的写作经历”、“文学和民族”、“妥协的语言”等散文。",
+        "book_status": "在库",
+        "book_getpricecurrent": "人民币",
+        "book_getprice": 0,
+        "book_isbn": "9787544220477",
+        "book_cnClassification": "I267",
+        "book_usClassification": "PL2778.Y8",
+        "book_star": 4,
+        "book_note": "老婆的书。",
+        "book_dadsay": "散文集。其中《灵魂饭》一篇探讨了印第安人和美国黑人命运的分叉缘由。"
+    },
+    {
+        "id": 3022,
+        "book_name": "Peter Pan",
+        "book_press": "Barnes & Noble Classics",
+        "book_author": "J. M. Barrie",
+        "book_gettime": "",
+        "book_getcity": "北京",
+        "book_keepcity": "北京",
+        "book_getway": "",
+        "book_class": "文学 儿童文学",
+        "book_presstime": "2005年版",
+        "book_pricecurrent": "美元",
+        "book_price": 7.95,
+        "book_count": "1",
+        "book_summary": "\"Peter Pan,\" by J.M. Barrie, is part of the \"Barnes and Noble Classics\"\" \"series, which offers quality editions at affordable prices to the student and the general reader, including new scholarship, thoughtful design, and pages of carefully crafted extras. Here are some of the remarkable features of \"Barnes and Noble Classics\": New introductions commissioned from today's top writers and scholars Biographies of the authors Chronologies of contemporary historical, biographical, and cultural events Footnotes and endnotes Selective discussions of imitations, parodies, poems, books, plays, paintings, operas, statuary, and films inspired by the work Comments by other famous authors Study questions to challenge the reader's viewpoints and expectations Bibliographies for further reading Indices and Glossaries, when appropriate/LI/ULAll editions are beautifully designed and are printed to superior specifications; some include illustrations of historical interest. \"Barnes and Noble Classics \"pulls together a constellation of influences--biographical, historical, and literary--to enrich each reader's understanding of these enduring works.\"\" \"Peter Pan\" first flew across a London stage in 1904, overwhelming audiences with its tale of a magical boy who never grows up, who lures young Wendy and her brothers to Neverland where they meet pirates, Indians, fairies, and the Lost Boys. Following the play's astonishing success, J. M. Barrie revised and expanded the story and published it as this novel, originally titled \"Peter and Wendy \"when it appeared in 1911. For children, it remains a marvelous mix of fantasy and adventure, featuring unique, imaginative characters, who frisk and frolic in an enchantingland. For adults, the story of Peter and the Lost Boys works on a much deeper level, speaking to them about the inevitable loss of childhood and the ability \"to fly.\" The climactic duel between the \"proud and insolent youth\" (Peter Pan) and the \"dark and sinister man\" (Captain Hook) is both a swashbuckling romp and a moving metaphor for the complex, poignant struggle between innocent but irresponsible youth and tainted but dependable maturity. Neither side wins, for the one inevitably becomes the other. Of course, the ageless Peter Pan is the happy exception. Amy Billone teaches at the University of Tennessee, Knoxville. She received her Ph.D. in Comparative Literature at Princeton University, where she wrote her dissertation on women's involvement with the nineteenth-century sonnet.",
+        "book_status": "在库",
+        "book_getpricecurrent": "人民币",
+        "book_getprice": 0,
+        "book_isbn": "9781593082130",
+        "book_cnClassification": "I561.84",
+        "book_usClassification": "PZ8.B275 Pe",
+        "book_star": 5
+    },
+    {
+        "id": 3023,
+        "book_name": "美食家",
+        "book_press": "古吴轩出版社",
+        "book_author": "陆文夫",
+        "book_gettime": "2023/10/4",
+        "book_getcity": "苏州",
+        "book_keepcity": "北京",
+        "book_getway": "苏州一家旧书店",
+        "book_class": "文学 小说",
+        "book_presstime": "2005年1版2005年1印",
+        "book_pricecurrent": "人民币",
+        "book_price": 28,
+        "book_count": "1",
+        "book_summary": "对于吃，陆文夫很是讲究，他认为，对于一个有文化的食客来说，吃，应求一种境界，或称为环境、气氛、心情、处境。他主张，饮食饭店一定要讲究气氛，只有环境环境幽雅，气氛浓郁，食客吃起来才会有兴致，吃得舒服，吃得开心。陆文夫对各地富有特色的民间小吃，很有兴趣，走到哪儿吃到哪儿，总有品不足、尝不够的感觉。他真正做到了“行万里路，尝百口鲜”。难怪朋友都称他是“玩家”、“吃家”。自小说《美食家》轰动以后，陆文夫每到一家饭店用餐，厨师闻知陆文夫来吃饭，便有些惶惶然，大有美食家面前班门弄斧之感，倘若做坏了一道菜，会坏了自己的名声。陆文夫的味蕾似乎特别敏感、发达，能品尝出各种酒菜色香味的细微差别。一盘鸡丁端上桌，他只需夹一块放进嘴里，就能断定是新鲜鸡肉还是冻鸡肉。他说名厨必须有丰富想象力，不能墨守成规，要不断创新，做出新菜、新味来。按照菜谱做菜，不会有大出息。特级厨师应有特级的独创性，应有绝招绝活。可见陆文夫确实是货真价实之美食家。",
+        "book_status": "在库",
+        "book_getpricecurrent": "人民币",
+        "book_getprice": 0,
+        "book_isbn": "9787805749532",
+        "book_cnClassification": "I247.5",
+        "book_usClassification": "PL2778.L8",
+        "book_star": 5,
+        "book_dadsay": "观前附近一条小巷子里的书店，书店老板上了岁数，但是很健谈。"
+    },
+    {
+        "id": 3024,
+        "book_name": "金银岛·化身博士",
+        "book_press": "上海译文出版社",
+        "book_author": "[英]斯蒂文森著 荣如德译",
+        "book_gettime": "",
+        "book_getcity": "北京",
+        "book_keepcity": "北京",
+        "book_getway": "",
+        "book_class": "文学 小说",
+        "book_presstime": "2018年版",
+        "book_pricecurrent": "人民币",
+        "book_price": 28,
+        "book_count": "1",
+        "book_summary": "《金银岛》不仅是斯蒂文森的成名作，也是他全部文学遗产中流传最广的代表作，这部脉络清晰、波澜迭起的海上历险、探宝小说堪称整个西方文学传统中最著名的海盗故事。《化身博士》（原名《杰基尔博士与海德先生奇案》）则是一部寓意深刻的经典惊悚小说，创造了文学史上最成功也是最著名的双重人格典型之一；“Jekyll and Hyde”自此成为一个通用词汇，意思就是“具有善恶双重性格之人”。",
+        "book_status": "在库",
+        "book_getpricecurrent": "人民币",
+        "book_getprice": 0,
+        "book_isbn": "9787532778225",
+        "book_cnClassification": "I561.44",
+        "book_usClassification": "PR4765",
+        "book_star": 3
     }
 ]
