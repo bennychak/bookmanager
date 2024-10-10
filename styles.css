@@ -74,6 +74,7 @@ h1 {
     -moz-user-select:auto;
     -ms-user-select: auto;
     user-select: auto;
+    background-color:rgba(255,255,255,.9);
 }
 .search-form input:focus + span,
 .search-form input:active + span,
@@ -166,12 +167,12 @@ h1 {
 .book-cards {
     position:relative;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(50vw, 1fr));
     gap: 20px;
 }
 
 .book-card {
-    background-color: #fff;
+    background-color: rgba(255,255,255,.9);
     padding: 20px;
     border-radius: 1rem;
     box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
