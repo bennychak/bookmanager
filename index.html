@@ -18,7 +18,7 @@
             <span id="book-total" class="book-total"></span><span id="search-result-total" class="search-result-total"></span>
         </h1>
         <form class="search-form">
-            <input type="text" maxlength="16" id="search-input" required onfocus="$('#placeholder').hide()" onblur="$('#placeholder').show()" />
+            <input type="text" maxlength="16" id="search-input" required />
             <span class="placeholder" id="placeholder">请输入书名、出版社、作者、类别、ISBN、中图分类号、书店或电商名称等</span>
             <button class="searchbutton" type="button" onclick="searchBooks()" style="box-sizing: border-box;">查询</button>
             <span onclick="randomSearch();this.style.display = 'none'; document.getElementById('refreshReset').style.display = 'block';" id="refreshRandom" class="refresh" title="随机排序"></span>
