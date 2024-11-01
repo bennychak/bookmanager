@@ -88,6 +88,7 @@ function displayBooks(books) {
             <h2><span class="card_mark" onclick="book_clc('`+card_mark+`','${book.book_name}','${book.book_cnClassification}','${book.book_usClassification}')">`+card_mark+`</span>${book.book_name}<label>Id.${book.id}</label></h2>
             <div class="book-details">
                 <p><strong>主观评级：</strong style="vertical-align:middle"> <span class="book-star">${createStars(book.book_star)}</span></p>
+                <div class="thumbnail"><img onerror="$(this).attr('src','./img/nocover.jpg');" src="./img/${book.book_isbn}.jpg" /></div>
                 
                 ${book.book_summary ? `<p><strong>内容简介：</strong> ${book.book_summary}</p>` : ''}
                 ${book.book_dadsay ? `<p><strong>爸爸说：</strong> ${book.book_dadsay}</p>` : ''}
