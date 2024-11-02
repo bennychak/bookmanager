@@ -227,6 +227,7 @@ h1 {
     float: right;
     width:120px;
     margin-left:1rem;
+    margin-top:.5em;
 }
 .book-card .thumbnail img{
     width:100%;
