@@ -20,7 +20,7 @@
             .audio-item { flex: 1 1 calc(25% - 20px); max-width: calc(25% - 20px); }
         }
         audio { width: 100%; }
-        .error-message { color: red; text-align: center; margin-top: 20px; }
+        .error-message { color: red; text-align: center; margin-top: 20px; display: none; } /* Ensure errorMessage is hidden by default */
     </style>
 </head>
 <body>
@@ -79,8 +79,14 @@
         async function loadDirectory(directory) {
             const contentDiv = document.getElementById('content');
             const loader = contentDiv.querySelector('.loader');
-            const errorMessage = document.getElementById('errorMessage');
-            errorMessage.style.display = 'none';
+            const errorMessageElement = document.querySelector('#errorMessage'); // Use querySelector and ensure it's defined
+
+            if (!errorMessageElement) {
+                console.error('Error message element not found.');
+                return;
+            }
+
+            errorMessageElement.style.display = 'none';
             loader.style.display = 'block';
             contentDiv.innerHTML = ''; // Clear previous content
 
@@ -138,18 +144,22 @@
         }
 
         function showError(message) {
-            const errorMessage = document.getElementById('errorMessage');
-            errorMessage.textContent = message;
-            errorMessage.style.display = 'block';
+            const errorMessageElement = document.querySelector('#errorMessage'); // Use querySelector and ensure it's defined
+            if (errorMessageElement) {
+                errorMessageElement.textContent = message;
+                errorMessageElement.style.display = 'block';
+            } else {
+                console.error('Error message element not found.');
+            }
         }
 
-        window.onload = async () => {
+        window.addEventListener('DOMContentLoaded', async () => {
             const directories = await fetchDirectories();
             if (directories) {
                 createNavigation(directories);
                 loadDirectory(Object.keys(directories)[0]); // Load the first directory's content
             }
-        };
+        });
     </script>
 </body>
 </html>
