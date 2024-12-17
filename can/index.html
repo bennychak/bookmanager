@@ -31,7 +31,7 @@
         </ul>
 
         <div id="content" class="mt-3">
-            <div class="loader"><img src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgRuQ Broadcom Corporation BCM43142 802.11b/g/n" alt="Loading..." /></div>
+            <div class="loader"><img src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgRuQ Broadcom Corporation BCM43142 802.11b/g/n" alt="Loading..." /></div>
             <div class="error-message" id="errorMessage"></div>
             <!-- Audio items will be listed here -->
         </div>
@@ -64,7 +64,10 @@
                         a.className = 'nav-link';
                         a.textContent = parentDir ? `${parentDir.replace(/\/$/, '')}` : key;
                         a.href = '#';
-                        a.onclick = () => loadDirectory(parentDir ? `${parentDir.replace(/\/$/, '')}` : key);
+                        a.onclick = (event) => {
+                            event.preventDefault(); // Prevent default link behavior
+                            loadDirectory(`${parentDir || ''}${key}`);
+                        };
                         li.appendChild(a);
                         nav.appendChild(li);
                     }
@@ -73,7 +76,7 @@
             addDirectory(directories);
         }
 
-        function loadDirectory(directory) {
+        async function loadDirectory(directory) {
             const contentDiv = document.getElementById('content');
             const loader = contentDiv.querySelector('.loader');
             const errorMessage = document.getElementById('errorMessage');
@@ -81,49 +84,48 @@
             loader.style.display = 'block';
             contentDiv.innerHTML = ''; // Clear previous content
 
-            fetchDirectories().then(directories => {
-                if (!directories) return;
+            const directories = await fetchDirectories();
+            if (!directories) return;
 
-                let files;
-                if (directory.includes('/')) {
-                    const [mainDir, ...subDirs] = directory.split('/');
-                    let currentDir = directories[mainDir];
-                    for (let subDir of subDirs) {
-                        if (currentDir[subDir]) {
-                            currentDir = currentDir[subDir];
-                        } else {
-                            showError('指定的目录不存在。');
-                            return;
-                        }
+            let files;
+            if (directory.includes('/')) {
+                const [mainDir, ...subDirs] = directory.split('/');
+                let currentDir = directories[mainDir];
+                for (let subDir of subDirs) {
+                    if (currentDir[subDir]) {
+                        currentDir = currentDir[subDir];
+                    } else {
+                        showError('指定的目录不存在。');
+                        return;
                     }
-                    files = currentDir;
-                } else {
-                    files = directories[directory];
                 }
+                files = currentDir;
+            } else {
+                files = directories[directory];
+            }
 
-                if (files) {
-                    files.forEach(filename => {
-                        const div = document.createElement('div');
-                        div.className = 'audio-item';
+            if (files) {
+                files.forEach(filename => {
+                    const div = document.createElement('div');
+                    div.className = 'audio-item';
 
-                        const audio = document.createElement('audio');
-                        audio.controls = true;
-                        audio.src = './' + encodeURI(directory.replace(/\//g, '/') + '/' + filename);
+                    const audio = document.createElement('audio');
+                    audio.controls = true;
+                    audio.src = './' + encodeURI(directory.replace(/\//g, '/') + '/' + filename);
 
-                        const name = document.createElement('p');
-                        name.textContent = filename;
+                    const name = document.createElement('p');
+                    name.textContent = filename;
 
-                        audio.onplay = () => stopOtherAudios(audio);
+                    audio.onplay = () => stopOtherAudios(audio);
 
-                        div.appendChild(name);
-                        div.appendChild(audio);
-                        contentDiv.appendChild(div);
-                    });
-                } else {
-                    showError('该目录下没有音频文件。');
-                }
-                loader.style.display = 'none';
-            });
+                    div.appendChild(name);
+                    div.appendChild(audio);
+                    contentDiv.appendChild(div);
+                });
+            } else {
+                showError('该目录下没有音频文件。');
+            }
+            loader.style.display = 'none';
         }
 
         function stopOtherAudios(currentAudio) {
@@ -141,13 +143,12 @@
             errorMessage.style.display = 'block';
         }
 
-        window.onload = () => {
-            fetchDirectories().then(directories => {
-                if (directories) {
-                    createNavigation(directories);
-                    loadDirectory(Object.keys(directories)[0]); // Load the first directory's content
-                }
-            });
+        window.onload = async () => {
+            const directories = await fetchDirectories();
+            if (directories) {
+                createNavigation(directories);
+                loadDirectory(Object.keys(directories)[0]); // Load the first directory's content
+            }
         };
     </script>
 </body>
