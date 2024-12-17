@@ -31,36 +31,23 @@
         </ul>
 
         <div id="content" class="mt-3">
-            <div class="loader"><img src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgRuQ Broadcom Corporation BCM43142 802.11b/g/n" alt="Loading..." /></div>
+            <div class="loader"><img src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgRuQ Broadcom Corporation BCM43142 802.11b/g/n" alt="Loading..." /></div>
             <div class="error-message" id="errorMessage"></div>
             <!-- Audio items will be listed here -->
         </div>
     </div>
 
     <script>
-        function loadDirectories(callback) {
-            const xhr = new XMLHttpRequest();
-            xhr.open('GET', 'audio-directory.json', true);
-            xhr.onreadystatechange = function () {
-                if (xhr.readyState === 4) {
-                    if (xhr.status === 200) {
-                        try {
-                            callback(JSON.parse(xhr.responseText));
-                        } catch (error) {
-                            showError('无法解析录音教材，请检查JSON文件格式。');
-                            console.error(error);
-                        }
-                    } else {
-                        showError('无法加载录音教材，请稍后再试。');
-                        console.error('Request failed with status:', xhr.status);
-                    }
-                }
-            };
-            xhr.onerror = function () {
-                showError('请求失败，请检查网络连接。');
-                console.error('Request failed.');
-            };
-            xhr.send();
+        async function fetchDirectories() {
+            try {
+                const response = await fetch('audio-directory.json');
+                if (!response.ok) throw new Error('Failed to fetch the JSON file.');
+                return await response.json();
+            } catch (error) {
+                showError('无法加载录音教材，请稍后再试。');
+                console.error(error);
+                return null;
+            }
         }
 
         function createNavigation(directories) {
@@ -94,7 +81,9 @@
             loader.style.display = 'block';
             contentDiv.innerHTML = ''; // Clear previous content
 
-            loadDirectories(directories => {
+            fetchDirectories().then(directories => {
+                if (!directories) return;
+
                 let files;
                 if (directory.includes('/')) {
                     const [mainDir, ...subDirs] = directory.split('/');
@@ -153,9 +142,11 @@
         }
 
         window.onload = () => {
-            loadDirectories(directories => {
-                createNavigation(directories);
-                loadDirectory(Object.keys(directories)[0]); // Load the first directory's content
+            fetchDirectories().then(directories => {
+                if (directories) {
+                    createNavigation(directories);
+                    loadDirectory(Object.keys(directories)[0]); // Load the first directory's content
+                }
             });
         };
     </script>
