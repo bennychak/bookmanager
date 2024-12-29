@@ -158,11 +158,11 @@ function updatePagination() {
     const searchResultTotal = document.getElementById('search-result-total');
 
     if (isSearching) {
-        searchResultTotal.textContent = `找到${totalItems}部（${bookCount}册）图书`;
+        searchResultTotal.textContent = `找到${totalItems}部 (${bookCount}册) 图书`;
         bookTotal.style.display = 'none';
         searchResultTotal.style.display = 'inline-block';
     } else {
-        bookTotal.textContent = `找到${totalItems}部（${bookCount}册）图书`;
+        bookTotal.textContent = `找到${totalItems}部 (${bookCount}册) 图书`;
         bookTotal.style.display = 'inline-block';
         searchResultTotal.style.display = 'none';
     }
