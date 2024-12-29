@@ -289,10 +289,11 @@ function classifyBooks(){
                 resetSearch();
             }else{
                 filteredBooks= books.filter(book => book.book_cnClassification.startsWith(result));
+                bookCount = filteredBooks.reduce((sum, book) => sum + parseInt(book.book_count, 10), 0);
                 currentPage = 1;
                 displayBooks(filteredBooks);
                 $('#book-total').hide();
-                document.getElementById('search-result-total').textContent = '找到'+filteredBooks.length+'部图书';
+                document.getElementById('search-result-total').textContent = '找到'+filteredBooks.length+'部 ('+bookCount+'册) 图书';
                 document.getElementById('search-result-total').style.display = 'inline-block';
                 document.getElementById('search-input').value = '';
             }
