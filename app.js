@@ -150,6 +150,7 @@ function createStars(stars) {
 function updatePagination() {
     const totalItems = filteredBooks.length;
     const totalPages = Math.ceil(totalItems / itemsPerPage);
+    const bookCount = filteredBooks.reduce((sum, book) => sum + parseInt(book.book_count, 10), 0);
     const pageInfo = document.getElementById('page-info');
     const prevPageButton = document.getElementById('prev-page');
     const nextPageButton = document.getElementById('next-page');
@@ -157,11 +158,11 @@ function updatePagination() {
     const searchResultTotal = document.getElementById('search-result-total');
 
     if (isSearching) {
-        searchResultTotal.textContent = `找到${totalItems}部图书`;
+        searchResultTotal.textContent = `找到${totalItems}部（${bookCount}册）图书`;
         bookTotal.style.display = 'none';
         searchResultTotal.style.display = 'inline-block';
     } else {
-        bookTotal.textContent = `找到${totalItems}部图书`;
+        bookTotal.textContent = `找到${totalItems}部（${bookCount}册）图书`;
         bookTotal.style.display = 'inline-block';
         searchResultTotal.style.display = 'none';
     }
