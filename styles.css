@@ -25,6 +25,7 @@ hr{ background:none; border:none; padding:0; margin:1rem 0; border-top: #000 1px
 
 .imggg,.imgpp{ width:3rem; border-radius:50%; display:inline-block;vertical-align:middle;}
 .imgpp{ margin-left:-1rem }
+.imgjs{ width:8rem; display:block; margin:0 auto 1rem}
 
 .container {
     max-width: 1000px;
@@ -157,7 +158,7 @@ h1 {
 .divide{margin:24vh 0 1rem; text-align: center; color:#fff; font-size: .75rem}
 
 .book-total, .search-result-total {
-    color: #fff; vertical-align: middle;
+    color: #fff; vertical-align: middle; text-align:center;
 }
 
 .book-list-container{

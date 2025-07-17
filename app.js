@@ -160,10 +160,10 @@ function updatePagination() {
     if (isSearching) {
         searchResultTotal.textContent = `找到${totalItems}部 (${bookCount}册) 图书`;
         bookTotal.style.display = 'none';
-        searchResultTotal.style.display = 'inline-block';
+        searchResultTotal.style.display = 'block';
     } else {
         bookTotal.textContent = `找到${totalItems}部 (${bookCount}册) 图书`;
-        bookTotal.style.display = 'inline-block';
+        bookTotal.style.display = 'block';
         searchResultTotal.style.display = 'none';
     }
 
