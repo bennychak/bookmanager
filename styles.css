@@ -1,6 +1,7 @@
 ::root,html{
     background-color: #bfc55f;
 }
+::placeholder{ color:#aaa}
 body {
     font-family: Arial, sans-serif;
     background: #bfc55f url(./bg.jpg) center center no-repeat;
@@ -129,7 +130,7 @@ h1 {
 .search-form .classify{
     height:4rem;
     position:absolute;
-    right: -125px;
+    right: -35px;
     bottom: 0;
     width: 80px;
     padding: .5rem 1rem;
@@ -154,9 +155,9 @@ h1 {
     background-size:2.2rem;
 }
 .search-form .classify{
-    right:-35px;
+    right:-125px;
 }
-.search-form .refresh:active
+.search-form .refresh:active,
 .search-form .classify:active{
     opacity:.7;
 }
