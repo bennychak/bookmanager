@@ -294,7 +294,7 @@ function classifyBooks(){
                 displayBooks(filteredBooks);
                 $('#book-total').hide();
                 document.getElementById('search-result-total').textContent = '找到'+filteredBooks.length+'部 ('+bookCount+'册) 图书';
-                document.getElementById('search-result-total').style.display = 'inline-block';
+                document.getElementById('search-result-total').style.display = 'block';
                 document.getElementById('search-input').value = '';
             }
         },

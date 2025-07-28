@@ -58,9 +58,12 @@ h1 {
     margin-left:auto;
     margin-right:auto;
 }
-
+.search-form input,
+.search-form input + span{
+    margin-left:-125px;
+}
 .search-form input {
-    width: 80%;
+    width: 90%;
     padding: .5rem 1rem;
     border: 1px solid #111;
     border-radius: 1rem;
@@ -81,7 +84,6 @@ h1 {
 .search-form input:active + span,
 .search-form input:valid + span{opacity:0}
 .search-form input + span{
-    width: 100%;
     padding: .5rem 1rem;
     margin-bottom: 20px;
     border: 1px solid #fff;
@@ -94,7 +96,7 @@ h1 {
     right: 0;
     pointer-events: none;
     user-select:none;
-    width:80%;
+    width:90%;
 }
 
 .search-form .searchbutton{
@@ -113,6 +115,7 @@ h1 {
     height:4rem;
     font-weight: bold;
     width:20%;
+    margin-left:10px;
 }
 
 .search-form .searchbutton:hover {
@@ -123,7 +126,7 @@ h1 {
 .search-form .classify{
     height:4rem;
     position:absolute;
-    right: -80px;
+    right: -35px;
     bottom: 0;
     width: 80px;
     padding: .5rem 1rem;
@@ -148,14 +151,14 @@ h1 {
     background-size:2.2rem;
 }
 .search-form .classify{
-    right:-160px;
+    right:-125px;
 }
 .search-form .refresh:active
 .search-form .classify:active{
     opacity:.7;
 }
 
-.divide{margin:24vh 0 1rem; text-align: center; color:#fff; font-size: .75rem}
+.divide{margin:10vh 0 1rem; text-align: center; color:#fff; font-size: .75rem}
 
 .book-total, .search-result-total {
     color: #fff; vertical-align: middle; text-align:center;
@@ -277,12 +280,14 @@ h1 {
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: #c0c56d;
+    background:rgba(192, 197, 109, .8);
     padding: 10px 0;
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
     z-index: 10;
     padding:1rem 0 2rem;
     user-select:none;
+    backdrop-filter:blur(6px);
+    border-radius:1rem 1rem 0 0;
 }
 
 .pagination button {
@@ -318,6 +323,10 @@ h1 {
         align-items:center;
     }
 
+    .search-form input,
+    .search-form input + span{
+        margin-left:0;
+    }
     .search-form input + span{
         width:100%;
     }
